@@ -1,0 +1,137 @@
+/* ================================
+   DESTINATIONS PAGE
+   ================================ */
+
+
+/* ---------- SECTION 1 ---------- */
+
+.destinations-sec-1 {
+  min-height: 400px;
+  padding: 80px 40px;
+
+  background-image:
+    url("../images/Mountain sky.jpg");
+
+  background-size: cover; 
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.destinations-sec-1 h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.destinations-sec-1 p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 2px 0;
+}
+
+
+/* ---------- SECTION 2 ---------- */
+
+.destinations-sec-2 {
+  padding: 70px 50px;
+}
+
+
+/* ---------- CATEGORY BUTTONS ---------- */
+
+.destinations-sec-2-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.destinations-sec-2-nav button {
+  padding: 10px 20px;
+
+  background-color: white;
+  color: #333;
+
+  border: 1px solid #ddd;
+  border-radius: 20px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+.destinations-sec-2-nav button:hover {
+  background-color: #0066cc;
+  color: white;
+  border-color: #0066cc;
+}
+
+.destinations-sec-2-nav button:first-child {
+  background-color: #0066cc;
+  color: white;
+  border-color: #0066cc;
+}
+
+
+/* ---------- DESTINATION GRID ---------- */
+
+.destinations-grid-sec {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+
+/* ---------- DESTINATION CARD ---------- */
+
+.destinations-grid-sec .article-card {
+  display: block;
+  width: 100%;
+  margin: 0;
+
+  background-color: white;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ---------- CARD IMAGE ---------- */
+
+.destinations-grid-sec .location-img {
+  width: 100%;
+  height: 220px;
+
+  object-fit: cover;
+  display: block;
+}
+
+
+/* ---------- CARD TITLE ---------- */
+
+.destinations-grid-sec .article-card h3 {
+  font-size: 22px;
+  margin: 15px 18px 6px;
+}
+
+
+/* ---------- CARD LOCATION ---------- */
+
+.destinations-grid-sec .article-card p {
+  color: #666;
+  font-size: 15px;
+
+  margin: 0 18px 18px;
+}
+
+.destinations-grid-sec .article-card p i {
+  margin-right: 6px;
+}

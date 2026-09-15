@@ -1,0 +1,152 @@
+
+.section-1 {
+  min-height: 500px;
+  padding: 100px 60px;
+
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 102, 204, 0) 0%,
+      rgba(0, 102, 204, 0.05) 35%,
+      rgba(0, 102, 204, 0.15) 100%
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 102, 204, 0.35) 0%,
+      rgba(0, 102, 204, 0.20) 40%,
+      rgba(0, 102, 204, 0.05) 70%,
+      rgba(0, 102, 204, 0) 100%
+    ),
+    url("../images/Mountain\ sky.jpg");
+
+  background-size: cover;
+  background-position: center;
+}
+.section-1 span{
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.section-1 h1{
+  color: white;
+  font-size: 52px;
+  max-width: 600px;
+  margin: 20px 0;
+  line-height: 1.1;
+}
+.section-1 p{
+  color: white;
+  font-size: 18px;
+  max-width: 550px;
+  line-height: 1.6;
+
+}
+.section-1 button{
+  margin-top: 25px;
+  padding: 14px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: white;
+  color: #0066cc;
+  font-weight: bold;
+}
+.section-2 {
+  padding: 80px 50px;
+  text-align: center;
+ }
+.section-2 > h2 {
+font-size: 35px;
+color: #222;
+margin-bottom: 10px;
+}
+.section-2 > p{
+  color: #666;
+  margin-bottom: 40px;
+}
+.article-card {
+  display: inline-block;
+  width: 30%;
+  margin: 1%;
+  text-align: left;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+}
+.location-img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.article-card h3{
+  font-size: 24px;
+  margin: 18px 20px 8px;
+}
+.article-card p{
+  color: #666;
+  margin: 0 20px 15px;
+}
+.article-card button{
+  margin: 0 20px 20px;
+  background: none;
+  font-weight: bold;
+}
+.section-3{
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #d4e1f7;
+}
+.section-3 > h2{
+  font-size: 35px;
+  color: #222;
+  margin-bottom: 10px;
+} 
+.section-3 > p{
+color: #666;
+margin-bottom: 40px;
+}
+.feature-card {
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  padding: 30px 20px;
+  background-color: white;
+  border-radius: 10px;
+  vertical-align: top;
+}
+.section-3-icons{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.feature-card h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.feature-card p{
+  color: #666;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

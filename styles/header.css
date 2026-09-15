@@ -1,0 +1,27 @@
+
+.page-header{
+  background-color:  #037df7;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 50px;
+  position: fixed;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+}
+
+.nav-bar{
+  display: flex;
+  gap: 30px;
+}
+.nav-bar a {
+  color: #f5f2f2;
+}
+.search-button{
+  background: none;
+}
+.search-icon{
+  width: 20px;
+}
