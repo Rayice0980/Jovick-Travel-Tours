@@ -156,8 +156,8 @@
 .contact-sec-3 {
   padding: 70px 40px;
 
-  background-color: #d4e1f7;
-
+  /* background-color: #d4e1f7; */
+  background-image: url("../images/Mountain sky.jpg");
   text-align: center;
 }
 
@@ -186,4 +186,70 @@
 
 .contact-sec-3 button:hover {
   background-color: #004f9e;
+}
+
+/* ================================
+   CONTACT FORM REFINEMENT
+   ================================ */
+
+.contact-form {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h2 {
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  outline: none;
+  font-family: inherit;
+  font-size: 15px;
+  margin-bottom: 18px;
+  transition: 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.08);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  background: #0066cc;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #0052a3;
 }

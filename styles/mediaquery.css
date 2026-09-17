@@ -458,4 +458,17 @@
     font-size: 27px;
   }
 
+  .contact-form {
+  padding: 25px 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+}
+
 }
