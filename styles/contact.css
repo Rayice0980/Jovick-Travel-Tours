@@ -1,0 +1,188 @@
+ /* =================================
+   CONTACT PAGE
+   ================================= */
+
+
+/* ---------- SECTION 1 ---------- */
+
+.contact-sec-1 {
+  min-height: 350px;
+  padding: 70px 40px;
+
+  background-image: url("../images/Mountain sky.jpg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+}
+
+.contact-sec-1 h2 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.contact-sec-1 p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* ---------- SECTION 2 ---------- */
+
+.contact-sec-2 {
+  display: flex;
+  gap: 60px;
+
+  padding: 80px 50px;
+
+  background-color: white;
+}
+
+
+/* ---------- GET IN TOUCH ---------- */
+
+.get-in-touch {
+  flex: 1;
+  padding: 20px;
+}
+
+.get-in-touch h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.get-in-touch > p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 450px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info p {
+  color: #555;
+}
+
+.contact-info i {
+  color: #0066cc;
+  margin-right: 10px;
+}
+
+
+/* ---------- CONTACT FORM ---------- */
+
+.contact-form {
+  flex: 1;
+  padding: 20px;
+}
+
+.contact-form h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 15px;
+
+  margin-bottom: 18px;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0066cc;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  width: fit-content;
+
+  padding: 12px 22px;
+
+  background-color: #0066cc;
+  color: white;
+
+  border-radius: 6px;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #004f9e;
+}
+
+
+/* ---------- SECTION 3 ---------- */
+
+.contact-sec-3 {
+  padding: 70px 40px;
+
+  background-color: #d4e1f7;
+
+  text-align: center;
+}
+
+.contact-sec-3 h2 {
+  font-size: 35px;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.contact-sec-3 p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.contact-sec-3 button {
+  padding: 13px 25px;
+
+  background-color: #0066cc;
+  color: white;
+
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.contact-sec-3 button:hover {
+  background-color: #004f9e;
+}
