@@ -345,80 +345,117 @@
    CONTACT PAGE
    ================================= */
 
-.contact-sec-1 {
-  min-height: 300px;
-  padding: 50px 20px;
+@media (max-width: 768px) {
+
+  .contact-sec-1 {
+    min-height: 300px;
+    padding: 50px 20px;
+  }
+
+  .contact-sec-1 h2 {
+    font-size: 36px;
+  }
+
+  .contact-sec-1 p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+
+  /* ---------- CONTACT SECTION 2 ---------- */
+
+  .contact-sec-2 {
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 20px;
+  }
+
+  .get-in-touch {
+    padding: 15px 5px;
+  }
+
+  .get-in-touch h2 {
+    font-size: 30px;
+  }
+
+  .get-in-touch > p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  /* ---------- CONTACT FORM ---------- */
+
+  .contact-form {
+    padding: 25px 20px;
+  }
+
+  .contact-form h2 {
+    font-size: 30px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    padding: 13px;
+  }
+
+
+  /* ---------- SECTION 3 ---------- */
+
+  .contact-sec-3 {
+    padding: 55px 20px;
+  }
+
+  .contact-sec-3 h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .contact-sec-3 p {
+    line-height: 1.5;
+  }
+
 }
 
-.contact-sec-1 h2 {
-  font-size: 36px;
-}
 
-.contact-sec-1 p {
-  font-size: 16px;
-  line-height: 1.5;
-}
+/* ---------- SMALL PHONES ---------- */
 
+@media (max-width: 480px) {
 
-/* ---------- CONTACT SECTION 2 ---------- */
+  .contact-sec-1 {
+    min-height: 280px;
+    padding: 40px 15px;
+  }
 
-.contact-sec-2 {
-  flex-direction: column;
-  gap: 20px;
+  .contact-sec-1 h2 {
+    font-size: 32px;
+  }
 
-  padding: 50px 20px;
-}
+  .contact-sec-1 p {
+    font-size: 15px;
+  }
 
+  .contact-sec-2 {
+    padding: 40px 15px 50px;
+  }
 
-/* ---------- GET IN TOUCH ---------- */
+  .get-in-touch h2,
+  .contact-form h2 {
+    font-size: 27px;
+  }
 
-.get-in-touch {
-  padding: 15px 5px;
-}
+  .contact-sec-3 {
+    padding: 50px 15px;
+  }
 
-.get-in-touch h2 {
-  font-size: 30px;
-}
+  .contact-sec-3 h2 {
+    font-size: 27px;
+  }
 
-.get-in-touch > p {
-  font-size: 15px;
-  line-height: 1.6;
-}
-
-
-/* ---------- CONTACT FORM ---------- */
-
-.contact-form {
-  padding: 15px 5px;
-}
-
-.contact-form h2 {
-  font-size: 30px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  font-size: 15px;
-  padding: 12px;
-}
-
-.contact-form button {
-  width: 100%;
-  padding: 13px;
-}
-
-
-/* ---------- SECTION 3 ---------- */
-
-.contact-sec-3 {
-  padding: 55px 20px;
-}
-
-.contact-sec-3 h2 {
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.contact-sec-3 p {
-  line-height: 1.5;
 }
