@@ -156,8 +156,10 @@
 .contact-sec-3 {
   padding: 70px 40px;
 
-  /* background-color: #d4e1f7; */
   background-image: url("../images/Mountain sky.jpg");
+background-size: cover;
+background-position: center;
+  
   text-align: center;
 }
 
