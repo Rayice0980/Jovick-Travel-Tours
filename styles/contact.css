@@ -86,10 +86,12 @@
 .contact-form {
   flex: 1;
   padding: 20px;
+  background-color: #f8f9fb;
+  border-radius: 10px;
 }
 
 .contact-form h2 {
-  font-size: 32px;
+  font-size: 30px;
   margin-bottom: 25px;
   color: #222;
 }
@@ -110,7 +112,6 @@
 .contact-form textarea {
   width: 100%;
   padding: 13px 15px;
-
   margin-bottom: 18px;
 
   border: 1px solid #ddd;

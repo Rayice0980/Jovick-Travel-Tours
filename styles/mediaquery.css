@@ -337,37 +337,7 @@
     height: 180px;
   }
 
-  /* ---------- CONTACT SMALL PHONE ---------- */
-
-.contact-sec-1 {
-  min-height: 280px;
-  padding: 40px 15px;
-}
-
-.contact-sec-1 h2 {
-  font-size: 32px;
-}
-
-.contact-sec-1 p {
-  font-size: 15px;
-}
-
-.contact-sec-2 {
-  padding: 40px 15px 50px;
-}
-
-.get-in-touch h2,
-.contact-form h2 {
-  font-size: 27px;
-}
-
-.contact-sec-3 {
-  padding: 50px 15px;
-}
-
-.contact-sec-3 h2 {
-  font-size: 27px;
-}
+  
 
 }
 
