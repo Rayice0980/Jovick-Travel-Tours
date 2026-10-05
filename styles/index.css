@@ -52,6 +52,13 @@
   color: #0066cc;
   font-weight: bold;
 }
+
+.section-1 button:hover {
+  background-color: #0066cc;
+  color: white;
+}
+
+
 .section-2 {
   padding: 80px 50px;
   text-align: center;
