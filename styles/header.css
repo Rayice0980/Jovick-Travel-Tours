@@ -1,3 +1,10 @@
+#searchMessage {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
 #searchResults {
   display: flex;
   flex-direction: column;
