@@ -1,7 +1,24 @@
+
+
 const menuButton = document.getElementById("menuButton");
 const navBar = document.getElementById("navBar");
 const searchMessage = document.getElementById("searchMessage");
 const searchResults = document.getElementById("searchResults");
+
+const pages = [
+  "index.html",
+  "destinations.html",
+  "tours.html",
+  "contact.html"
+];
+
+
+const pageNames = {
+              "index.html": "Home",
+              "destinations.html": "Destinations",
+              "tours.html": "Tours",
+              "contact.html": "Contact"
+            };
 
 
 
@@ -9,6 +26,8 @@ const searchResults = document.getElementById("searchResults");
 
 menuButton.addEventListener("click", function () {
   navBar.classList.toggle("show-menu");
+
+  searchBox.classList.remove("show-search");
 
   if (navBar.classList.contains("show-menu")) {
     menuButton.innerHTML = "✕";
@@ -44,6 +63,9 @@ const searchBox = document.getElementById("searchBox");
 
 searchButton.addEventListener("click", function () {
   searchBox.classList.toggle("show-search");
+
+  navBar.classList.remove("show-menu");
+  menuButton.innerHTML = "☰";
 });
 
 
@@ -73,12 +95,7 @@ searchInput.addEventListener("keydown", function (event) {
 
             const result = document.createElement("a");
             result.href = page;
-            const pageNames = {
-              "index.html": "Home",
-              "destinations.html": "Destinations",
-              "tours.html": "Tours",
-              "contact.html": "Contact"
-            };
+            
 
             result.textContent = pageNames[page];
 
@@ -95,9 +112,56 @@ searchInput.addEventListener("keydown", function (event) {
   }
 });
 
-const pages = [
-  "index.html",
-  "destinations.html",
-  "tours.html",
-  "contact.html"
-];
+
+searchInput.addEventListener("input", function () {
+  const foundPages = new Set();
+  const searchTerm = searchInput.value.trim();
+
+  if (searchTerm === "") {
+    searchResults.innerHTML = "";
+    searchMessage.textContent = "";
+    return;
+  }
+
+  searchResults.innerHTML = "";
+  searchMessage.textContent = "";
+
+  pages.forEach(function (page) {
+    fetch(page)
+      .then(function (response) {
+        return response.text();
+      })
+      .then(function (html) {
+        if (html.toLowerCase().includes(searchTerm.toLowerCase())) {
+          if (!foundPages.has(page)) {
+            foundPages.add(page);
+
+            const result = document.createElement("a");
+
+            result.href = page;
+            result.textContent = pageNames[page];
+
+            searchResults.appendChild(result);
+
+            result.addEventListener("click", function () {
+              searchBox.classList.remove("show-search");
+            });
+          }
+        }
+      });
+  });
+});
+
+document.addEventListener("click", function (event) {
+  if (
+    !navBar.contains(event.target) &&
+    !menuButton.contains(event.target) &&
+    !searchBox.contains(event.target) &&
+    !searchButton.contains(event.target)
+  ) {
+    navBar.classList.remove("show-menu");
+    searchBox.classList.remove("show-search");
+    menuButton.innerHTML = "☰";
+  }
+});
+
