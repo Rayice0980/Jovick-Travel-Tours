@@ -26,6 +26,15 @@
 .search-icon{
   width: 20px;
 }
+
+.search-box {
+  display: none;
+}
+
+.search-box.show-search {
+  display: block;
+}
+
 .menu-button{
   display: none;
 }

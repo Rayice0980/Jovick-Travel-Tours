@@ -4,6 +4,14 @@
   padding: 0;
 }
 
+#searchMessage {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+
 body {
   font-family: Arial, sans-serif;
   padding-top: 60px;

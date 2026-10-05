@@ -1,6 +1,4 @@
-/* ================================
-   RESPONSIVE DESIGN
-   ================================ */
+
 
 
 /* ---------- TABLET & MOBILE ---------- */
@@ -10,7 +8,12 @@
   /* ---------- HEADER ---------- */
 
   .page-header {
-    padding: 12px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 12px 20px;
   }
 
   .nav-bar {
@@ -42,6 +45,58 @@
   .company-name {
     font-size: 18px;
   }
+
+  @media (max-width: 480px) {
+  .search-box {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 150px;
+  }
+
+  .search-box input {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 16px;
+  }
+}
+
+
+ .nav-bar.show-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  width: 150px;
+
+  background-color:  #037df7;
+  padding: 10px 12px;
+  gap: 8px;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+
+  animation: slideDown 0.3s ease;
+}
+
+.nav-bar.show-menu a {
+  color: black;
+  font-weight: bold;
+  padding: 6px 4px;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
   /* =================================
