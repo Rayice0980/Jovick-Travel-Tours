@@ -292,13 +292,21 @@
   }
 
 
+  /* ---------- TOUR GRID ---------- */
+
+  .tour-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+
   /* ---------- TOUR CARDS ---------- */
 
   .tour-sec-2 .article-card {
     display: block;
 
     width: 100%;
-    margin: 0 0 20px;
+    margin: 0;
 
     border-radius: 10px;
   }
@@ -387,6 +395,11 @@
 
   .tour-sec-2 > h2 {
     font-size: 26px;
+  }
+
+  .tour-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
 
   .tour-sec-2 .location-img {
