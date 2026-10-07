@@ -1,81 +1,202 @@
+/* =================================
+   PROFESSIONAL HEADER
+   ================================= */
 
-
-
-.page-header{
-  background-color:  #037df7;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 50px;
+.page-header {
   position: fixed;
-  right: 0px;
-  left: 0px;
-  top: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1000;
+
+  min-height: 72px;
+  padding: 10px 5%;
+  
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 30px;
+
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 
-.nav-bar{
+.page-header .brand {
+  min-width: max-content;
+}
+
+.page-header .jovick-logo {
+  width: 46px;
+  height: 46px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 102, 204, 0.15);
+}
+
+.page-header .company-name {
+  color: #123b63;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.nav-bar {
   display: flex;
-  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(18px, 3vw, 38px);
 }
+
 .nav-bar a {
-  color: #f5f2f2;
+  position: relative;
+  padding: 8px 0;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 0.25s ease;
 }
-.search-button{
-  background: none;
+
+.nav-bar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: #0066cc;
+  transition: width 0.25s ease;
 }
-.search-icon{
-  width: 20px;
+
+.nav-bar a:hover,
+.nav-bar a.active {
+  color: #0066cc;
+}
+
+.nav-bar a:hover::after,
+.nav-bar a.active::after {
+  width: 100%;
+}
+
+.search-button,
+.menu-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 42px;
+  height: 42px;
+  padding: 0;
+
+  border: 1px solid rgba(0, 102, 204, 0.12);
+  border-radius: 50%;
+  background: #f5f9ff;
+  color: #123b63;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.search-button:hover,
+.menu-button:hover {
+  background: #0066cc;
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 102, 204, 0.2);
+}
+
+.search-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.menu-button {
+  display: none;
 }
 
 .search-box {
   display: none;
+
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 5%;
+
+  width: min(320px, calc(100vw - 30px));
+  padding: 14px;
+
+  background: white;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
 }
 
 .search-box.show-search {
   display: block;
+  animation: searchDrop 0.2s ease;
 }
 
-.menu-button{
-  display: none;
+.search-box input {
+  width: 100%;
+  padding: 11px 13px;
+
+  border: 1px solid #d8e2ee;
+  border-radius: 10px;
+  outline: none;
+
+  font: inherit;
+  color: #1e293b;
+  background: #f8fafc;
 }
 
-
-.search-box {
-  position: absolute;
-  top: 100%;
-  right: 20px;
-  width: 180px;
-  padding: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
+.search-box input:focus {
+  border-color: #0066cc;
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
 }
-
 
 #searchMessage {
   margin-top: 8px;
-  font-size: 14px;
-  font-weight: bold;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
 }
-
 
 #searchResults {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 5px;
   margin-top: 8px;
 }
 
 #searchResults a {
   display: block;
-  padding: 8px 10px;
-  background: white;
-  color: black;
-  font-weight: bold;
-  border-radius: 4px;
+  padding: 9px 10px;
+  border-radius: 8px;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  background: #f8fafc;
 }
 
 #searchResults a:hover {
   color: #0066cc;
+  background: #eef6ff;
+}
+
+@keyframes searchDrop {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
