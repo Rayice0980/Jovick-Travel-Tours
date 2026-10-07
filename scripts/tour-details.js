@@ -344,16 +344,19 @@ const tourData = {
 };
 
 
+/* ---------- GET SELECTED TOUR ---------- */
+
 const urlParams =
   new URLSearchParams(window.location.search);
 
 const selectedTour =
   urlParams.get("tour");
 
-
 const tour =
   tourData[selectedTour];
 
+
+/* ---------- PAGE ELEMENTS ---------- */
 
 const tourName =
   document.getElementById("tourName");
@@ -380,9 +383,12 @@ const tourIncludes =
   document.getElementById("tourIncludes");
 
 
+/* ---------- DISPLAY TOUR ---------- */
+
 if (tour) {
 
-  tourName.textContent = tour.name;
+  tourName.textContent =
+    tour.name;
 
   tourLocation.textContent =
     tour.location;
@@ -403,7 +409,7 @@ if (tour) {
     tour.duration;
 
   tourPrice.textContent =
-    tour.price;
+    tour.price + " per person";
 
 
   tourIncludes.innerHTML = "";
@@ -414,7 +420,8 @@ if (tour) {
     const li =
       document.createElement("li");
 
-    li.textContent = item;
+    li.textContent =
+      item;
 
     tourIncludes.appendChild(li);
 
@@ -435,7 +442,7 @@ if (tour) {
 }
 
 
-/* ---------- BOOKING ---------- */
+/* ---------- BOOKING ELEMENTS ---------- */
 
 const tourBookingForm =
   document.getElementById("tourBookingForm");
@@ -446,6 +453,56 @@ const bookingMessage =
 const bookingSuccess =
   document.getElementById("bookingSuccess");
 
+const numberOfTravelersInput =
+  document.getElementById("numberOfTravelers");
+
+
+/* ---------- PRICE CALCULATION ---------- */
+
+function getBasePrice() {
+
+  if (!tour) {
+    return 0;
+  }
+
+  return Number(
+    tour.price.replace(/[₦,]/g, "")
+  );
+
+}
+
+
+function calculateTotalPrice(numberOfTravelers) {
+
+  const basePrice =
+    getBasePrice();
+
+  return basePrice *
+    Number(numberOfTravelers);
+
+}
+
+
+function formatPrice(amount) {
+
+  return "₦" +
+    amount.toLocaleString("en-NG");
+
+}
+
+
+/* ---------- SHOW PRICE PER PERSON ---------- */
+
+if (tour) {
+
+  tourPrice.textContent =
+    formatPrice(getBasePrice()) +
+    " per person";
+
+}
+
+
+/* ---------- BOOKING ---------- */
 
 tourBookingForm.addEventListener(
   "submit",
@@ -482,9 +539,9 @@ tourBookingForm.addEventListener(
 
 
     const numberOfTravelers =
-      document
-        .getElementById("numberOfTravelers")
-        .value;
+      Number(
+        numberOfTravelersInput.value
+      );
 
 
     if (!tour) {
@@ -502,7 +559,8 @@ tourBookingForm.addEventListener(
       customerEmail === "" ||
       customerPhone === "" ||
       travelDate === "" ||
-      numberOfTravelers === ""
+      !numberOfTravelers ||
+      numberOfTravelers < 1
     ) {
 
       bookingMessage.textContent =
@@ -513,6 +571,12 @@ tourBookingForm.addEventListener(
     }
 
 
+    const totalPrice =
+      calculateTotalPrice(
+        numberOfTravelers
+      );
+
+
     const booking = {
 
       tour: tour.name,
@@ -521,17 +585,26 @@ tourBookingForm.addEventListener(
 
       duration: tour.duration,
 
-      price: tour.price,
+      pricePerPerson:
+        getBasePrice(),
 
-      customerName: customerName,
+      totalPrice:
+        totalPrice,
 
-      customerEmail: customerEmail,
+      customerName:
+        customerName,
 
-      customerPhone: customerPhone,
+      customerEmail:
+        customerEmail,
 
-      travelDate: travelDate,
+      customerPhone:
+        customerPhone,
 
-      numberOfTravelers: numberOfTravelers
+      travelDate:
+        travelDate,
+
+      numberOfTravelers:
+        numberOfTravelers
 
     };
 
@@ -542,34 +615,42 @@ tourBookingForm.addEventListener(
     );
 
 
+    /* ---------- BOOKING SUMMARY ---------- */
+
     document.getElementById(
       "summaryTour"
-    ).textContent = tour.name;
+    ).textContent =
+      tour.name;
 
 
     document.getElementById(
       "summaryName"
-    ).textContent = customerName;
+    ).textContent =
+      customerName;
 
 
     document.getElementById(
       "summaryEmail"
-    ).textContent = customerEmail;
+    ).textContent =
+      customerEmail;
 
 
     document.getElementById(
       "summaryDate"
-    ).textContent = travelDate;
+    ).textContent =
+      travelDate;
 
 
     document.getElementById(
       "summaryTravelers"
-    ).textContent = numberOfTravelers;
+    ).textContent =
+      numberOfTravelers;
 
 
     document.getElementById(
       "summaryPrice"
-    ).textContent = tour.price;
+    ).textContent =
+      formatPrice(totalPrice);
 
 
     document.getElementById(
@@ -582,6 +663,8 @@ tourBookingForm.addEventListener(
       " has been successfully received.";
 
 
+    /* ---------- HIDE FORM ---------- */
+
     tourBookingForm.style.display =
       "none";
 
@@ -589,6 +672,8 @@ tourBookingForm.addEventListener(
     bookingMessage.textContent =
       "";
 
+
+    /* ---------- SHOW SUCCESS ---------- */
 
     bookingSuccess.style.display =
       "block";
