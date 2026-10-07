@@ -5,33 +5,43 @@
 
 
 /* =================================
+   HOME PAGE LOAD
+   ================================= */
+
+document.body.classList.add("home-loaded");
+
+
+/* =================================
    SCROLL REVEAL
    ================================= */
 
-const revealElements = document.querySelectorAll(".reveal");
+const revealElements =
+  document.querySelectorAll(".reveal");
+
 
 if ("IntersectionObserver" in window) {
 
-  const revealObserver = new IntersectionObserver(
-    function (entries, observer) {
+  const revealObserver =
+    new IntersectionObserver(
+      function (entries, observer) {
 
-      entries.forEach(function (entry) {
+        entries.forEach(function (entry) {
 
-        if (entry.isIntersecting) {
+          if (entry.isIntersecting) {
 
-          entry.target.classList.add("visible");
+            entry.target.classList.add("visible");
 
-          observer.unobserve(entry.target);
+            observer.unobserve(entry.target);
 
-        }
+          }
 
-      });
+        });
 
-    },
-    {
-      threshold: 0.12
-    }
-  );
+      },
+      {
+        threshold: 0.12
+      }
+    );
 
 
   revealElements.forEach(function (element) {
@@ -56,16 +66,23 @@ if ("IntersectionObserver" in window) {
    ================================= */
 
 const heroPrimaryButton =
-  document.querySelector(".hero-primary-button");
+  document.querySelector(
+    ".hero-primary-button"
+  );
 
 
 if (heroPrimaryButton) {
 
-  heroPrimaryButton.addEventListener("click", function () {
+  heroPrimaryButton.addEventListener(
+    "click",
+    function () {
 
-    heroPrimaryButton.classList.add("button-clicked");
+      heroPrimaryButton.classList.add(
+        "button-clicked"
+      );
 
-  });
+    }
+  );
 
 }
 
@@ -75,15 +92,24 @@ if (heroPrimaryButton) {
    ================================= */
 
 const homeImages =
-  document.querySelectorAll("img");
+  document.querySelectorAll(
+    ".home-hero img, " +
+    ".home-welcome img, " +
+    ".home-destination-card img"
+  );
 
 
 homeImages.forEach(function (image) {
 
-  image.addEventListener("error", function () {
+  image.addEventListener(
+    "error",
+    function () {
 
-    image.classList.add("image-error");
+      image.classList.add(
+        "image-error"
+      );
 
-  });
+    }
+  );
 
 });
