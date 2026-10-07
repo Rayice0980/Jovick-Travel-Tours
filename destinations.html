@@ -1,158 +1,781 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jvk Travel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/destinations.css">
-    <link rel="stylesheet" href="styles/mediaquery.css">
-    
-  </head>
-  <body>
-    <header class="page-header">
-      <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">  <span class="company-name">Jvk Travel</span>
-      </div>
-      <nav class="nav-bar" id="navBar">
-          <a href="index.html">Home</a>
-          <a href="destinations.html"> Destinations</a>
-          <a href="tours.html">Tours</a>
-          <a href="contact.html">Contact</a>
-      </nav>
-      <button class="search-button" id="searchButton">
-        <img class="search-icon" src="icons/search.svg" alt="Search">
-      </button>
-      <div class="search-box" id="searchBox">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <p id="searchMessage"></p>
 
-        <div id="searchResults"></div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Jvk Travel | Destinations</title>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/destinations.css">
+  <link rel="stylesheet" href="styles/mediaquery.css">
+</head>
+
+<body>
+
+  <!-- ================================
+       HEADER
+       ================================ -->
+
+  <header class="page-header">
+
+    <div class="brand">
+      <img
+        class="jovick-logo"
+        src="images/Jovick-logo.jpg"
+        alt="Jovick Travel logo"
+      >
+
+      <span class="company-name">Jvk Travel</span>
+    </div>
 
 
-      <button class="menu-button" id="menuButton">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </header>
+    <nav class="nav-bar" id="navBar">
 
-    <section class="destinations-sec-1">
-      <h2>Our Destinations</h2>
-      <p>Explore breathtaking places, from vibrant cities to serene beaches.
-      </p>
-      <p>Find your next favorite destination</p>
-      
-    </section>
+      <a href="index.html">Home</a>
 
+      <a href="destinations.html">Destinations</a>
+
+      <a href="tours.html">Tours</a>
+
+      <a href="contact.html">Contact</a>
+
+    </nav>
+
+
+    <!-- Search Button -->
+
+    <button
+      class="search-button"
+      id="searchButton"
+      type="button"
+      aria-label="Open search"
+    >
+
+      <img
+        class="search-icon"
+        src="icons/search.svg"
+        alt="Search"
+      >
+
+    </button>
+
+
+    <!-- Search Box -->
+
+    <div class="search-box" id="searchBox">
+
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search..."
+        aria-label="Search website"
+      >
+
+      <p id="searchMessage"></p>
+
+      <div id="searchResults"></div>
+
+    </div>
+
+
+    <!-- Mobile Menu Button -->
+
+    <button
+      class="menu-button"
+      id="menuButton"
+      type="button"
+      aria-label="Open navigation menu"
+    >
+
+      <i class="fa-solid fa-bars"></i>
+
+    </button>
+
+  </header>
+
+
+  <!-- ================================
+       DESTINATIONS HERO SECTION
+       ================================ -->
+
+  <section class="destinations-sec-1">
+
+    <h2>Our Destinations</h2>
+
+    <p>
+      Explore breathtaking places, from vibrant cities to serene beaches.
+    </p>
+
+    <p>
+      Find your next favorite destination
+    </p>
+
+  </section>
+
+
+  <!-- ================================
+       DESTINATIONS SECTION
+       ================================ -->
+
+  <main>
 
     <section class="destinations-sec-2">
-      <div class="destinations-sec-2-nav" >
-        <button>All</button>
-        <button>Africa</button>
-        <button>Middle East</button>
-        <button>Europe</button>
-        <button>Asia</button>
+
+      <!-- CATEGORY FILTERS -->
+
+      <div
+        class="destinations-sec-2-nav"
+        id="destinationFilters"
+      >
+
+        <button
+          type="button"
+          class="destination-filter active"
+          data-category="all"
+        >
+          All
+        </button>
+
+        <button
+          type="button"
+          class="destination-filter"
+          data-category="africa"
+        >
+          Africa
+        </button>
+
+        <button
+          type="button"
+          class="destination-filter"
+          data-category="middle-east"
+        >
+          Middle East
+        </button>
+
+        <button
+          type="button"
+          class="destination-filter"
+          data-category="europe"
+        >
+          Europe
+        </button>
+
+        <button
+          type="button"
+          class="destination-filter"
+          data-category="asia"
+        >
+          Asia
+        </button>
+
       </div>
 
-      <div class="destinations-grid-sec">
 
-  <article class="article-card">
-    <img class="location-img" src="images/Abuja 2.jpg" alt="Abuja">
-    <h3>Abuja</h3>
-    <p><i class="fa-solid fa-location-dot"></i> Nigeria</p>
-  </article>
+      <!-- DESTINATION GRID -->
 
-  <article class="article-card">
-    <img class="location-img" src="images/Lagos 1.jpg" alt="Lagos">
-    <h3>Lagos</h3>
-    <p><i class="fa-solid fa-location-dot"></i> Nigeria</p>
-  </article>
+      <div
+        class="destinations-grid-sec"
+        id="destinationGrid"
+      >
 
-  <article class="article-card">
-    <img class="location-img" src="images/Dubai 2.jpg" alt="Dubai">
-    <h3>Dubai</h3>
-    <p><i class="fa-solid fa-location-dot"></i> UAE</p>
-  </article>
 
-  <article class="article-card">
-    <img class="location-img" src="images/London 2.jpg" alt="London">
-    <h3>London</h3>
-    <p><i class="fa-solid fa-location-dot"></i> United Kingdom</p>
-  </article>
+        <!-- Abuja -->
 
-  <article class="article-card">
-    <img class="location-img" src="images/Paris 1.jpg" alt="Paris">
-    <h3>Paris</h3>
-    <p><i class="fa-solid fa-location-dot"></i> France</p>
-  </article>
+        <article
+          class="article-card"
+          data-category="africa"
+        >
 
-  <article class="article-card">
-    <img class="location-img" src="images/Cape Town 1.jpg" alt="Cape Town">
-    <h3>Cape Town</h3>
-    <p><i class="fa-solid fa-location-dot"></i> South Africa</p>
-  </article>
+          <img
+            class="location-img"
+            src="images/Abuja 2.jpg"
+            alt="Abuja"
+          >
 
-  <article class="article-card">
-    <img class="location-img" src="images/Tanzania 1.jpg" alt="Zanzibar">
-    <h3>Zanzibar</h3>
-    <p><i class="fa-solid fa-location-dot"></i> Tanzania</p>
-  </article>
+          <h3>Abuja</h3>
 
-  <article class="article-card">
-    <img class="location-img" src="images/Ghana 1.jpg" alt="Accra">
-    <h3>Accra</h3>
-    <p><i class="fa-solid fa-location-dot"></i> Ghana</p>
-  </article>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Nigeria
+          </p>
 
-  <article class="article-card">
-    <img class="location-img" src="images/Abuja 2.jpg" alt="Abuja">
-    <h3>Cairo</h3>
-    <p><i class="fa-solid fa-location-dot"></i> Egypt</p>
-  </article>
+        </article>
 
-</div>
 
+        <!-- Lagos -->
+
+        <article
+          class="article-card"
+          data-category="africa"
+        >
+
+          <img
+            class="location-img"
+            src="images/Lagos 1.jpg"
+            alt="Lagos"
+          >
+
+          <h3>Lagos</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Nigeria
+          </p>
+
+        </article>
+
+
+        <!-- Dubai -->
+
+        <article
+          class="article-card"
+          data-category="middle-east"
+        >
+
+          <img
+            class="location-img"
+            src="images/Dubai 2.jpg"
+            alt="Dubai"
+          >
+
+          <h3>Dubai</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            UAE
+          </p>
+
+        </article>
+
+
+        <!-- London -->
+
+        <article
+          class="article-card"
+          data-category="europe"
+        >
+
+          <img
+            class="location-img"
+            src="images/London 2.jpg"
+            alt="London"
+          >
+
+          <h3>London</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            United Kingdom
+          </p>
+
+        </article>
+
+
+        <!-- Paris -->
+
+        <article
+          class="article-card"
+          data-category="europe"
+        >
+
+          <img
+            class="location-img"
+            src="images/Paris 1.jpg"
+            alt="Paris"
+          >
+
+          <h3>Paris</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            France
+          </p>
+
+        </article>
+
+
+        <!-- Cape Town -->
+
+        <article
+          class="article-card"
+          data-category="africa"
+        >
+
+          <img
+            class="location-img"
+            src="images/Cape Town 1.jpg"
+            alt="Cape Town"
+          >
+
+          <h3>Cape Town</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            South Africa
+          </p>
+
+        </article>
+
+
+        <!-- Zanzibar -->
+
+        <article
+          class="article-card"
+          data-category="africa"
+        >
+
+          <img
+            class="location-img"
+            src="images/Tanzania 1.jpg"
+            alt="Zanzibar"
+          >
+
+          <h3>Zanzibar</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Tanzania
+          </p>
+
+        </article>
+
+
+        <!-- Accra -->
+
+        <article
+          class="article-card"
+          data-category="africa"
+        >
+
+          <img
+            class="location-img"
+            src="images/Ghana 1.jpg"
+            alt="Accra"
+          >
+
+          <h3>Accra</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Ghana
+          </p>
+
+        </article>
+
+
+        <!-- Cairo -->
+
+        <article
+          class="article-card"
+          data-category="africa"
+        >
+
+          <img
+            class="location-img"
+            src="images/Abuja 2.jpg"
+            alt="Cairo"
+          >
+
+          <h3>Cairo</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Egypt
+          </p>
+
+        </article>
+        <!-- Nairobi -->
+
+        <article
+          class="article-card"
+          data-category="africa"
+        >
+
+          <img
+            class="location-img"
+            src="images/Nairobi.jpg"
+            alt="Nairobi"
+          >
+
+          <h3>Nairobi</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Kenya
+          </p>
+
+        </article>
+
+
+        <!-- Rome -->
+
+        <article
+          class="article-card"
+          data-category="europe"
+        >
+
+          <img
+            class="location-img"
+            src="images/Rome.jpg"
+            alt="Rome"
+          >
+
+          <h3>Rome</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Italy
+          </p>
+
+        </article>
+
+
+        <!-- Amsterdam -->
+
+        <article
+          class="article-card"
+          data-category="europe"
+        >
+
+          <img
+            class="location-img"
+            src="images/Amsterdam.jpg"
+            alt="Amsterdam"
+          >
+
+          <h3>Amsterdam</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Netherlands
+          </p>
+
+        </article>
+
+
+        <!-- Barcelona -->
+
+        <article
+          class="article-card"
+          data-category="europe"
+        >
+
+          <img
+            class="location-img"
+            src="images/Barcelona.jpg"
+            alt="Barcelona"
+          >
+
+          <h3>Barcelona</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Spain
+          </p>
+
+        </article>
+
+
+        <!-- Abu Dhabi -->
+
+        <article
+          class="article-card"
+          data-category="middle-east"
+        >
+
+          <img
+            class="location-img"
+            src="images/Abu Dhabi.jpg"
+            alt="Abu Dhabi"
+          >
+
+          <h3>Abu Dhabi</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            United Arab Emirates
+          </p>
+
+        </article>
+
+
+        <!-- Riyadh -->
+
+        <article
+          class="article-card"
+          data-category="middle-east"
+        >
+
+          <img
+            class="location-img"
+            src="images/Riyadh.jpg"
+            alt="Riyadh"
+          >
+
+          <h3>Riyadh</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Saudi Arabia
+          </p>
+
+        </article>
+
+
+        <!-- Tokyo -->
+
+        <article
+          class="article-card"
+          data-category="asia"
+        >
+
+          <img
+            class="location-img"
+            src="images/Tokyo.jpg"
+            alt="Tokyo"
+          >
+
+          <h3>Tokyo</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Japan
+          </p>
+
+        </article>
+
+
+        <!-- Singapore -->
+
+        <article
+          class="article-card"
+          data-category="asia"
+        >
+
+          <img
+            class="location-img"
+            src="images/Singapore.jpg"
+            alt="Singapore"
+          >
+
+          <h3>Singapore</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Singapore
+          </p>
+
+        </article>
+
+
+        <!-- Bangkok -->
+
+        <article
+          class="article-card"
+          data-category="asia"
+        >
+
+          <img
+            class="location-img"
+            src="images/Bangkok.jpg"
+            alt="Bangkok"
+          >
+
+          <h3>Bangkok</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Thailand
+          </p>
+
+        </article>
+
+
+        <!-- Seoul -->
+
+        <article
+          class="article-card"
+          data-category="asia"
+        >
+
+          <img
+            class="location-img"
+            src="images/Seoul.jpg"
+            alt="Seoul"
+          >
+
+          <h3>Seoul</h3>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            South Korea
+          </p>
+
+        </article>
+
+
+      </div>
 
     </section>
 
+  </main>
 
 
-    
-    <footer class="footer-section">
-      <article class="footer-about">
-        <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">
+  <!-- ================================
+       FOOTER
+       ================================ -->
+
+  <footer class="footer-section">
+
+    <article class="footer-about">
+
+      <div class="brand">
+
+        <img
+          class="jovick-logo"
+          src="images/Jovick-logo.jpg"
+          alt="Jovick Travel logo"
+        >
+
         <span class="company-name">JVK.T</span>
-        </div>
-        <p>Explore the world with us. Your next adventure is just a click away.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://x.com/JUSTJH0N1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/@unseen_systems" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.tiktok.com/@jovick_unique_ltd?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-      </article>
-      <article class="footer-quick-link">
-       <span class="head-quick-link">Quick Links</span> 
-        <a href="index.html">Home</a>
-        <a href="destinations.html"> Destinations</a>
-        <a href="tours.html">Tours</a>
-        <a href="contact.html">Contact</a>
-      </article>
-      <article class="footer-contact-info">
-        <span class="head-contact-info">Contact Info</span>
-        <p><i class="fa-solid fa-location-dot"></i> Gwagwalada, Abuja, Nigeria</p>
-        <p><i class="fa-solid fa-envelope"></i>jovickuniqueenterprises@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +234 9158950008</p>
-      </article>
-      
-    </footer>
-        <aside class="copyright"> &copy; Jovick Travel, All rights reserved. </aside>
 
-         <script src="scripts/main.js"></script>
-  </body>
+      </div>
+
+
+      <p>
+        Explore the world with us.
+        Your next adventure is just a click away.
+      </p>
+
+
+      <div class="social-icons">
+
+        <a href="#" aria-label="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+
+        <a
+          href="https://x.com/JUSTJH0N1"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.youtube.com/@unseen_systems"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
+        <a
+          href="https://www.tiktok.com/@jovick_unique_ltd?lang=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="TikTok"
+        >
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- Quick Links -->
+
+    <article class="footer-quick-link">
+
+      <span class="head-quick-link">
+        Quick Links
+      </span>
+
+      <a href="index.html">Home</a>
+
+      <a href="destinations.html">
+        Destinations
+      </a>
+
+      <a href="tours.html">
+        Tours
+      </a>
+
+      <a href="contact.html">
+        Contact
+      </a>
+
+    </article>
+
+
+    <!-- Contact Information -->
+
+    <article class="footer-contact-info">
+
+      <span class="head-contact-info">
+        Contact Info
+      </span>
+
+      <p>
+        <i class="fa-solid fa-location-dot"></i>
+        Gwagwalada, Abuja, Nigeria
+      </p>
+
+      <p>
+        <i class="fa-solid fa-envelope"></i>
+        jovickuniqueenterprises@gmail.com
+      </p>
+
+      <p>
+        <i class="fa-solid fa-phone"></i>
+        +234 9158950008
+      </p>
+
+    </article>
+
+  </footer>
+
+
+  <!-- Copyright -->
+
+  <aside class="copyright">
+    &copy; Jovick Travel, All rights reserved.
+  </aside>
+
+
+  <!-- ================================
+       JAVASCRIPT
+       ================================ -->
+
+  <!-- Global JavaScript -->
+
+  <script src="scripts/main.js"></script>
+
+  <!-- Destinations Page JavaScript -->
+
+  <script src="scripts/destinations.js"></script>
+
+</body>
+
 </html>
