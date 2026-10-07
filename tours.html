@@ -58,7 +58,14 @@
           <h3>Abuja City Tour</h3>
           <p> <i class="fa-solid fa-archive"></i> 3 Days &amp; Nights</p>
           <span class="tour-price">₦ 150,000</span>
-          <button>View Tour &rarr; </button>
+          <button
+              class="view-tour"
+              data-tour="Abuja City Tour"
+              data-duration="3 Days & Nights"
+              data-price="₦150,000"
+            >
+              View Tour &rarr;
+            </button>
         </article>
 
         <article class="article-card">
@@ -66,7 +73,14 @@
           <h3>Dubai Experience</h3>
           <p> <i class="fa-solid fa-archive"></i> 7 Days &amp; Nights</p>
           <span class="tour-price">₦ 850,000</span>
-          <button>View Tour &rarr; </button>
+          <button
+            class="view-tour"
+            data-tour="Dubai Experience"
+            data-duration="7 Days & Nights"
+            data-price="₦850,000"
+          >
+            View Tour &rarr;
+          </button>
         </article>
 
         <article class="article-card">
@@ -74,36 +88,109 @@
           <h3>London Gateway</h3>
           <p> <i class="fa-solid fa-archive"></i> 5 Days &amp; Nights</p>
           <span class="tour-price">₦ 600,000</span>
-          <button>View Tour &rarr; </button>
+          <button
+            class="view-tour"
+            data-tour="London Gateway"
+            data-duration="5 Days & Nights"
+            data-price="₦600,000"
+          >
+            View Tour &rarr;
+          </button>
         </article>
         <article class="article-card">
           <img class="location-img" src="images/Paris 1.jpg" alt="">
           <h3>Paris Romantic Trip</h3>
           <p> <i class="fa-solid fa-archive"></i> 3 Days &amp; Nights</p>
           <span class="tour-price">₦ 150,000</span>
-          <button>View Tour &rarr; </button>
+          <button
+            class="view-tour"
+            data-tour="Paris Romantic Trip"
+            data-duration="3 Days & Nights"
+            data-price="₦150,000"
+          >
+            View Tour &rarr;
+          </button>
         </article>
         <article class="article-card">
           <img class="location-img" src="images/Cape Town 1.jpg" alt="">
           <h3>Cape Town Adventure</h3>
           <p> <i class="fa-solid fa-archive"></i> 7 Days &amp; Nights</p>
           <span class="tour-price">₦ 900,000</span>
-          <button>View Tour &rarr; </button>
+          <button
+            class="view-tour"
+            data-tour="Cape Town Adventure"
+            data-duration="7 Days & Nights"
+            data-price="₦900,000"
+          >
+            View Tour &rarr;
+          </button>
         </article>
         <article class="article-card">
           <img class="location-img" src="images/Tanzania 1.jpg" alt="">
-          <h3>Abuja City Tour</h3>
+          <h3>Tanzania Tour</h3>
           <p> <i class="fa-solid fa-archive"></i> 5 Days &amp; Nights</p>
           <span class="tour-price">₦ 700,000</span>
-          <button>View Tour &rarr; </button>
-        </article>
+          <button
+            class="view-tour"
+            data-tour="Tanzania Tour"
+            data-duration="5 Days & Nights"
+            data-price="₦700,000"
+          >
+            View Tour &rarr;
+          </button>
+                  </article>
 
 
     </section>
 
 
+    <div class="tour-details" id="tourDetails">
+      <h2 id="selectedTour"></h2>
 
+      <p id="tourDuration"></p>
 
+      <p id="tourPrice"></p>
+
+      <p id="tourMessage"></p>
+
+      <button id="bookTourButton">Book This Tour</button>
+    </div>
+
+    <div class="booking-form" id="bookingForm">
+      <h2>Book Your Tour</h2>
+
+      <form id="tourBookingForm">
+
+        <label for="selectedTourInput">Selected Tour</label>
+        <input type="text" id="selectedTourInput" readonly>
+
+        <label for="selectedDuration">Duration</label>
+        <input type="text" id="selectedDuration" readonly>
+
+        <label for="selectedPrice">Price</label>
+        <input type="text" id="selectedPrice" readonly>
+
+        <label for="customerName">Full Name</label>
+        <input type="text" id="customerName" required>
+
+        <label for="customerEmail">Email</label>
+        <input type="email" id="customerEmail" required>
+
+        <label for="customerPhone">Phone Number</label>
+        <input type="tel" id="customerPhone" required>
+
+        <button type="submit">Confirm Booking</button>
+
+      </form>
+
+      <p id="bookingMessage"></p>
+
+      <div class="booking-confirmation" id="bookingConfirmation">
+        <h2>Booking Request Received!</h2>
+        <p id="confirmationMessage"></p>
+      </div>
+      
+    </div>
 
     
     <footer class="footer-section">
@@ -139,6 +226,7 @@
         <aside class="copyright"> &copy; Jovick Travel, All rights reserved. </aside>
 
 
-         <script src="scripts/main.js"></script>
+          <script src="scripts/main.js"></script>
+          <script src="scripts/tours.js"></script>
   </body>
 </html>
