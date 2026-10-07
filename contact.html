@@ -3,138 +3,201 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jvk Travel</title>
+
+    <title>Contact Us | JOVICK Travel & Tours</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/mediaquery.css">
     <link rel="stylesheet" href="styles/contact.css">
-    
   </head>
+
   <body>
+
     <header class="page-header">
       <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">  <span class="company-name">Jvk Travel</span>
+        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="JOVICK Travel logo">
+        <span class="company-name">Jvk Travel</span>
       </div>
+
       <nav class="nav-bar" id="navBar">
-          <a href="index.html">Home</a>
-          <a href="destinations.html"> Destinations</a>
-          <a href="tours.html">Tours</a>
-          <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="tours.html">Tours</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
-      <button class="search-button" id="searchButton">
+
+      <button class="search-button" id="searchButton" type="button" aria-label="Open search">
         <img class="search-icon" src="icons/search.svg" alt="Search">
       </button>
-      <div class="search-box" id="searchBox">
-        <input type="text" id="searchInput" placeholder="Search...">
-        <p id="searchMessage"></p>
 
+      <div class="search-box" id="searchBox">
+        <input type="text" id="searchInput" placeholder="Search..." aria-label="Search">
+        <p id="searchMessage"></p>
         <div id="searchResults"></div>
       </div>
 
-
-      <button class="menu-button" id="menuButton">
+      <button class="menu-button" id="menuButton" type="button" aria-label="Open menu" aria-expanded="false">
         <i class="fa-solid fa-bars"></i>
       </button>
     </header>
-    
 
-<main>
 
-      <!-- SECTION 1 -->
+    <main>
 
+      <!-- HERO -->
       <section class="contact-sec-1">
-
-        <h2>Contact Us</h2>
-
+        <span class="contact-hero-label">We're here to help</span>
+        <h1>Contact Us</h1>
         <p>
-          We'd love to hear from you. Get in touch with us today.
+          Have a question, need travel advice, or ready to plan your next adventure?
+          Talk to the JOVICK Travel & Tours team.
         </p>
-
       </section>
 
 
-      <!-- SECTION 2 -->
-
+      <!-- CONTACT INFORMATION + FORM -->
       <section class="contact-sec-2">
-
-        <!-- GET IN TOUCH -->
 
         <div class="get-in-touch">
 
-          <h2>Get in Touch</h2>
+          <span class="contact-section-label">Get in touch</span>
+          <h2>Let's Plan Your Journey</h2>
 
           <p>
-            Have a question or need help planning your next adventure?
-            We're here to help.
+            Whether you are planning a city break, an international holiday,
+            a group trip, or simply need more information, we're ready to help.
           </p>
 
           <div class="contact-info">
 
-            <p>
-              <i class="fa-solid fa-location-dot"></i>
-              Gwagwalada, Abuja, Nigeria
-            </p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Gwagwalada%2C%20Abuja%2C%20Nigeria"
+               class="contact-info-card"
+               target="_blank"
+               rel="noopener noreferrer">
+              <span class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              <span>
+                <strong>Our Location</strong>
+                <small>Gwagwalada, Abuja, Nigeria</small>
+              </span>
+            </a>
 
-            <p>
-              <i class="fa-solid fa-envelope"></i>
-              jovickuniqueenterprises@gmail.com
-            </p>
+            <a href="mailto:jovickuniqueenterprises@gmail.com" class="contact-info-card">
+              <span class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </span>
+              <span>
+                <strong>Email Us</strong>
+                <small>jovickuniqueenterprises@gmail.com</small>
+              </span>
+            </a>
 
-            <p>
-              <i class="fa-solid fa-phone"></i>
-              +234 9158950008
-            </p>
+            <a href="tel:+2349158950008" class="contact-info-card">
+              <span class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </span>
+              <span>
+                <strong>Call Us</strong>
+                <small>+234 915 895 0008</small>
+              </span>
+            </a>
+
+            <div class="contact-info-card contact-hours-card">
+              <span class="contact-info-icon">
+                <i class="fa-solid fa-clock"></i>
+              </span>
+              <span>
+                <strong>Business Hours</strong>
+                <small>Monday - Saturday · 8:00 AM - 6:00 PM</small>
+              </span>
+            </div>
 
           </div>
+
+          <a
+            class="whatsapp-chat-button"
+            href="https://wa.me/2349158950008?text=Hello%20JOVICK%20Travel%20%26%20Tours%2C%20I%27d%20like%20to%20make%20an%20inquiry."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+            Chat With Us on WhatsApp
+          </a>
+
+          <p class="chat-note">
+            Need a quick response? Send us a message on WhatsApp.
+          </p>
 
         </div>
 
 
-        <!-- CONTACT FORM -->
-
         <div class="contact-form">
 
-          <h2>Send Us a Message</h2>
+          <span class="contact-section-label">Send a message</span>
+          <h2>How Can We Help?</h2>
 
-          <form>
+          <form id="contactForm" novalidate>
 
-            <label for="name">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Your name"
-            >
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                autocomplete="name"
+                required
+              >
+              <small class="form-error" id="nameError"></small>
+            </div>
 
-            <label for="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            >
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              >
+              <small class="form-error" id="emailError"></small>
+            </div>
 
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-            >
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                placeholder="What can we help you with?"
+                required
+              >
+              <small class="form-error" id="subjectError"></small>
+            </div>
 
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Your message"
-              rows="5"
-            ></textarea>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell us how we can help..."
+                rows="6"
+                required
+              ></textarea>
+              <small class="form-error" id="messageError"></small>
+            </div>
 
-            <button type="submit">
+            <button type="submit" id="contactSubmitButton">
+              <i class="fa-solid fa-paper-plane"></i>
               Send Message
             </button>
+
+            <p id="contactFormMessage" class="contact-form-message" role="status"></p>
 
           </form>
 
@@ -143,72 +206,174 @@
       </section>
 
 
-      <!-- SECTION 3 -->
+      <!-- FAQ -->
+      <section class="contact-faq">
 
+        <div class="contact-faq-heading">
+          <span class="contact-section-label">Frequently asked questions</span>
+          <h2>Before You Reach Out</h2>
+          <p>Here are quick answers to some common travel questions.</p>
+        </div>
+
+        <div class="faq-list">
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Can you help me choose the right tour?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Tell us your destination, preferred travel dates, budget,
+                and number of travelers, and we can help you choose a suitable tour.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Can I make a booking through the website?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. You can browse our tours, open a tour details page, and submit
+                your booking request. Our team can then assist you with the next steps.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>How can I get a quick response?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                WhatsApp is the quickest option for a direct inquiry. You can also
+                call us or send an email using the contact details above.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false">
+              <span>Do you arrange trips for groups?</span>
+              <i class="fa-solid fa-plus"></i>
+            </button>
+            <div class="faq-answer">
+              <p>
+                We can discuss group travel requirements and help you plan an
+                experience around your group's destination, dates, and needs.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- CTA -->
       <section class="contact-sec-3">
 
-        <h2>Ready for Your Next Adventure?</h2>
+        <div class="contact-cta-content">
+          <span class="contact-section-label">Your next adventure awaits</span>
+          <h2>Ready to Explore the World?</h2>
+          <p>
+            Browse our destinations and tours, then let us help you turn your
+            travel plans into reality.
+          </p>
 
-        <p>
-          Let us help you plan an unforgettable journey.
-        </p>
+          <div class="contact-cta-actions">
+            <a href="tours.html" class="contact-cta-button primary">
+              Explore Tours <i class="fa-solid fa-arrow-right"></i>
+            </a>
 
-        <button>
-          Explore Tours &rarr;
-        </button>
+            <a href="destinations.html" class="contact-cta-button secondary">
+              View Destinations
+            </a>
+          </div>
+        </div>
 
       </section>
 
     </main>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <footer class="footer-section">
+
       <article class="footer-about">
         <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">
-        <span class="company-name">JVK.T</span>
+          <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="JOVICK Travel logo">
+          <span class="company-name">JVK.T</span>
         </div>
-        <p>Explore the world with us. Your next adventure is just a click away.</p>
+
+        <p>
+          Explore the world with us. Your next adventure is just a click away.
+        </p>
+
         <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://x.com/JUSTJH0N1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/@unseen_systems" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.tiktok.com/@jovick_unique_ltd?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://x.com/JUSTJH0N1" target="_blank" rel="noopener noreferrer" aria-label="X">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@unseen_systems" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="https://www.tiktok.com/@jovick_unique_ltd?lang=en"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
         </div>
       </article>
+
       <article class="footer-quick-link">
-       <span class="head-quick-link">Quick Links</span> 
+        <span class="head-quick-link">Quick Links</span>
         <a href="index.html">Home</a>
-        <a href="destinations.html"> Destinations</a>
+        <a href="destinations.html">Destinations</a>
         <a href="tours.html">Tours</a>
         <a href="contact.html">Contact</a>
       </article>
+
       <article class="footer-contact-info">
         <span class="head-contact-info">Contact Info</span>
         <p><i class="fa-solid fa-location-dot"></i> Gwagwalada, Abuja, Nigeria</p>
-        <p><i class="fa-solid fa-envelope"></i>jovickuniqueenterprises@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +234 9158950008</p>
+        <p><i class="fa-solid fa-envelope"></i> jovickuniqueenterprises@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +234 915 895 0008</p>
       </article>
-      
+
     </footer>
-        <aside class="copyright"> &copy; Jovick Travel, All rights reserved. </aside>
+
+    <aside class="copyright">
+      &copy; Jovick Travel, All rights reserved.
+    </aside>
 
 
-         <script src="scripts/main.js"></script>
+    <!-- FLOATING WHATSAPP SUPPORT -->
+    <a
+      class="floating-whatsapp"
+      href="https://wa.me/2349158950008?text=Hello%20JOVICK%20Travel%20%26%20Tours%2C%20I%27d%20like%20some%20travel%20help."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Chat with JOVICK Travel & Tours on WhatsApp"
+      title="Chat with us on WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>Chat with us</span>
+    </a>
+
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/contact.js"></script>
+
   </body>
 </html>
