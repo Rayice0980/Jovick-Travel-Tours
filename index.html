@@ -2,129 +2,705 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jvk Travel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+      name="description"
+      content="Discover unforgettable destinations, exciting tours and reliable travel experiences with Jovick Travel & Tours."
+    >
+
+    <title>Jovick Travel & Tours | Explore More. Experience More.</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/mediaquery.css">
-    
   </head>
+
   <body>
+
+    <!-- =================================
+         HEADER
+         ================================= -->
+
     <header class="page-header">
+
       <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">  <span class="company-name">Jvk Travel</span>
+        <img
+          class="jovick-logo"
+          src="images/Jovick-logo.jpg"
+          alt="Jovick Travel & Tours logo"
+        >
+
+        <span class="company-name">
+          JVK Travel
+        </span>
       </div>
+
       <nav class="nav-bar" id="navBar">
-          <a href="index.html">Home</a>
-          <a href="destinations.html"> Destinations</a>
-          <a href="tours.html">Tours</a>
-          <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="tours.html">Tours</a>
+        <a href="contact.html">Contact</a>
       </nav>
-      <button class="search-button" id="searchButton">
-        <img class="search-icon" src="icons/search.svg" alt="Search">
+
+      <button
+        class="search-button"
+        id="searchButton"
+        type="button"
+        aria-label="Open search"
+      >
+        <img
+          src="icons/search.svg"
+          alt="Search"
+          class="search-icon"
+        >
       </button>
+
       <div class="search-box" id="searchBox">
-        <input type="text" id="searchInput" placeholder="Search...">
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search..."
+          aria-label="Search website"
+        >
+
         <p id="searchMessage"></p>
 
         <div id="searchResults"></div>
+
       </div>
 
-
-      <button class="menu-button" id="menuButton">
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open navigation menu"
+      >
         <i class="fa-solid fa-bars"></i>
       </button>
+
     </header>
+
+
     <main class="main-content">
-      <section class="section-1">
-        <span>EXPLORE THE WORLD</span>
-        <h1>Your Next Adventure Starts Here</h1>
-        <p>Discover amazing places, experience new cultures,and create memories that last a lifetime.</p>
-        <button >Explore Tours &rarr;</button>
+
+
+      <!-- =================================
+           HERO SECTION
+           ================================= -->
+
+      <section class="home-hero">
+
+        <div class="home-hero-overlay">
+
+          <span class="hero-eyebrow">
+            EXPLORE THE WORLD WITH JOVICK
+          </span>
+
+          <h1>
+            Your Journey Begins With
+            <span>Jovick Travel &amp; Tours</span>
+          </h1>
+
+          <p>
+            Discover remarkable destinations, experience new cultures,
+            and create memories that stay with you long after the journey ends.
+          </p>
+
+          <div class="hero-actions">
+
+            <a
+              href="tours.html"
+              class="hero-primary-button"
+            >
+              Explore Our Tours
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a
+              href="destinations.html"
+              class="hero-secondary-button"
+            >
+              Discover Destinations
+            </a>
+
+          </div>
+
+          <div class="hero-trust">
+
+            <div class="hero-trust-item">
+              <i class="fa-solid fa-earth-africa"></i>
+
+              <span>
+                Exciting Destinations
+              </span>
+            </div>
+
+            <div class="hero-trust-item">
+              <i class="fa-solid fa-shield-heart"></i>
+
+              <span>
+                Travel With Confidence
+              </span>
+            </div>
+
+            <div class="hero-trust-item">
+              <i class="fa-solid fa-headset"></i>
+
+              <span>
+                Dedicated Support
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
       </section>
-      <section class="section-2">
-        <h2>Popular Destinations</h2>
-        <p>Explore some of the most beautiful places around the world.</p>
-        <article class="article-card">
-          <img class="location-img" src="images/Abuja 1.jpg" alt="">
-          <h3>Abuja</h3>
-          <p>The heart of Nigeria</p>
-          <button>View More &rarr; </button>
-        </article>
-        <article class="article-card">
-          <img class="location-img" src="images/Dubai 1.jpg" alt="">
-          <h3>Dubai</h3>
-          <p>Luxury meets adventure</p>
-          <button>View More &rarr; </button>
-        </article>
-        <article class="article-card">
-          <img class="location-img" src="images/London 1.jpg" alt="">
-          <h3>London</h3>
-          <p>History, culture and More</p>
-          <button>View More &rarr; </button>
-        </article>
+
+
+      <!-- =================================
+           WELCOME SECTION
+           ================================= -->
+
+      <section class="home-welcome reveal">
+
+        <div class="welcome-image">
+
+          <img
+            src="images/Abuja 1.jpg"
+            alt="Beautiful travel destination"
+          >
+
+          <div class="welcome-image-badge">
+            <i class="fa-solid fa-plane-departure"></i>
+
+            <div>
+              <strong>Start Exploring</strong>
+              <span>Your next adventure awaits</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="welcome-content">
+
+          <span class="section-label">
+            WELCOME TO JOVICK
+          </span>
+
+          <h2>
+            More Than A Trip.
+            <span>It's An Experience.</span>
+          </h2>
+
+          <p>
+            At Jovick Travel &amp; Tours, we believe that travelling is
+            more than simply moving from one place to another.
+            It is about discovering new places, meeting people,
+            experiencing different cultures and creating memories
+            worth keeping.
+          </p>
+
+          <p>
+            Whether you are planning a relaxing escape, a city adventure,
+            a cultural experience or your next exciting holiday,
+            we are here to help make your journey easier and more enjoyable.
+          </p>
+
+          <a
+            href="contact.html"
+            class="text-link"
+          >
+            Talk To Our Travel Team
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+
       </section>
-      <section class="section-3">
-        <h2>Why Travel With Us ?</h2>
-        <p>We will make your travel safe, easy and unforgettable </p>
-        <article class="feature-card">
-          <img class="section-3-icons" src="icons/Save and secure.jpg" alt="">
-          <h3>Safe &amp; Secure</h3>
-          <p>Your safety is our priority</p>
-        </article>
-        <article class="feature-card">
-          <img class="section-3-icons" src="icons/Affordable price.jpg" alt="">
-          <h3>Affordable Prices</h3>
-          <p>Great deals, no hidden cost</p>
-        </article>
-        <article class="feature-card">
-          <img class="section-3-icons" src="icons/quality service.jpg" alt="">
-          <h3>Quality Service</h3>
-          <p>Comfortable and reliable</p>
-        </article>
-        <article class="feature-card">
-          <img class="section-3-icons" src="icons/Costormer support.jpg" alt="">
-          <h3>24/7 Support</h3>
-          <p>We're always here to help</p>
-        </article>
+
+
+      <!-- =================================
+           POPULAR DESTINATIONS
+           ================================= -->
+
+      <section class="popular-destinations reveal">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            WHERE WILL YOU GO?
+          </span>
+
+          <h2>
+            Explore Popular Destinations
+          </h2>
+
+          <p>
+            From African adventures to unforgettable international escapes,
+            discover places waiting to become part of your story.
+          </p>
+
+        </div>
+
+
+        <div class="destination-preview-grid">
+
+
+          <a
+            href="destination-details.html?place=abuja"
+            class="home-destination-card"
+          >
+
+            <img
+              src="images/Abuja 1.jpg"
+              alt="Abuja, Nigeria"
+            >
+
+            <div class="home-destination-content">
+
+              <span>
+                Nigeria
+              </span>
+
+              <h3>
+                Abuja
+              </h3>
+
+              <p>
+                The heart of Nigeria
+              </p>
+
+              <strong>
+                Explore Abuja
+                <i class="fa-solid fa-arrow-right"></i>
+              </strong>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="destination-details.html?place=dubai"
+            class="home-destination-card"
+          >
+
+            <img
+              src="images/Dubai 1.jpg"
+              alt="Dubai, United Arab Emirates"
+            >
+
+            <div class="home-destination-content">
+
+              <span>
+                United Arab Emirates
+              </span>
+
+              <h3>
+                Dubai
+              </h3>
+
+              <p>
+                Luxury meets adventure
+              </p>
+
+              <strong>
+                Explore Dubai
+                <i class="fa-solid fa-arrow-right"></i>
+              </strong>
+
+            </div>
+
+          </a>
+
+
+          <a
+            href="destination-details.html?place=london"
+            class="home-destination-card"
+          >
+
+            <img
+              src="images/London 1.jpg"
+              alt="London, United Kingdom"
+            >
+
+            <div class="home-destination-content">
+
+              <span>
+                United Kingdom
+              </span>
+
+              <h3>
+                London
+              </h3>
+
+              <p>
+                History, culture and discovery
+              </p>
+
+              <strong>
+                Explore London
+                <i class="fa-solid fa-arrow-right"></i>
+              </strong>
+
+            </div>
+
+          </a>
+
+        </div>
+
+
+        <a
+          href="destinations.html"
+          class="section-main-button"
+        >
+          View All Destinations
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
       </section>
+
+
+      <!-- =================================
+           WHY CHOOSE US
+           ================================= -->
+
+      <section class="why-jovick reveal">
+
+        <div class="section-heading">
+
+          <span class="section-label">
+            WHY CHOOSE US
+          </span>
+
+          <h2>
+            Travel With Confidence
+          </h2>
+
+          <p>
+            We focus on making your travel experience simple,
+            comfortable and memorable from the moment you start planning.
+          </p>
+
+        </div>
+
+
+        <div class="benefits-grid">
+
+
+          <article class="benefit-card">
+
+            <div class="benefit-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+
+            <h3>
+              Safe &amp; Secure
+            </h3>
+
+            <p>
+              Your comfort and peace of mind matter to us throughout
+              your travel planning and experience.
+            </p>
+
+          </article>
+
+
+          <article class="benefit-card">
+
+            <div class="benefit-icon">
+              <i class="fa-solid fa-tags"></i>
+            </div>
+
+            <h3>
+              Affordable Prices
+            </h3>
+
+            <p>
+              Discover enjoyable travel experiences designed to offer
+              great value without unnecessary costs.
+            </p>
+
+          </article>
+
+
+          <article class="benefit-card">
+
+            <div class="benefit-icon">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <h3>
+              Quality Service
+            </h3>
+
+            <p>
+              We aim to make every part of your journey feel organized,
+              convenient and enjoyable.
+            </p>
+
+          </article>
+
+
+          <article class="benefit-card">
+
+            <div class="benefit-icon">
+              <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <h3>
+              Dedicated Support
+            </h3>
+
+            <p>
+              Whenever you need help with your travel plans,
+              our team is ready to assist you.
+            </p>
+
+          </article>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           TRAVEL EXPERIENCE SECTION
+           ================================= -->
+
+      <section class="travel-experience reveal">
+
+        <div class="experience-content">
+
+          <span class="section-label">
+            YOUR NEXT ADVENTURE
+          </span>
+
+          <h2>
+            Don't Just Dream About
+            <span>The Journey.</span>
+          </h2>
+
+          <p>
+            Start planning it.
+            Choose a destination, find a tour that inspires you,
+            and let Jovick help turn your travel plans into an experience
+            you will remember.
+          </p>
+
+          <div class="experience-actions">
+
+            <a
+              href="tours.html"
+              class="experience-primary"
+            >
+              Find A Tour
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a
+              href="contact.html"
+              class="experience-secondary"
+            >
+              Contact Us
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <!-- =================================
+           FINAL CTA
+           ================================= -->
+
+      <section class="home-final-cta reveal">
+
+        <div>
+
+          <span class="section-label">
+            READY TO EXPLORE?
+          </span>
+
+          <h2>
+            Your Next Adventure Is Waiting.
+          </h2>
+
+          <p>
+            Let Jovick Travel &amp; Tours help you discover
+            where your next journey could take you.
+          </p>
+
+        </div>
+
+        <a
+          href="destinations.html"
+          class="cta-button"
+        >
+          Start Exploring
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+      </section>
+
     </main>
 
-    <footer class="footer-section">
-      <article class="footer-about">
-        <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">
-        <span class="company-name">JVK.T</span>
-        </div>
-        <p>Explore the world with us. Your next adventure is just a click away.</p>
-        <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://x.com/JUSTJH0N1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/@unseen_systems" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.tiktok.com/@jovick_unique_ltd?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-      </article>
-      <article class="footer-quick-link">
-       <span class="head-quick-link">Quick Links</span> 
-        <a href="index.html">Home</a>
-        <a href="destinations.html"> Destinations</a>
-        <a href="tours.html">Tours</a>
-        <a href="contact.html">Contact</a>
-      </article>
-      <article class="footer-contact-info">
-        <span class="head-contact-info">Contact Info</span>
-        <p><i class="fa-solid fa-location-dot"></i> Gwagwalada, Abuja, Nigeria</p>
-        <p><i class="fa-solid fa-envelope"></i>jovickuniqueenterprises@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +234 9158950008</p>
-      </article>
-      
-    </footer>
-        <aside class="copyright"> &copy; Jovick Travel, All rights reserved. </aside>
 
-        <script src="scripts/main.js"></script>
+    <!-- =================================
+         FOOTER
+         ================================= -->
+
+    <footer class="footer-section">
+
+      <article class="footer-about">
+
+        <div class="brand">
+
+          <img
+            class="jovick-logo"
+            src="images/Jovick-logo.jpg"
+            alt="Jovick Travel & Tours logo"
+          >
+
+          <span class="company-name">
+            JVK.T
+          </span>
+
+        </div>
+
+        <p>
+          Explore the world with us.
+          Your next adventure is just a click away.
+        </p>
+
+        <div class="social-icons">
+
+          <a
+            href="#"
+            aria-label="Facebook"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a
+            href="https://x.com/JUSTJH0N1"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="X"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@unseen_systems"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@jovick_unique_ltd?lang=en"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="TikTok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="footer-quick-link">
+
+        <span class="head-quick-link">
+          Quick Links
+        </span>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="destinations.html">
+          Destinations
+        </a>
+
+        <a href="tours.html">
+          Tours
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </article>
+
+
+      <article class="footer-contact-info">
+
+        <span class="head-contact-info">
+          Contact Info
+        </span>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Gwagwalada, Abuja, Nigeria
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          jovickuniqueenterprises@gmail.com
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +234 9158950008
+        </p>
+
+      </article>
+
+    </footer>
+
+
+    <aside class="copyright">
+      &copy; Jovick Travel, All rights reserved.
+    </aside>
+
+
+    <!-- GLOBAL JAVASCRIPT -->
+    <script src="scripts/main.js"></script>
+
+    <!-- HOME PAGE JAVASCRIPT -->
+    <script src="scripts/index.js"></script>
+
   </body>
 </html>
