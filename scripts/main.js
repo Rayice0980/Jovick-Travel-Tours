@@ -1,7 +1,8 @@
-
-
 const menuButton = document.getElementById("menuButton");
 const navBar = document.getElementById("navBar");
+const searchButton = document.getElementById("searchButton");
+const searchBox = document.getElementById("searchBox");
+const searchInput = document.getElementById("searchInput");
 const searchMessage = document.getElementById("searchMessage");
 const searchResults = document.getElementById("searchResults");
 
@@ -12,156 +13,155 @@ const pages = [
   "contact.html"
 ];
 
-
 const pageNames = {
-              "index.html": "Home",
-              "destinations.html": "Destinations",
-              "tours.html": "Tours",
-              "contact.html": "Contact"
-            };
+  "index.html": "Home",
+  "destinations.html": "Destinations",
+  "tours.html": "Tours",
+  "contact.html": "Contact"
+};
 
+function closeMenu() {
+  navBar.classList.remove("show-menu");
 
+  const menuIcon = menuButton.querySelector("i");
 
+  if (menuIcon) {
+    menuIcon.classList.remove("fa-xmark");
+    menuIcon.classList.add("fa-bars");
+  }
 
+  menuButton.setAttribute("aria-label", "Open navigation menu");
+}
+
+function closeSearch() {
+  searchBox.classList.remove("show-search");
+  searchButton.setAttribute("aria-label", "Open search");
+}
+
+function openMenu() {
+  closeSearch();
+  navBar.classList.add("show-menu");
+
+  const menuIcon = menuButton.querySelector("i");
+
+  if (menuIcon) {
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-xmark");
+  }
+
+  menuButton.setAttribute("aria-label", "Close navigation menu");
+}
 
 menuButton.addEventListener("click", function () {
-  navBar.classList.toggle("show-menu");
-
-  searchBox.classList.remove("show-search");
-
   if (navBar.classList.contains("show-menu")) {
-    menuButton.innerHTML = "✕";
+    closeMenu();
   } else {
-    menuButton.innerHTML = "☰";
+    openMenu();
   }
 });
 
+searchButton.addEventListener("click", function () {
+  closeMenu();
+
+  const isOpen = searchBox.classList.toggle("show-search");
+
+  searchButton.setAttribute(
+    "aria-label",
+    isOpen ? "Close search" : "Open search"
+  );
+
+  if (isOpen) {
+    searchInput.focus();
+  }
+});
 
 const navLinks = navBar.querySelectorAll("a");
 
 navLinks.forEach(function (link) {
-  link.addEventListener("click", function () {
-    navBar.classList.remove("show-menu");
-    menuButton.innerHTML = "☰";
-  });
+  link.addEventListener("click", closeMenu);
 });
-
 
 const currentPage = window.location.pathname.split("/").pop();
 
 navLinks.forEach(function (link) {
   const linkPage = link.getAttribute("href");
 
-  if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+  if (
+    linkPage === currentPage ||
+    (currentPage === "" && linkPage === "index.html")
+  ) {
     link.classList.add("active");
   }
 });
 
-
-const searchButton = document.getElementById("searchButton");
-const searchBox = document.getElementById("searchBox");
-
-searchButton.addEventListener("click", function () {
-  searchBox.classList.toggle("show-search");
-
-  navBar.classList.remove("show-menu");
-  menuButton.innerHTML = "☰";
-});
-
-
-const searchInput = document.getElementById("searchInput");
-
-searchInput.addEventListener("keydown", function (event) {
-  if (event.key === "Enter") {
-    const searchTerm = searchInput.value.trim();
-
-    if (searchTerm === "") {
-      return;
-    }
-
-    searchResults.innerHTML = "";
-    searchMessage.textContent = "";
-
-    let found = false;
-
-    pages.forEach(function (page) {
-      fetch(page)
-        .then(function (response) {
-          return response.text();
-        })
-        .then(function (html) {
-          if (html.toLowerCase().includes(searchTerm.toLowerCase())) {
-            found = true;
-
-            const result = document.createElement("a");
-            result.href = page;
-            
-
-            result.textContent = pageNames[page];
-
-            searchResults.appendChild(result);
-          }
-        });
-    });
-
-    setTimeout(function () {
-      if (!found) {
-        searchMessage.textContent = "No results found.";
-      }
-    }, 1000);
-  }
-});
-
-
-searchInput.addEventListener("input", function () {
-  const foundPages = new Set();
-  const searchTerm = searchInput.value.trim();
-
-  if (searchTerm === "") {
-    searchResults.innerHTML = "";
-    searchMessage.textContent = "";
-    return;
-  }
-
+function renderSearchResults(searchTerm) {
   searchResults.innerHTML = "";
   searchMessage.textContent = "";
 
-  pages.forEach(function (page) {
-    fetch(page)
+  if (searchTerm === "") {
+    return;
+  }
+
+  const requests = pages.map(function (page) {
+    return fetch(page)
       .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Unable to load " + page);
+        }
+
         return response.text();
       })
       .then(function (html) {
-        if (html.toLowerCase().includes(searchTerm.toLowerCase())) {
-          if (!foundPages.has(page)) {
-            foundPages.add(page);
-
-            const result = document.createElement("a");
-
-            result.href = page;
-            result.textContent = pageNames[page];
-
-            searchResults.appendChild(result);
-
-            result.addEventListener("click", function () {
-              searchBox.classList.remove("show-search");
-            });
-          }
-        }
+        return {
+          page: page,
+          matches: html.toLowerCase().includes(searchTerm.toLowerCase())
+        };
+      })
+      .catch(function () {
+        return {
+          page: page,
+          matches: false
+        };
       });
   });
+
+  Promise.all(requests).then(function (results) {
+    const matchedPages = results.filter(function (result) {
+      return result.matches;
+    });
+
+    if (matchedPages.length === 0) {
+      searchMessage.textContent = "No results found.";
+      return;
+    }
+
+    matchedPages.forEach(function (result) {
+      const link = document.createElement("a");
+
+      link.href = result.page;
+      link.textContent = pageNames[result.page];
+
+      searchResults.appendChild(link);
+    });
+  });
+}
+
+searchInput.addEventListener("input", function () {
+  renderSearchResults(searchInput.value.trim());
 });
 
-document.addEventListener("click", function (event) {
-  if (
-    !navBar.contains(event.target) &&
-    !menuButton.contains(event.target) &&
-    !searchBox.contains(event.target) &&
-    !searchButton.contains(event.target)
-  ) {
-    navBar.classList.remove("show-menu");
-    searchBox.classList.remove("show-search");
-    menuButton.innerHTML = "☰";
+searchInput.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    closeSearch();
+    searchInput.blur();
   }
 });
 
+document.addEventListener("click", function (event) {
+  const header = document.querySelector(".page-header");
+
+  if (header && !header.contains(event.target)) {
+    closeMenu();
+    closeSearch();
+  }
+});
