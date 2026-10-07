@@ -1,15 +1,21 @@
- /* =================================
+/* =================================
    CONTACT PAGE
    ================================= */
 
 
-/* ---------- SECTION 1 ---------- */
+/* ---------- HERO ---------- */
 
 .contact-sec-1 {
-  min-height: 350px;
-  padding: 70px 40px;
+  min-height: 390px;
+  padding: 80px 40px;
 
-  background-image: url("../images/Mountain sky.jpg");
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.42),
+      rgba(0, 0, 0, 0.52)
+    ),
+    url("../images/Mountain sky.jpg");
+
   background-size: cover;
   background-position: center;
 
@@ -22,79 +28,212 @@
   color: white;
 }
 
-.contact-sec-1 h2 {
-  font-size: 48px;
-  margin-bottom: 15px;
+.contact-hero-label {
+  display: inline-block;
+  margin-bottom: 12px;
+
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-sec-1 h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 18px;
 }
 
 .contact-sec-1 p {
+  max-width: 650px;
+
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 
-/* ---------- SECTION 2 ---------- */
+/* ---------- CONTACT SECTION ---------- */
 
 .contact-sec-2 {
-  display: flex;
-  gap: 60px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 70px;
 
-  padding: 80px 50px;
+  max-width: 1200px;
+  margin: 0 auto;
 
-  background-color: white;
+  padding: 85px 50px;
 }
 
 
-/* ---------- GET IN TOUCH ---------- */
+/* ---------- LEFT SIDE ---------- */
 
 .get-in-touch {
-  flex: 1;
-  padding: 20px;
+  padding: 15px 0;
 }
 
-.get-in-touch h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
+.contact-section-label {
+  display: inline-block;
+
+  color: #0066cc;
+
+  font-size: 13px;
+  font-weight: bold;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  margin-bottom: 10px;
+}
+
+.get-in-touch h2,
+.contact-form h2,
+.contact-faq-heading h2 {
+  font-size: 34px;
   color: #222;
+  margin-bottom: 16px;
 }
 
 .get-in-touch > p {
+  max-width: 520px;
+
   color: #666;
-  line-height: 1.6;
+
+  line-height: 1.8;
+
   margin-bottom: 30px;
-  max-width: 450px;
 }
+
+
+/* ---------- CONTACT INFO CARDS ---------- */
 
 .contact-info {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 13px;
+  margin-bottom: 25px;
 }
 
-.contact-info p {
-  color: #555;
+.contact-info-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px;
+
+  color: #333;
+  text-decoration: none;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+
+  background-color: #fff;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
 }
 
-.contact-info i {
+a.contact-info-card:hover {
+  color: #333;
+
+  transform: translateY(-2px);
+
+  border-color: #c9dff5;
+
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: #eef6ff;
   color: #0066cc;
-  margin-right: 10px;
+}
+
+.contact-info-card > span:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact-info-card strong {
+  color: #222;
+  font-size: 15px;
+}
+
+.contact-info-card small {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+
+/* ---------- WHATSAPP ---------- */
+
+.whatsapp-chat-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 13px 18px;
+
+  border-radius: 25px;
+
+  background-color: #128c7e;
+  color: white;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.whatsapp-chat-button:hover {
+  background-color: #0d766a;
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+.whatsapp-chat-button i {
+  font-size: 18px;
+}
+
+.chat-note {
+  margin-top: 9px;
+
+  color: #777;
+  font-size: 12px;
 }
 
 
 /* ---------- CONTACT FORM ---------- */
 
 .contact-form {
-  flex: 1;
-  background: #ffffff;
   padding: 35px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-}
 
-.contact-form h2 {
-  font-size: 30px;
-  color: #222;
-  margin-bottom: 25px;
+  background-color: white;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .contact-form form {
@@ -102,94 +241,349 @@
   flex-direction: column;
 }
 
-.contact-form label {
-  display: block;
+.form-group {
+  display: flex;
   flex-direction: column;
-  font-size: 15px;
+}
+
+.contact-form label {
+  font-size: 14px;
   font-weight: bold;
+
   color: #333;
-  margin-bottom: 8px;
+
+  margin-bottom: 7px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 14px 15px;
-  border: 1px solid #ddd;
-  border-radius: 6px;
+
+  padding: 13px 14px;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 7px;
+
   outline: none;
+
   font-family: Arial, sans-serif;
   font-size: 15px;
-  margin-bottom: 18px;
-  transition: 0.3s ease;
-  box-sizing: border-box;
+
+  margin-bottom: 6px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .contact-form textarea {
-  min-height: 140px;
+  min-height: 145px;
   resize: vertical;
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #0066cc;
-  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.08);
+
+  box-shadow:
+    0 0 0 3px rgba(0, 102, 204, 0.08);
+}
+
+.contact-form input.input-error,
+.contact-form textarea.input-error {
+  border-color: #d93025;
+}
+
+.form-error {
+  min-height: 18px;
+
+  color: #d93025;
+
+  font-size: 12px;
+
+  margin-bottom: 8px;
 }
 
 .contact-form button {
   width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
   padding: 14px;
+
   border: none;
-  border-radius: 6px;
-  background: #0066cc;
+  border-radius: 7px;
+
+  background-color: #0066cc;
   color: white;
-  font-size: 16px;
+
+  font-size: 15px;
   font-weight: bold;
+
   cursor: pointer;
-  transition: 0.3s ease;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .contact-form button:hover {
-  background: #0052a3;
+  background-color: #0052a3;
+  transform: translateY(-1px);
+}
+
+.contact-form button:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+}
+
+.contact-form-message {
+  display: none;
+
+  margin-top: 15px;
+
+  padding: 12px 14px;
+
+  border-radius: 7px;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.contact-form-message.show {
+  display: block;
+}
+
+.contact-form-message.success {
+  background-color: #edf8f1;
+  color: #187a3d;
+  border: 1px solid #c7ead3;
+}
+
+.contact-form-message.error {
+  background-color: #fff2f1;
+  color: #b42318;
+  border: 1px solid #f1c5c1;
 }
 
 
+/* ---------- FAQ ---------- */
 
-/* ---------- SECTION 3 ---------- */
+.contact-faq {
+  padding: 80px 50px;
 
-.contact-sec-3 {
-  padding: 70px 40px;
+  background-color: #f7faff;
+}
 
-  background-image: url("../images/Mountain sky.jpg");
-background-size: cover;
-background-position: center;
-  
+.contact-faq-heading {
+  max-width: 760px;
+  margin: 0 auto 35px;
+
   text-align: center;
 }
 
+.contact-faq-heading p {
+  color: #666;
+  line-height: 1.7;
+}
+
+.faq-list {
+  max-width: 850px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  overflow: hidden;
+
+  background-color: white;
+
+  border: 1px solid #e1e7ef;
+  border-radius: 10px;
+}
+
+.faq-question {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  padding: 20px;
+
+  background-color: white;
+  color: #222;
+
+  text-align: left;
+
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.faq-question:hover {
+  color: #0066cc;
+}
+
+.faq-question i {
+  color: #0066cc;
+  transition: transform 0.2s ease;
+}
+
+.faq-item.open .faq-question i {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  display: none;
+
+  padding: 0 20px 20px;
+
+  color: #666;
+
+  line-height: 1.7;
+}
+
+.faq-item.open .faq-answer {
+  display: block;
+}
+
+
+/* ---------- CTA ---------- */
+
+.contact-sec-3 {
+  padding: 80px 40px;
+
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.90),
+      rgba(255, 255, 255, 0.90)
+    ),
+    url("../images/Mountain sky.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  text-align: center;
+}
+
+.contact-cta-content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
 .contact-sec-3 h2 {
-  font-size: 35px;
+  font-size: 38px;
   color: #222;
   margin-bottom: 12px;
 }
 
 .contact-sec-3 p {
   color: #666;
+  line-height: 1.7;
   margin-bottom: 25px;
 }
 
-.contact-sec-3 button {
-  padding: 13px 25px;
-
-  background-color: #0066cc;
-  color: white;
-
-  border-radius: 5px;
-
-  font-size: 15px;
-  font-weight: bold;
+.contact-cta-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
-.contact-sec-3 button:hover {
-  background-color: #004f9e;
+.contact-cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 20px;
+
+  border-radius: 25px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.contact-cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.contact-cta-button.primary {
+  background-color: #0066cc;
+  color: white;
+}
+
+.contact-cta-button.primary:hover {
+  background-color: #0052a3;
+  color: white;
+}
+
+.contact-cta-button.secondary {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.contact-cta-button.secondary:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+/* ---------- FLOATING WHATSAPP ---------- */
+
+.floating-whatsapp {
+  position: fixed;
+
+  right: 20px;
+  bottom: 20px;
+
+  z-index: 999;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 12px 16px;
+
+  border-radius: 30px;
+
+  background-color: #128c7e;
+  color: white;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2);
+
+  font-size: 13px;
+  font-weight: bold;
+
+  text-decoration: none;
+
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.floating-whatsapp:hover {
+  background-color: #0d766a;
+  color: white;
+  transform: translateY(-3px);
+}
+
+.floating-whatsapp i {
+  font-size: 19px;
 }
