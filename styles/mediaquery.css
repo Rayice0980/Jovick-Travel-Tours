@@ -8,58 +8,84 @@
   /* ---------- HEADER ---------- */
 
   .page-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  padding: 12px 20px;
+    min-height: 68px;
+    padding: 8px 20px;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+
+  .page-header .jovick-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .page-header .company-name {
+    font-size: 16px;
   }
 
   .nav-bar {
     display: none;
   }
 
+  .search-button,
   .menu-button {
-    display: block;
-    border: none;
-    background: none;
-    font-size: 22px;
-    padding: 5px;
-    color: black;
-  }
-
-  .search-button {
-    padding: 5px;
-  }
-
-  .search-icon {
-    width: 19px;
-  }
-
-  .jovick-logo {
     width: 40px;
     height: 40px;
   }
 
-  .company-name {
-    font-size: 18px;
+  .menu-button {
+    display: inline-flex;
   }
 
-  @media (max-width: 480px) {
-  .search-box {
+  .page-header .search-button {
     position: absolute;
-    top: 100%;
-    right: 20px;
-    width: 150px;
+    right: 70px;
+    top: 14px;
   }
 
-  .search-box input {
-    width: 100%;
-    padding: 8px 10px;
-    font-size: 16px;
+  .page-header .menu-button {
+    position: absolute;
+    right: 20px;
+    top: 14px;
   }
-}
+
+  .search-box {
+    top: calc(100% + 8px);
+    right: 20px;
+    width: min(300px, calc(100vw - 40px));
+  }
+
+  .nav-bar.show-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 20px;
+
+    width: min(260px, calc(100vw - 40px));
+    padding: 10px;
+
+    background: white;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+
+    gap: 3px;
+    animation: slideDown 0.25s ease;
+  }
+
+  .nav-bar.show-menu a {
+    padding: 12px 14px;
+    border-radius: 9px;
+    color: #334155;
+    font-weight: 600;
+  }
+
+  .nav-bar.show-menu a:hover,
+  .nav-bar.show-menu a.active {
+    color: #0066cc;
+    background: #eef6ff;
+  }
 
 
  .nav-bar.show-menu {
@@ -188,9 +214,14 @@
   /* ---------- FOOTER ---------- */
 
   .footer-section {
-    flex-direction: column;
-    padding: 50px 25px;
-    gap: 40px;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 30px;
+    padding: 55px 25px 45px;
+  }
+
+  .footer-about {
+    grid-column: 1 / -1;
+    max-width: 520px;
   }
 
 
@@ -404,6 +435,39 @@
 
   .tour-sec-2 .location-img {
     height: 180px;
+  }
+
+  /* ---------- HEADER & FOOTER ---------- */
+
+  .page-header {
+    padding: 8px 15px;
+  }
+
+  .page-header .company-name {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+  .page-header .search-button {
+    right: 60px;
+  }
+
+  .page-header .menu-button {
+    right: 15px;
+  }
+
+  .footer-section {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 48px 20px 40px;
+  }
+
+  .footer-about {
+    grid-column: auto;
+  }
+
+  .footer-contact-info p {
+    font-size: 13px;
   }
 
   
