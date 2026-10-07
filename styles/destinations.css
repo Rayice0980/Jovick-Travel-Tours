@@ -12,7 +12,7 @@
   background-image:
     url("../images/Mountain sky.jpg");
 
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
 
   display: flex;
@@ -64,6 +64,11 @@
   font-size: 15px;
 
   cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .destinations-sec-2-nav button:hover {
@@ -72,7 +77,7 @@
   border-color: #0066cc;
 }
 
-.destinations-sec-2-nav button:first-child {
+.destinations-sec-2-nav button.active {
   background-color: #0066cc;
   color: white;
   border-color: #0066cc;
@@ -88,6 +93,17 @@
 }
 
 
+/* ---------- DESTINATION CARD LINK ---------- */
+
+.destination-card-link {
+  display: block;
+  width: 100%;
+
+  text-decoration: none;
+  color: inherit;
+}
+
+
 /* ---------- DESTINATION CARD ---------- */
 
 .destinations-grid-sec .article-card {
@@ -100,7 +116,26 @@
   border-radius: 12px;
   overflow: hidden;
 
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.1);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+/* ---------- CARD HOVER ---------- */
+
+.destination-card-link:hover .article-card {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 7px 20px rgba(0, 0, 0, 0.16);
+}
+
+.destination-card-link:hover .article-card h3 {
+  font-weight: 700;
 }
 
 

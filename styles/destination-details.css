@@ -1,0 +1,344 @@
+/* =================================
+   DESTINATION DETAILS PAGE
+   ================================= */
+
+
+/* ---------- HERO ---------- */
+
+.destination-details-hero {
+
+  min-height: 430px;
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    var(--destination-image);
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: white;
+}
+
+
+.destination-hero-overlay {
+
+  width: 100%;
+
+  max-width: 800px;
+
+  padding: 60px 30px;
+
+}
+
+
+.destination-hero-overlay p:first-child {
+
+  font-size: 16px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+
+}
+
+
+.destination-hero-overlay h1 {
+
+  font-size: 52px;
+
+  margin: 0 0 15px;
+
+}
+
+
+#destinationTagline {
+
+  font-size: 19px;
+
+  line-height: 1.6;
+
+}
+
+
+/* ---------- MAIN SECTION ---------- */
+
+.destination-details-section {
+
+  padding: 70px 50px;
+
+}
+
+
+.destination-details-content {
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+
+}
+
+
+/* ---------- GENERAL ---------- */
+
+.destination-about,
+.places-to-visit,
+.destination-experience {
+
+  margin-bottom: 65px;
+
+}
+
+
+.destination-section-label {
+
+  display: inline-block;
+
+  color: #0066cc;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 10px;
+
+}
+
+
+.destination-about h2,
+.places-to-visit h2,
+.destination-experience h2 {
+
+  font-size: 32px;
+
+  color: #222;
+
+  margin-bottom: 18px;
+
+}
+
+
+.destination-about p,
+.destination-experience p {
+
+  max-width: 850px;
+
+  color: #555;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+}
+
+
+/* ---------- PLACES ---------- */
+
+.places-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+
+  margin-top: 25px;
+
+}
+
+
+.place-card {
+
+  background-color: white;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 4px 15px rgba(0, 0, 0, 0.09);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+
+}
+
+
+.place-card:hover {
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.14);
+
+}
+
+
+.place-card img {
+
+  width: 100%;
+
+  height: 190px;
+
+  object-fit: cover;
+
+  display: block;
+
+}
+
+
+.place-card-content {
+
+  padding: 18px;
+
+}
+
+
+.place-card h3 {
+
+  font-size: 20px;
+
+  margin: 0 0 8px;
+
+  color: #222;
+
+}
+
+
+.place-card p {
+
+  margin: 0;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+}
+
+
+/* ---------- BOOKING CTA ---------- */
+
+.destination-booking-card {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 30px;
+
+  padding: 35px;
+
+  background-color: #f5f9ff;
+
+  border-radius: 15px;
+
+  border: 1px solid #dce9f7;
+
+}
+
+
+.destination-booking-card h2 {
+
+  margin: 0 0 8px;
+
+  font-size: 28px;
+
+  color: #222;
+
+}
+
+
+.destination-booking-card p {
+
+  margin: 0;
+
+  color: #666;
+
+}
+
+
+.destination-actions {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  flex-shrink: 0;
+
+}
+
+
+.destination-actions a {
+
+  text-decoration: none;
+
+  border-radius: 25px;
+
+  padding: 11px 18px;
+
+  font-size: 14px;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+
+}
+
+
+.back-destinations {
+
+  color: #333;
+
+  border: 1px solid #ccc;
+
+  background-color: white;
+
+}
+
+
+.back-destinations:hover {
+
+  background-color: #eee;
+
+}
+
+
+.view-destination-tour {
+
+  color: white;
+
+  background-color: #0066cc;
+
+}
+
+
+.view-destination-tour:hover {
+
+  background-color: #0052a3;
+
+  transform: translateY(-2px);
+
+}

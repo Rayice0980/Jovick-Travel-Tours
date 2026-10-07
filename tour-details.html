@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Tour Details - Jvk Travel</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/tour-details.css">
+    <link rel="stylesheet" href="styles/mediaquery.css">
+
+  </head>
+
+
+  <body>
+
+
+    <header class="page-header">
+
+      <div class="brand">
+
+        <img
+          class="jovick-logo"
+          src="images/Jovick-logo.jpg"
+          alt=""
+        >
+
+        <span class="company-name">
+          Jvk Travel
+        </span>
+
+      </div>
+
+
+      <nav class="nav-bar" id="navBar">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="destinations.html">
+          Destinations
+        </a>
+
+        <a href="tours.html">
+          Tours
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </nav>
+
+
+      <button
+        class="search-button"
+        id="searchButton"
+      >
+
+        <img
+          class="search-icon"
+          src="icons/search.svg"
+          alt="Search"
+        >
+
+      </button>
+
+
+      <div
+        class="search-box"
+        id="searchBox"
+      >
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search..."
+        >
+
+        <p id="searchMessage"></p>
+
+        <div id="searchResults"></div>
+
+      </div>
+
+
+      <button
+        class="menu-button"
+        id="menuButton"
+      >
+
+        <i class="fa-solid fa-bars"></i>
+
+      </button>
+
+    </header>
+
+
+    <main>
+
+
+      <!-- TOUR INFORMATION -->
+
+      <section class="tour-detail-hero">
+
+        <img
+          id="tourImage"
+          src=""
+          alt=""
+        >
+
+        <div class="tour-detail-overlay">
+
+          <h1 id="tourName">
+            Tour Details
+          </h1>
+
+          <p id="tourLocation"></p>
+
+        </div>
+
+      </section>
+
+
+      <!-- TOUR DETAILS -->
+
+      <section class="tour-detail-section">
+
+        <div class="tour-information">
+
+          <h2 id="tourTitle">
+            Tour Details
+          </h2>
+
+          <p id="tourDescription"></p>
+
+
+          <div class="tour-info-grid">
+
+            <div>
+
+              <i class="fa-solid fa-calendar-days"></i>
+
+              <strong>
+                Duration
+              </strong>
+
+              <span id="tourDuration"></span>
+
+            </div>
+
+
+            <div>
+
+              <i class="fa-solid fa-money-bill"></i>
+
+              <strong>
+                Price
+              </strong>
+
+              <span id="tourPrice"></span>
+
+            </div>
+
+          </div>
+
+
+          <h3>
+            What's Included
+          </h3>
+
+          <ul id="tourIncludes"></ul>
+
+        </div>
+
+
+        <!-- BOOKING -->
+
+        <div class="tour-booking-card">
+
+          <h2>
+            Book This Tour
+          </h2>
+
+          <p>
+            Fill in your details to submit your booking request.
+          </p>
+
+
+          <form id="tourBookingForm">
+
+
+            <label for="customerName">
+              Full Name
+            </label>
+
+            <input
+              type="text"
+              id="customerName"
+              required
+            >
+
+
+            <label for="customerEmail">
+              Email Address
+            </label>
+
+            <input
+              type="email"
+              id="customerEmail"
+              required
+            >
+
+
+            <label for="customerPhone">
+              Phone Number
+            </label>
+
+            <input
+              type="tel"
+              id="customerPhone"
+              required
+            >
+
+
+            <label for="travelDate">
+              Preferred Travel Date
+            </label>
+
+            <input
+              type="date"
+              id="travelDate"
+              required
+            >
+
+
+            <label for="numberOfTravelers">
+              Number of Travelers
+            </label>
+
+            <input
+              type="number"
+              id="numberOfTravelers"
+              min="1"
+              value="1"
+              required
+            >
+
+
+            <button type="submit">
+              Submit Booking
+            </button>
+
+          </form>
+
+
+          <p
+            id="bookingMessage"
+            class="booking-message"
+          ></p>
+
+        </div>
+
+      </section>
+
+
+      <!-- SUCCESSFUL BOOKING -->
+
+      <section
+        class="booking-success"
+        id="bookingSuccess"
+      >
+
+        <div class="success-icon">
+
+          <i class="fa-solid fa-circle-check"></i>
+
+        </div>
+
+
+        <h2>
+          Booking Successful!
+        </h2>
+
+
+        <p id="successMessage"></p>
+
+
+        <div class="booking-summary">
+
+          <h3>
+            Booking Summary
+          </h3>
+
+          <p>
+            <strong>Tour:</strong>
+            <span id="summaryTour"></span>
+          </p>
+
+          <p>
+            <strong>Name:</strong>
+            <span id="summaryName"></span>
+          </p>
+
+          <p>
+            <strong>Email:</strong>
+            <span id="summaryEmail"></span>
+          </p>
+
+          <p>
+            <strong>Travel Date:</strong>
+            <span id="summaryDate"></span>
+          </p>
+
+          <p>
+            <strong>Travelers:</strong>
+            <span id="summaryTravelers"></span>
+          </p>
+
+          <p>
+            <strong>Price:</strong>
+            <span id="summaryPrice"></span>
+          </p>
+
+        </div>
+
+
+        <!-- PAYMENT -->
+
+        <div
+          class="payment-section"
+          id="paymentSection"
+        >
+
+          <h2>
+            Make Payment
+          </h2>
+
+          <p>
+            Select your preferred payment method
+            to continue with your tour booking.
+          </p>
+
+
+          <div class="payment-methods">
+
+
+            <label class="payment-option">
+
+              <input
+                type="radio"
+                name="paymentMethod"
+                value="card"
+              >
+
+              <span>
+
+                <i class="fa-solid fa-credit-card"></i>
+
+                Card Payment
+
+              </span>
+
+            </label>
+
+
+            <label class="payment-option">
+
+              <input
+                type="radio"
+                name="paymentMethod"
+                value="bank"
+              >
+
+              <span>
+
+                <i class="fa-solid fa-building-columns"></i>
+
+                Bank Transfer
+
+              </span>
+
+            </label>
+
+
+          </div>
+
+
+          <button
+            id="makePaymentButton"
+            type="button"
+          >
+            Proceed to Payment
+          </button>
+
+
+          <p
+            id="paymentMessage"
+            class="payment-message"
+          ></p>
+
+        </div>
+
+      </section>
+
+
+    </main>
+
+
+    <footer class="footer-section">
+
+      <article class="footer-about">
+
+        <div class="brand">
+
+          <img
+            class="jovick-logo"
+            src="images/Jovick-logo.jpg"
+            alt=""
+          >
+
+          <span class="company-name">
+            JVK.T
+          </span>
+
+        </div>
+
+        <p>
+          Explore the world with us.
+          Your next adventure is just a click away.
+        </p>
+
+        <div class="social-icons">
+
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a
+            href="https://x.com/JUSTJH0N1"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@unseen_systems"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@jovick_unique_ltd?lang=en"
+            target="_blank"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+        </div>
+
+      </article>
+
+
+      <article class="footer-quick-link">
+
+        <span class="head-quick-link">
+          Quick Links
+        </span>
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="destinations.html">
+          Destinations
+        </a>
+
+        <a href="tours.html">
+          Tours
+        </a>
+
+        <a href="contact.html">
+          Contact
+        </a>
+
+      </article>
+
+
+      <article class="footer-contact-info">
+
+        <span class="head-contact-info">
+          Contact Info
+        </span>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Gwagwalada, Abuja, Nigeria
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          jovickuniqueenterprises@gmail.com
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +234 9158950008
+        </p>
+
+      </article>
+
+    </footer>
+
+
+    <aside class="copyright">
+      &copy; Jovick Travel, All rights reserved.
+    </aside>
+
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/tour-details.js"></script>
+
+  </body>
+
+</html>

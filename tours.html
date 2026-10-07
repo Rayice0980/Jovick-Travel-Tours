@@ -3,230 +3,772 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Jvk Travel</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/tours.css">
     <link rel="stylesheet" href="styles/mediaquery.css">
-    
   </head>
+
   <body>
+
     <header class="page-header">
+
       <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">  <span class="company-name">Jvk Travel</span>
+        <img
+          class="jovick-logo"
+          src="images/Jovick-logo.jpg"
+          alt=""
+        >
+
+        <span class="company-name">Jvk Travel</span>
       </div>
+
       <nav class="nav-bar" id="navBar">
-          <a href="index.html">Home</a>
-          <a href="destinations.html"> Destinations</a>
-          <a href="tours.html">Tours</a>
-          <a href="contact.html">Contact</a>
+        <a href="index.html">Home</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="tours.html">Tours</a>
+        <a href="contact.html">Contact</a>
       </nav>
+
       <button class="search-button" id="searchButton">
-        <img class="search-icon" src="icons/search.svg" alt="Search">
+        <img
+          class="search-icon"
+          src="icons/search.svg"
+          alt="Search"
+        >
       </button>
+
       <div class="search-box" id="searchBox">
-        <input type="text" id="searchInput" placeholder="Search...">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search..."
+        >
+
         <p id="searchMessage"></p>
 
         <div id="searchResults"></div>
       </div>
 
-
       <button class="menu-button" id="menuButton">
         <i class="fa-solid fa-bars"></i>
       </button>
+
     </header>
 
-   
+
     <section class="tour-sec-1">
+
       <h2>Our Tours</h2>
+
       <p>
-        Choose from our exclusive tour packages and experience the best of what the word has to offer.
+        Choose from our exclusive tour packages and experience
+        the best of what the world has to offer.
       </p>
-    
-      
+
     </section>
-    
+
 
     <section class="tour-sec-2">
-      <H2>Featured Tour packages</H2>
-      <p>Handpicked tours for unforgettable experience.</p>
-       <article class="article-card">
-          <img class="location-img" src="images/Abuja 3.jpg" alt="">
+
+      <h2>Featured Tour Packages</h2>
+
+      <p>
+        Handpicked tours for unforgettable experiences.
+      </p>
+
+
+      <div class="tour-grid">
+
+
+        <!-- ABUJA -->
+
+        <article class="article-card">
+
+          <img
+            class="location-img"
+            src="images/Abuja 3.jpg"
+            alt="Abuja"
+          >
+
           <h3>Abuja City Tour</h3>
-          <p> <i class="fa-solid fa-archive"></i> 3 Days &amp; Nights</p>
-          <span class="tour-price">₦ 150,000</span>
-          <button
+
+          <p>
+            <i class="fa-solid fa-archive"></i>
+            3 Days &amp; Nights
+          </p>
+
+          <span class="tour-price">₦150,000</span>
+
+          <a
+            class="view-tour"
+            href="tour-details.html?tour=abuja"
+          >
+            View Tour &rarr;
+          </a>
+
+        </article>
+
+
+        <!-- DUBAI -->
+
+        <article class="article-card">
+
+          <img
+            class="location-img"
+            src="images/Dubai 2.jpg"
+            alt="Dubai"
+          >
+
+          <h3>Dubai Experience</h3>
+
+          <p>
+            <i class="fa-solid fa-archive"></i>
+            7 Days &amp; Nights
+          </p>
+
+          <span class="tour-price">₦850,000</span>
+
+          <a
+            class="view-tour"
+            href="tour-details.html?tour=dubai"
+          >
+            View Tour &rarr;
+          </a>
+
+        </article>
+
+
+        <!-- LONDON -->
+
+        <article class="article-card">
+
+          <img
+            class="location-img"
+            src="images/London 2.jpg"
+            alt="London"
+          >
+
+          <h3>London Gateway</h3>
+
+          <p>
+            <i class="fa-solid fa-archive"></i>
+            5 Days &amp; Nights
+          </p>
+
+          <span class="tour-price">₦600,000</span>
+
+          <a
+            class="view-tour"
+            href="tour-details.html?tour=london"
+          >
+            View Tour &rarr;
+          </a>
+
+        </article>
+
+
+        <!-- PARIS -->
+
+        <article class="article-card">
+
+          <img
+            class="location-img"
+            src="images/Paris 1.jpg"
+            alt="Paris"
+          >
+
+          <h3>Paris Romantic Trip</h3>
+
+          <p>
+            <i class="fa-solid fa-archive"></i>
+            3 Days &amp; Nights
+          </p>
+
+          <span class="tour-price">₦150,000</span>
+
+          <a
+            class="view-tour"
+            href="tour-details.html?tour=paris"
+          >
+            View Tour &rarr;
+          </a>
+
+        </article>
+
+
+        <!-- CAPE TOWN -->
+
+        <article class="article-card">
+
+          <img
+            class="location-img"
+            src="images/Cape Town 1.jpg"
+            alt="Cape Town"
+          >
+
+          <h3>Cape Town Adventure</h3>
+
+          <p>
+            <i class="fa-solid fa-archive"></i>
+            7 Days &amp; Nights
+          </p>
+
+          <span class="tour-price">₦900,000</span>
+
+          <a
+            class="view-tour"
+            href="tour-details.html?tour=cape-town"
+          >
+            View Tour &rarr;
+          </a>
+
+        </article>
+
+
+        <!-- ZANZIBAR -->
+
+        <article class="article-card">
+
+          <img
+            class="location-img"
+            src="images/Tanzania 1.jpg"
+            alt="Zanzibar"
+          >
+
+          <h3>Zanzibar Escape</h3>
+
+          <p>
+            <i class="fa-solid fa-archive"></i>
+            5 Days &amp; Nights
+          </p>
+
+          <span class="tour-price">₦700,000</span>
+
+          <a
+            class="view-tour"
+            href="tour-details.html?tour=zanzibar"
+          >
+            View Tour &rarr;
+          </a>
+
+        </article>
+
+
+        <!-- HIDDEN TOURS -->
+
+        <div class="extra-tours" id="extraTours">
+
+
+          <!-- LAGOS -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Lagos.jpg"
+              alt="Lagos"
+            >
+
+            <h3>Lagos City Experience</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              3 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦180,000</span>
+
+            <a
               class="view-tour"
-              data-tour="Abuja City Tour"
-              data-duration="3 Days & Nights"
-              data-price="₦150,000"
+              href="tour-details.html?tour=lagos"
             >
               View Tour &rarr;
-            </button>
-        </article>
+            </a>
 
-        <article class="article-card">
-          <img class="location-img" src="images/Dubai 2.jpg" alt="">
-          <h3>Dubai Experience</h3>
-          <p> <i class="fa-solid fa-archive"></i> 7 Days &amp; Nights</p>
-          <span class="tour-price">₦ 850,000</span>
-          <button
-            class="view-tour"
-            data-tour="Dubai Experience"
-            data-duration="7 Days & Nights"
-            data-price="₦850,000"
-          >
-            View Tour &rarr;
-          </button>
-        </article>
+          </article>
 
-        <article class="article-card">
-          <img class="location-img" src="images/London 2.jpg" alt="">
-          <h3>London Gateway</h3>
-          <p> <i class="fa-solid fa-archive"></i> 5 Days &amp; Nights</p>
-          <span class="tour-price">₦ 600,000</span>
-          <button
-            class="view-tour"
-            data-tour="London Gateway"
-            data-duration="5 Days & Nights"
-            data-price="₦600,000"
-          >
-            View Tour &rarr;
-          </button>
-        </article>
-        <article class="article-card">
-          <img class="location-img" src="images/Paris 1.jpg" alt="">
-          <h3>Paris Romantic Trip</h3>
-          <p> <i class="fa-solid fa-archive"></i> 3 Days &amp; Nights</p>
-          <span class="tour-price">₦ 150,000</span>
-          <button
-            class="view-tour"
-            data-tour="Paris Romantic Trip"
-            data-duration="3 Days & Nights"
-            data-price="₦150,000"
-          >
-            View Tour &rarr;
-          </button>
-        </article>
-        <article class="article-card">
-          <img class="location-img" src="images/Cape Town 1.jpg" alt="">
-          <h3>Cape Town Adventure</h3>
-          <p> <i class="fa-solid fa-archive"></i> 7 Days &amp; Nights</p>
-          <span class="tour-price">₦ 900,000</span>
-          <button
-            class="view-tour"
-            data-tour="Cape Town Adventure"
-            data-duration="7 Days & Nights"
-            data-price="₦900,000"
-          >
-            View Tour &rarr;
-          </button>
-        </article>
-        <article class="article-card">
-          <img class="location-img" src="images/Tanzania 1.jpg" alt="">
-          <h3>Tanzania Tour</h3>
-          <p> <i class="fa-solid fa-archive"></i> 5 Days &amp; Nights</p>
-          <span class="tour-price">₦ 700,000</span>
-          <button
-            class="view-tour"
-            data-tour="Tanzania Tour"
-            data-duration="5 Days & Nights"
-            data-price="₦700,000"
-          >
-            View Tour &rarr;
-          </button>
-                  </article>
 
+          <!-- ACCRA -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Ghana.jpg"
+              alt="Accra"
+            >
+
+            <h3>Accra Discovery</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              4 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦350,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=accra"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- CAIRO -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Cairo.jpg"
+              alt="Cairo"
+            >
+
+            <h3>Cairo Heritage Tour</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              5 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦550,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=cairo"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- NAIROBI -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Nairobi.jpg"
+              alt="Nairobi"
+            >
+
+            <h3>Nairobi Adventure</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              5 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦600,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=nairobi"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- ROME -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Rome.jpg"
+              alt="Rome"
+            >
+
+            <h3>Rome Historical Tour</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              5 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦650,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=rome"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- AMSTERDAM -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Amsterdam.jpg"
+              alt="Amsterdam"
+            >
+
+            <h3>Amsterdam Escape</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              5 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦680,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=amsterdam"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- BARCELONA -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Barcelona.jpg"
+              alt="Barcelona"
+            >
+
+            <h3>Barcelona Experience</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              5 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦700,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=barcelona"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- ABU DHABI -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Abu Dhabi.jpg"
+              alt="Abu Dhabi"
+            >
+
+            <h3>Abu Dhabi Experience</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              5 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦750,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=abu-dhabi"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- RIYADH -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Riyadh.jpg"
+              alt="Riyadh"
+            >
+
+            <h3>Riyadh Discovery</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              5 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦700,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=riyadh"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- TOKYO -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Tokyo.jpg"
+              alt="Tokyo"
+            >
+
+            <h3>Tokyo Adventure</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              7 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦950,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=tokyo"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- SINGAPORE -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Singapore.jpg"
+              alt="Singapore"
+            >
+
+            <h3>Singapore Experience</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              6 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦900,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=singapore"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- BANGKOK -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Bangkok.jpg"
+              alt="Bangkok"
+            >
+
+            <h3>Bangkok Discovery</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              6 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦750,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=bangkok"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+          <!-- SEOUL -->
+
+          <article class="article-card">
+
+            <img
+              class="location-img"
+              src="images/Seoul.jpg"
+              alt="Seoul"
+            >
+
+            <h3>Seoul Experience</h3>
+
+            <p>
+              <i class="fa-solid fa-archive"></i>
+              6 Days &amp; Nights
+            </p>
+
+            <span class="tour-price">₦850,000</span>
+
+            <a
+              class="view-tour"
+              href="tour-details.html?tour=seoul"
+            >
+              View Tour &rarr;
+            </a>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+
+      <button
+        id="viewAllTours"
+        class="view-all-tours"
+        type="button"
+      >
+        View All Tours
+      </button>
 
     </section>
 
 
-    <div class="tour-details" id="tourDetails">
-      <h2 id="selectedTour"></h2>
-
-      <p id="tourDuration"></p>
-
-      <p id="tourPrice"></p>
-
-      <p id="tourMessage"></p>
-
-      <button id="bookTourButton">Book This Tour</button>
-    </div>
-
-    <div class="booking-form" id="bookingForm">
-      <h2>Book Your Tour</h2>
-
-      <form id="tourBookingForm">
-
-        <label for="selectedTourInput">Selected Tour</label>
-        <input type="text" id="selectedTourInput" readonly>
-
-        <label for="selectedDuration">Duration</label>
-        <input type="text" id="selectedDuration" readonly>
-
-        <label for="selectedPrice">Price</label>
-        <input type="text" id="selectedPrice" readonly>
-
-        <label for="customerName">Full Name</label>
-        <input type="text" id="customerName" required>
-
-        <label for="customerEmail">Email</label>
-        <input type="email" id="customerEmail" required>
-
-        <label for="customerPhone">Phone Number</label>
-        <input type="tel" id="customerPhone" required>
-
-        <button type="submit">Confirm Booking</button>
-
-      </form>
-
-      <p id="bookingMessage"></p>
-
-      <div class="booking-confirmation" id="bookingConfirmation">
-        <h2>Booking Request Received!</h2>
-        <p id="confirmationMessage"></p>
-      </div>
-      
-    </div>
-
-    
     <footer class="footer-section">
+
       <article class="footer-about">
+
         <div class="brand">
-        <img class="jovick-logo" src="images/Jovick-logo.jpg" alt="">
-        <span class="company-name">JVK.T</span>
+
+          <img
+            class="jovick-logo"
+            src="images/Jovick-logo.jpg"
+            alt=""
+          >
+
+          <span class="company-name">JVK.T</span>
+
         </div>
-        <p>Explore the world with us. Your next adventure is just a click away.</p>
+
+        <p>
+          Explore the world with us.
+          Your next adventure is just a click away.
+        </p>
+
         <div class="social-icons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://x.com/JUSTJH0N1" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.youtube.com/@unseen_systems" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://www.tiktok.com/@jovick_unique_ltd?lang=en" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+
+          <a href="#">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+          <a
+            href="https://x.com/JUSTJH0N1"
+            target="_blank"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/johnpaul.josiah?stkn=MWppOTg2Yzdkc3ZybQ%3D%3D&utm_source=qr"
+            target="_blank"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/@unseen_systems"
+            target="_blank"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@jovick_unique_ltd?lang=en"
+            target="_blank"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
         </div>
+
       </article>
+
+
       <article class="footer-quick-link">
-       <span class="head-quick-link">Quick Links</span> 
+
+        <span class="head-quick-link">
+          Quick Links
+        </span>
+
         <a href="index.html">Home</a>
-        <a href="destinations.html"> Destinations</a>
+        <a href="destinations.html">Destinations</a>
         <a href="tours.html">Tours</a>
         <a href="contact.html">Contact</a>
+
       </article>
+
+
       <article class="footer-contact-info">
-        <span class="head-contact-info">Contact Info</span>
-        <p><i class="fa-solid fa-location-dot"></i> Gwagwalada, Abuja, Nigeria</p>
-        <p><i class="fa-solid fa-envelope"></i>jovickuniqueenterprises@gmail.com</p>
-        <p><i class="fa-solid fa-phone"></i> +234 9158950008</p>
+
+        <span class="head-contact-info">
+          Contact Info
+        </span>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Gwagwalada, Abuja, Nigeria
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          jovickuniqueenterprises@gmail.com
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +234 9158950008
+        </p>
+
       </article>
-      
+
     </footer>
-        <aside class="copyright"> &copy; Jovick Travel, All rights reserved. </aside>
 
 
-          <script src="scripts/main.js"></script>
-          <script src="scripts/tours.js"></script>
+    <aside class="copyright">
+      &copy; Jovick Travel, All rights reserved.
+    </aside>
+
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/tours.js"></script>
+
   </body>
 </html>

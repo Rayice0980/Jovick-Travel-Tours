@@ -1,0 +1,1049 @@
+/* =================================
+   DESTINATION DETAILS
+   ================================= */
+
+
+const destinationData = {
+
+  abuja: {
+
+    name: "Abuja",
+
+    country: "Nigeria",
+
+    tagline:
+      "Discover Nigeria's beautiful capital city.",
+
+    image: "images/Abuja 2.jpg",
+
+    description:
+      "Abuja is Nigeria's modern capital and a great destination for travelers who want to experience beautiful landscapes, cultural attractions, impressive architecture and a peaceful city atmosphere.",
+
+    experience:
+      "Abuja offers a mixture of nature, culture and modern city life. Visitors can enjoy scenic views, historical landmarks, relaxing outdoor spaces and some of the city's most popular attractions.",
+
+    tour: "abuja",
+
+    places: [
+
+      {
+        name: "Zuma Rock",
+        image: "images/Abuja 2.jpg",
+        description:
+          "One of Nigeria's most recognizable natural landmarks and a popular attraction near Abuja."
+      },
+
+      {
+        name: "Millennium Park",
+        image: "images/Abuja 2.jpg",
+        description:
+          "A beautiful green space in the heart of Abuja, ideal for relaxing and enjoying the outdoors."
+      },
+
+      {
+        name: "Aso Rock",
+        image: "images/Abuja 2.jpg",
+        description:
+          "A famous natural landmark that forms an important part of Abuja's landscape."
+      }
+
+    ]
+
+  },
+
+
+  lagos: {
+
+    name: "Lagos",
+
+    country: "Nigeria",
+
+    tagline:
+      "Experience Nigeria's energetic coastal city.",
+
+    image: "images/Lagos 1.jpg",
+
+    description:
+      "Lagos is one of Africa's most vibrant cities, known for its beaches, entertainment, nightlife, food, culture and fast-paced atmosphere.",
+
+    experience:
+      "Lagos is perfect for travelers looking for an exciting urban experience combined with beaches, cultural attractions and entertainment.",
+
+    tour: "lagos",
+
+    places: [
+
+      {
+        name: "Lekki Conservation Centre",
+        image: "images/Lagos 1.jpg",
+        description:
+          "A popular nature attraction where visitors can experience Lagos' natural environment."
+      },
+
+      {
+        name: "Tarkwa Bay",
+        image: "images/Lagos 1.jpg",
+        description:
+          "A beautiful beach destination known for its relaxed coastal atmosphere."
+      },
+
+      {
+        name: "Nike Art Gallery",
+        image: "images/Lagos 1.jpg",
+        description:
+          "A major cultural attraction showcasing Nigerian art and creativity."
+      }
+
+    ]
+
+  },
+
+
+  dubai: {
+
+    name: "Dubai",
+
+    country: "United Arab Emirates",
+
+    tagline:
+      "Explore luxury, innovation and unforgettable experiences.",
+
+    image: "images/Dubai 2.jpg",
+
+    description:
+      "Dubai is famous for its modern architecture, luxury shopping, desert adventures, beaches and world-class attractions.",
+
+    experience:
+      "Dubai combines modern city life with traditional Arabian culture, making it a popular destination for travelers seeking both adventure and luxury.",
+
+    tour: "dubai",
+
+    places: [
+
+      {
+        name: "Burj Khalifa",
+        image: "images/Dubai 2.jpg",
+        description:
+          "One of Dubai's most famous landmarks and an iconic part of the city's skyline."
+      },
+
+      {
+        name: "Dubai Marina",
+        image: "images/Dubai 2.jpg",
+        description:
+          "A modern waterfront district filled with restaurants, attractions and spectacular views."
+      },
+
+      {
+        name: "Palm Jumeirah",
+        image: "images/Dubai 2.jpg",
+        description:
+          "A remarkable man-made island known for luxury resorts and beautiful coastal scenery."
+      }
+
+    ]
+
+  },
+
+
+  london: {
+
+    name: "London",
+
+    country: "United Kingdom",
+
+    tagline:
+      "Discover history, culture and modern British life.",
+
+    image: "images/London 2.jpg",
+
+    description:
+      "London is one of the world's most famous cities, offering historic landmarks, museums, shopping, entertainment and diverse cultural experiences.",
+
+    experience:
+      "Travelers can explore historic streets, famous landmarks, royal attractions, museums and some of the world's best-known cultural institutions.",
+
+    tour: "london",
+
+    places: [
+
+      {
+        name: "Big Ben",
+        image: "images/London 2.jpg",
+        description:
+          "One of London's most recognizable landmarks."
+      },
+
+      {
+        name: "Tower Bridge",
+        image: "images/London 2.jpg",
+        description:
+          "A historic bridge and one of the most photographed sights in London."
+      },
+
+      {
+        name: "Buckingham Palace",
+        image: "images/London 2.jpg",
+        description:
+          "The famous London residence associated with the British monarchy."
+      }
+
+    ]
+
+  },
+
+
+  paris: {
+
+    name: "Paris",
+
+    country: "France",
+
+    tagline:
+      "Experience art, romance, fashion and French culture.",
+
+    image: "images/Paris 1.jpg",
+
+    description:
+      "Paris is celebrated for its architecture, museums, cuisine, fashion and romantic atmosphere.",
+
+    experience:
+      "Paris offers travelers a mixture of art, history, architecture, food and unforgettable city experiences.",
+
+    tour: "paris",
+
+    places: [
+
+      {
+        name: "Eiffel Tower",
+        image: "images/Paris 1.jpg",
+        description:
+          "The world-famous symbol of Paris."
+      },
+
+      {
+        name: "Louvre Museum",
+        image: "images/Paris 1.jpg",
+        description:
+          "One of the world's most famous museums."
+      },
+
+      {
+        name: "Arc de Triomphe",
+        image: "images/Paris 1.jpg",
+        description:
+          "A historic monument overlooking one of Paris' famous avenues."
+      }
+
+    ]
+
+  },
+
+
+  "cape-town": {
+
+    name: "Cape Town",
+
+    country: "South Africa",
+
+    tagline:
+      "Where mountains, beaches and city life meet.",
+
+    image: "images/Cape Town 1.jpg",
+
+    description:
+      "Cape Town is a spectacular destination surrounded by mountains, coastline and beautiful natural scenery.",
+
+    experience:
+      "Visitors can combine outdoor adventures, beaches, scenic drives, cultural attractions and vibrant city experiences.",
+
+    tour: "cape-town",
+
+    places: [
+
+      {
+        name: "Table Mountain",
+        image: "images/Cape Town 1.jpg",
+        description:
+          "One of Cape Town's most famous natural landmarks."
+      },
+
+      {
+        name: "V&A Waterfront",
+        image: "images/Cape Town 1.jpg",
+        description:
+          "A lively waterfront area with restaurants, shopping and entertainment."
+      },
+
+      {
+        name: "Camps Bay",
+        image: "images/Cape Town 1.jpg",
+        description:
+          "A popular beach destination surrounded by dramatic scenery."
+      }
+
+    ]
+
+  },
+
+
+  zanzibar: {
+
+    name: "Zanzibar",
+
+    country: "Tanzania",
+
+    tagline:
+      "Relax on beautiful beaches and discover island culture.",
+
+    image: "images/Tanzania 1.jpg",
+
+    description:
+      "Zanzibar is an island destination famous for beaches, historic Stone Town, turquoise waters and unique cultural experiences.",
+
+    experience:
+      "Zanzibar is ideal for travelers who want relaxation, coastal adventures and cultural exploration.",
+
+    tour: "zanzibar",
+
+    places: [
+
+      {
+        name: "Stone Town",
+        image: "images/Tanzania 1.jpg",
+        description:
+          "A historic area known for its architecture, culture and narrow streets."
+      },
+
+      {
+        name: "Nungwi Beach",
+        image: "images/Tanzania 1.jpg",
+        description:
+          "A popular beach known for beautiful coastal scenery."
+      },
+
+      {
+        name: "Prison Island",
+        image: "images/Tanzania 1.jpg",
+        description:
+          "An island attraction offering a memorable coastal experience."
+      }
+
+    ]
+
+  },
+
+
+  accra: {
+
+    name: "Accra",
+
+    country: "Ghana",
+
+    tagline:
+      "Discover Ghanaian culture, history and coastal life.",
+
+    image: "images/Ghana 1.jpg",
+
+    description:
+      "Accra is Ghana's lively capital, offering beaches, markets, historical attractions, food and rich cultural experiences.",
+
+    experience:
+      "Accra gives travelers an opportunity to experience modern Ghana alongside its history, culture and coastal environment.",
+
+    tour: "accra",
+
+    places: [
+
+      {
+        name: "Labadi Beach",
+        image: "images/Ghana 1.jpg",
+        description:
+          "One of Accra's popular coastal destinations."
+      },
+
+      {
+        name: "Kwame Nkrumah Memorial Park",
+        image: "images/Ghana 1.jpg",
+        description:
+          "A significant historical and cultural attraction."
+      },
+
+      {
+        name: "Makola Market",
+        image: "images/Ghana 1.jpg",
+        description:
+          "A lively market offering an authentic urban experience."
+      }
+
+    ]
+
+  },
+
+
+  cairo: {
+
+    name: "Cairo",
+
+    country: "Egypt",
+
+    tagline:
+      "Step into thousands of years of history.",
+
+    image: "images/Abuja 2.jpg",
+
+    description:
+      "Cairo is a fascinating destination filled with ancient history, cultural attractions, markets and iconic Egyptian landmarks.",
+
+    experience:
+      "Travelers can explore ancient wonders, museums, markets and the unique atmosphere of Egypt's capital.",
+
+    tour: "cairo",
+
+    places: [
+
+      {
+        name: "Pyramids of Giza",
+        image: "images/Abuja 2.jpg",
+        description:
+          "One of the world's most famous ancient landmarks."
+      },
+
+      {
+        name: "Egyptian Museum",
+        image: "images/Abuja 2.jpg",
+        description:
+          "A major museum featuring ancient Egyptian history and artifacts."
+      },
+
+      {
+        name: "Khan el-Khalili",
+        image: "images/Abuja 2.jpg",
+        description:
+          "A historic market area known for shopping and traditional atmosphere."
+      }
+
+    ]
+
+  },
+
+
+  nairobi: {
+
+    name: "Nairobi",
+
+    country: "Kenya",
+
+    tagline:
+      "Experience wildlife and modern African city life.",
+
+    image: "images/Nairobi.jpg",
+
+    description:
+      "Nairobi combines modern city life with access to wildlife, nature and some of Kenya's most interesting attractions.",
+
+    experience:
+      "Nairobi is a great base for travelers interested in wildlife, culture, nature and urban experiences.",
+
+    tour: "nairobi",
+
+    places: [
+
+      {
+        name: "Nairobi National Park",
+        image: "images/Nairobi.jpg",
+        description:
+          "A unique wildlife destination located close to the city."
+      },
+
+      {
+        name: "Giraffe Centre",
+        image: "images/Nairobi.jpg",
+        description:
+          "A popular conservation and wildlife attraction."
+      },
+
+      {
+        name: "Karen Blixen Museum",
+        image: "images/Nairobi.jpg",
+        description:
+          "A cultural attraction connected with Kenya's history."
+      }
+
+    ]
+
+  },
+
+
+  rome: {
+
+    name: "Rome",
+
+    country: "Italy",
+
+    tagline:
+      "Walk through centuries of history.",
+
+    image: "images/Rome.jpg",
+
+    description:
+      "Rome is an extraordinary destination filled with ancient monuments, beautiful architecture, art, food and Italian culture.",
+
+    experience:
+      "Visitors can explore ancient ruins, famous landmarks, historic streets and some of Italy's most memorable cultural attractions.",
+
+    tour: "rome",
+
+    places: [
+
+      {
+        name: "Colosseum",
+        image: "images/Rome.jpg",
+        description:
+          "One of Rome's most famous ancient monuments."
+      },
+
+      {
+        name: "Trevi Fountain",
+        image: "images/Rome.jpg",
+        description:
+          "A spectacular and iconic fountain in central Rome."
+      },
+
+      {
+        name: "Vatican City",
+        image: "images/Rome.jpg",
+        description:
+          "A major cultural and religious destination surrounded by extraordinary art and history."
+      }
+
+    ]
+
+  },
+
+
+  amsterdam: {
+
+    name: "Amsterdam",
+
+    country: "Netherlands",
+
+    tagline:
+      "Discover canals, culture and charming European streets.",
+
+    image: "images/Amsterdam.jpg",
+
+    description:
+      "Amsterdam is known for its canals, historic architecture, museums, cycling culture and lively neighborhoods.",
+
+    experience:
+      "Amsterdam is ideal for travelers looking for culture, scenic canals, museums and a relaxed European city experience.",
+
+    tour: "amsterdam",
+
+    places: [
+
+      {
+        name: "Canal District",
+        image: "images/Amsterdam.jpg",
+        description:
+          "A beautiful network of canals surrounded by historic buildings."
+      },
+
+      {
+        name: "Rijksmuseum",
+        image: "images/Amsterdam.jpg",
+        description:
+          "A major museum showcasing Dutch art and history."
+      },
+
+      {
+        name: "Jordaan",
+        image: "images/Amsterdam.jpg",
+        description:
+          "A charming neighborhood known for streets, cafes and canals."
+      }
+
+    ]
+
+  },
+
+
+  barcelona: {
+
+    name: "Barcelona",
+
+    country: "Spain",
+
+    tagline:
+      "Experience architecture, beaches and Spanish culture.",
+
+    image: "images/Barcelona.jpg",
+
+    description:
+      "Barcelona offers a combination of Mediterranean beaches, remarkable architecture, food, art and vibrant city life.",
+
+    experience:
+      "Barcelona gives travelers the chance to enjoy both cultural attractions and a relaxed Mediterranean atmosphere.",
+
+    tour: "barcelona",
+
+    places: [
+
+      {
+        name: "Sagrada Familia",
+        image: "images/Barcelona.jpg",
+        description:
+          "One of Barcelona's most famous architectural landmarks."
+      },
+
+      {
+        name: "Park Güell",
+        image: "images/Barcelona.jpg",
+        description:
+          "A colorful park featuring remarkable architectural designs."
+      },
+
+      {
+        name: "Barceloneta Beach",
+        image: "images/Barcelona.jpg",
+        description:
+          "A popular beach area close to the city center."
+      }
+
+    ]
+
+  },
+
+
+  "abu-dhabi": {
+
+    name: "Abu Dhabi",
+
+    country: "United Arab Emirates",
+
+    tagline:
+      "Discover culture, luxury and Arabian hospitality.",
+
+    image: "images/Abu Dhabi.jpg",
+
+    description:
+      "Abu Dhabi is the capital of the United Arab Emirates and offers impressive architecture, cultural attractions, beaches and luxury experiences.",
+
+    experience:
+      "Travelers can enjoy a more relaxed side of the UAE while exploring cultural landmarks, modern attractions and beautiful coastal areas.",
+
+    tour: "abu-dhabi",
+
+    places: [
+
+      {
+        name: "Sheikh Zayed Grand Mosque",
+        image: "images/Abu Dhabi.jpg",
+        description:
+          "One of Abu Dhabi's most impressive architectural landmarks."
+      },
+
+      {
+        name: "Louvre Abu Dhabi",
+        image: "images/Abu Dhabi.jpg",
+        description:
+          "A remarkable museum combining art, architecture and culture."
+      },
+
+      {
+        name: "Yas Island",
+        image: "images/Abu Dhabi.jpg",
+        description:
+          "A major entertainment and leisure destination."
+      }
+
+    ]
+
+  },
+
+
+  riyadh: {
+
+    name: "Riyadh",
+
+    country: "Saudi Arabia",
+
+    tagline:
+      "Discover modern Saudi Arabia and its heritage.",
+
+    image: "images/Riyadh.jpg",
+
+    description:
+      "Riyadh is Saudi Arabia's capital and a growing destination known for modern development, cultural attractions and traditional heritage.",
+
+    experience:
+      "Riyadh provides travelers with an opportunity to experience modern Saudi Arabia alongside its history, food and culture.",
+
+    tour: "riyadh",
+
+    places: [
+
+      {
+        name: "Kingdom Centre",
+        image: "images/Riyadh.jpg",
+        description:
+          "One of Riyadh's most recognizable modern landmarks."
+      },
+
+      {
+        name: "Diriyah",
+        image: "images/Riyadh.jpg",
+        description:
+          "A historic area offering insight into Saudi heritage."
+      },
+
+      {
+        name: "Edge of the World",
+        image: "images/Riyadh.jpg",
+        description:
+          "A dramatic natural landscape outside Riyadh."
+      }
+
+    ]
+
+  },
+
+
+  tokyo: {
+
+    name: "Tokyo",
+
+    country: "Japan",
+
+    tagline:
+      "Experience technology, tradition and Japanese culture.",
+
+    image: "images/Tokyo.jpg",
+
+    description:
+      "Tokyo is a fascinating combination of modern technology, traditional culture, food, shopping and entertainment.",
+
+    experience:
+      "Tokyo offers something for almost every traveler, from historic temples and gardens to modern neighborhoods and world-class food.",
+
+    tour: "tokyo",
+
+    places: [
+
+      {
+        name: "Shibuya",
+        image: "images/Tokyo.jpg",
+        description:
+          "One of Tokyo's busiest and most recognizable districts."
+      },
+
+      {
+        name: "Tokyo Skytree",
+        image: "images/Tokyo.jpg",
+        description:
+          "A famous observation and communications tower."
+      },
+
+      {
+        name: "Senso-ji Temple",
+        image: "images/Tokyo.jpg",
+        description:
+          "A historic temple and important cultural attraction."
+      }
+
+    ]
+
+  },
+
+
+  singapore: {
+
+    name: "Singapore",
+
+    country: "Singapore",
+
+    tagline:
+      "Explore a clean, modern and multicultural city.",
+
+    image: "images/Singapore.jpg",
+
+    description:
+      "Singapore is known for its modern skyline, gardens, food, shopping and efficient city environment.",
+
+    experience:
+      "Singapore combines modern attractions with multicultural neighborhoods, excellent food and beautiful public spaces.",
+
+    tour: "singapore",
+
+    places: [
+
+      {
+        name: "Marina Bay Sands",
+        image: "images/Singapore.jpg",
+        description:
+          "One of Singapore's most recognizable modern landmarks."
+      },
+
+      {
+        name: "Gardens by the Bay",
+        image: "images/Singapore.jpg",
+        description:
+          "A spectacular modern garden attraction."
+      },
+
+      {
+        name: "Sentosa Island",
+        image: "images/Singapore.jpg",
+        description:
+          "A popular leisure and entertainment destination."
+      }
+
+    ]
+
+  },
+
+
+  bangkok: {
+
+    name: "Bangkok",
+
+    country: "Thailand",
+
+    tagline:
+      "Discover temples, food, markets and vibrant city life.",
+
+    image: "images/Bangkok.jpg",
+
+    description:
+      "Bangkok is a lively destination known for temples, markets, food, nightlife and Thai culture.",
+
+    experience:
+      "Bangkok provides an exciting combination of traditional culture and modern city experiences.",
+
+    tour: "bangkok",
+
+    places: [
+
+      {
+        name: "Grand Palace",
+        image: "images/Bangkok.jpg",
+        description:
+          "One of Bangkok's most important historic attractions."
+      },
+
+      {
+        name: "Wat Arun",
+        image: "images/Bangkok.jpg",
+        description:
+          "A beautiful temple located along the Chao Phraya River."
+      },
+
+      {
+        name: "Chatuchak Market",
+        image: "images/Bangkok.jpg",
+        description:
+          "A famous market offering a huge variety of goods and local experiences."
+      }
+
+    ]
+
+  },
+
+
+  seoul: {
+
+    name: "Seoul",
+
+    country: "South Korea",
+
+    tagline:
+      "Experience Korean culture, technology and modern city life.",
+
+    image: "images/Seoul.jpg",
+
+    description:
+      "Seoul combines historic palaces and traditional neighborhoods with modern architecture, technology, shopping and entertainment.",
+
+    experience:
+      "Seoul is ideal for travelers interested in Korean culture, food, technology, entertainment and history.",
+
+    tour: "seoul",
+
+    places: [
+
+      {
+        name: "Gyeongbokgung Palace",
+        image: "images/Seoul.jpg",
+        description:
+          "A historic royal palace and major cultural attraction."
+      },
+
+      {
+        name: "N Seoul Tower",
+        image: "images/Seoul.jpg",
+        description:
+          "A famous landmark offering panoramic city views."
+      },
+
+      {
+        name: "Myeongdong",
+        image: "images/Seoul.jpg",
+        description:
+          "A lively shopping and food district."
+      }
+
+    ]
+
+  }
+
+};
+
+
+/* =================================
+   GET SELECTED DESTINATION
+   ================================= */
+
+const urlParams =
+  new URLSearchParams(window.location.search);
+
+const selectedPlace =
+  urlParams.get("place");
+
+
+const destination =
+  destinationData[selectedPlace];
+
+
+/* =================================
+   CHECK DESTINATION
+   ================================= */
+
+if (!destination) {
+
+  window.location.href = "destinations.html";
+
+}
+
+
+/* =================================
+   PAGE ELEMENTS
+   ================================= */
+
+const destinationHero =
+  document.getElementById("destinationHero");
+
+const destinationName =
+  document.getElementById("destinationName");
+
+const destinationCountry =
+  document.getElementById("destinationCountry");
+
+const destinationTagline =
+  document.getElementById("destinationTagline");
+
+const destinationDescription =
+  document.getElementById("destinationDescription");
+
+const experienceName =
+  document.getElementById("experienceName");
+
+const experienceText =
+  document.getElementById("experienceText");
+
+const placesGrid =
+  document.getElementById("placesGrid");
+
+const viewTourButton =
+  document.getElementById("viewTourButton");
+
+
+/* =================================
+   DISPLAY DESTINATION
+   ================================= */
+
+if (destination) {
+
+  document.title =
+    `Jvk Travel | ${destination.name}`;
+
+
+  destinationHero.style
+    .setProperty(
+      "--destination-image",
+      `url("${destination.image}")`
+    );
+
+
+  destinationName.textContent =
+    destination.name;
+
+
+  destinationCountry.textContent =
+    destination.country;
+
+
+  destinationTagline.textContent =
+    destination.tagline;
+
+
+  destinationDescription.textContent =
+    destination.description;
+
+
+  experienceName.textContent =
+    destination.name;
+
+
+  experienceText.textContent =
+    destination.experience;
+
+
+  /* =================================
+     PLACES TO VISIT
+     ================================= */
+
+  destination.places.forEach(function (place) {
+
+    const placeCard =
+      document.createElement("article");
+
+    placeCard.className =
+      "place-card";
+
+
+    placeCard.innerHTML = `
+
+      <img
+        src="${place.image}"
+        alt="${place.name}"
+      >
+
+      <div class="place-card-content">
+
+        <h3>
+          ${place.name}
+        </h3>
+
+        <p>
+          ${place.description}
+        </p>
+
+      </div>
+
+    `;
+
+
+    placesGrid.appendChild(placeCard);
+
+  });
+
+
+  /* =================================
+     TOUR BUTTON
+     ================================= */
+
+  viewTourButton.href =
+    `tour-details.html?tour=${destination.tour}`;
+
+}
