@@ -172,16 +172,10 @@
 
 .extra-tours {
   display: none;
-
-  grid-column: 1 / -1;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 25px;
 }
 
 .extra-tours.show {
-  display: grid;
+  display: contents;
 }
 
 
