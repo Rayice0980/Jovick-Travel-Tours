@@ -110,45 +110,17 @@ if (contactForm) {
       return;
     }
 
-    contactSubmitButton.disabled = true;
-    contactSubmitButton.innerHTML =
-      '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+    /*
+      Supabase submission will be connected here through the
+      Jovick Travel & Tours Supabase Edge Function.
 
-    const formData = new FormData(contactForm);
+      The Netlify Forms submission has intentionally been removed.
+    */
 
-    fetch("/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded"
-      },
-      body: new URLSearchParams(formData).toString()
-    })
-      .then(function (response) {
-        if (!response.ok) {
-          throw new Error("Form submission failed.");
-        }
-
-        showFormMessage(
-          "Thank you! Your message has been sent successfully. We will get back to you as soon as possible.",
-          "success"
-        );
-
-        contactForm.reset();
-        clearAllErrors();
-      })
-      .catch(function (error) {
-        console.error(error);
-
-        showFormMessage(
-          "Sorry, we could not send your message right now. Please try again or contact us on WhatsApp.",
-          "error"
-        );
-      })
-      .finally(function () {
-        contactSubmitButton.disabled = false;
-        contactSubmitButton.innerHTML =
-          '<i class="fa-solid fa-paper-plane"></i> Send Message';
-      });
+    showFormMessage(
+      "Our contact service is being connected. Please try again shortly or contact us on WhatsApp.",
+      "error"
+    );
   });
 }
 
