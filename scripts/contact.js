@@ -114,24 +114,41 @@ if (contactForm) {
     contactSubmitButton.innerHTML =
       '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
 
-    /*
-      This is currently a frontend-only contact form.
-      A real message-delivery service/backend can be connected later.
-    */
+    const formData = new FormData(contactForm);
 
-    setTimeout(function () {
-      showFormMessage(
-        "Thank you! Your message has been received. We will get back to you as soon as possible.",
-        "success"
-      );
+    fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: new URLSearchParams(formData).toString()
+    })
+      .then(function (response) {
+        if (!response.ok) {
+          throw new Error("Form submission failed.");
+        }
 
-      contactForm.reset();
-      clearAllErrors();
+        showFormMessage(
+          "Thank you! Your message has been sent successfully. We will get back to you as soon as possible.",
+          "success"
+        );
 
-      contactSubmitButton.disabled = false;
-      contactSubmitButton.innerHTML =
-        '<i class="fa-solid fa-paper-plane"></i> Send Message';
-    }, 800);
+        contactForm.reset();
+        clearAllErrors();
+      })
+      .catch(function (error) {
+        console.error(error);
+
+        showFormMessage(
+          "Sorry, we could not send your message right now. Please try again or contact us on WhatsApp.",
+          "error"
+        );
+      })
+      .finally(function () {
+        contactSubmitButton.disabled = false;
+        contactSubmitButton.innerHTML =
+          '<i class="fa-solid fa-paper-plane"></i> Send Message';
+      });
   });
 }
 
