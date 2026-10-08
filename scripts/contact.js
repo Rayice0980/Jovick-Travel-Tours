@@ -117,6 +117,13 @@ if (contactForm) {
       return;
     }
 
+    contactSubmitButton.disabled = true;
+    contactSubmitButton.innerHTML =
+      '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+    showFormMessage("Sending your message...", "info");
+
+    console.info("[Jovick contact] Submitting to Supabase:", SUPABASE_FUNCTION_URL);
+
     fetch(SUPABASE_FUNCTION_URL, {
       method: "POST",
       headers: {
@@ -132,8 +139,15 @@ if (contactForm) {
       })
     })
       .then(async function (response) {
+        console.info("[Jovick contact] Supabase HTTP status:", response.status);
+
         const data = await response.json().catch(function () {
           return {};
+        });
+
+        console.info("[Jovick contact] Supabase response received:", {
+          httpOk: response.ok,
+          functionOk: data.ok === true
         });
 
         if (!response.ok || !data.ok) {
@@ -151,7 +165,7 @@ if (contactForm) {
         clearAllErrors();
       })
       .catch(function (error) {
-        console.error(error);
+        console.error("[Jovick contact] Supabase request failed:", error);
 
         showFormMessage(
           "Sorry, we could not send your message right now. Please try again or contact us on WhatsApp.",
