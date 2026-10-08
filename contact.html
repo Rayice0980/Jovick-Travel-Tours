@@ -114,7 +114,28 @@
           <span class="contact-section-label">Send a message</span>
           <h2>How Can We Help?</h2>
 
-          <form id="contactForm" novalidate>
+          <form
+            id="contactForm"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+            novalidate
+          >
+            <input type="hidden" name="form-name" value="contact">
+            <input
+              type="hidden"
+              name="subject"
+              value="New JOVICK Travel & Tours contact message"
+              data-remove-prefix
+            >
+
+            <p class="form-honeypot" aria-hidden="true">
+              <label>
+                Don't fill this out if you're human:
+                <input name="bot-field" tabindex="-1" autocomplete="off">
+              </label>
+            </p>
 
             <div class="form-group">
               <label for="name">Full Name</label>
