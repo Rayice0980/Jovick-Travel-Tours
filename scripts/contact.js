@@ -10,7 +10,7 @@ const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const subjectInput = document.getElementById("subject");
 const messageInput = document.getElementById("message");
-const websiteInput = document.getElementById("website");
+const websiteInput = document.getElementById("companyWebsite");
 
 const SUPABASE_FUNCTION_URL =
   "https://rfswkddhhtjvcdwkykwp.supabase.co/functions/v1/contact-form";
@@ -123,6 +123,7 @@ if (contactForm) {
     showFormMessage("Sending your message...", "info");
 
     console.info("[Jovick contact] Submitting to Supabase:", SUPABASE_FUNCTION_URL);
+    console.info("[Jovick contact] Honeypot filled:", Boolean(websiteInput && websiteInput.value.trim()));
 
     fetch(SUPABASE_FUNCTION_URL, {
       method: "POST",
