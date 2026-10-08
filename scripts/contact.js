@@ -10,6 +10,13 @@ const nameInput = document.getElementById("name");
 const emailInput = document.getElementById("email");
 const subjectInput = document.getElementById("subject");
 const messageInput = document.getElementById("message");
+const websiteInput = document.getElementById("website");
+
+const SUPABASE_FUNCTION_URL =
+  "https://rfswkddhhtjvcdwkykwp.supabase.co/functions/v1/contact-form";
+
+const SUPABASE_PUBLISHABLE_KEY =
+  "sb_publishable_fM3wreQX_U3MgG3n7Sv9Fw_45e3MNOk";
 
 const nameError = document.getElementById("nameError");
 const emailError = document.getElementById("emailError");
@@ -110,17 +117,52 @@ if (contactForm) {
       return;
     }
 
-    /*
-      Supabase submission will be connected here through the
-      Jovick Travel & Tours Supabase Edge Function.
+    fetch(SUPABASE_FUNCTION_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "apikey": SUPABASE_PUBLISHABLE_KEY
+      },
+      body: JSON.stringify({
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        subject: subjectInput.value.trim(),
+        message: messageInput.value.trim(),
+        website: websiteInput ? websiteInput.value.trim() : ""
+      })
+    })
+      .then(async function (response) {
+        const data = await response.json().catch(function () {
+          return {};
+        });
 
-      The Netlify Forms submission has intentionally been removed.
-    */
+        if (!response.ok || !data.ok) {
+          throw new Error(
+            data.error || "Unable to send your message."
+          );
+        }
 
-    showFormMessage(
-      "Our contact service is being connected. Please try again shortly or contact us on WhatsApp.",
-      "error"
-    );
+        showFormMessage(
+          "Thank you! Your message has been sent successfully. We will get back to you as soon as possible.",
+          "success"
+        );
+
+        contactForm.reset();
+        clearAllErrors();
+      })
+      .catch(function (error) {
+        console.error(error);
+
+        showFormMessage(
+          "Sorry, we could not send your message right now. Please try again or contact us on WhatsApp.",
+          "error"
+        );
+      })
+      .finally(function () {
+        contactSubmitButton.disabled = false;
+        contactSubmitButton.innerHTML =
+          '<i class="fa-solid fa-paper-plane"></i> Send Message';
+      });
   });
 }
 
