@@ -687,6 +687,27 @@ const cardPaymentDetails =
 const bankTransferDetails =
   document.getElementById("bankTransferDetails");
 
+const copyBankAccountButton =
+  document.getElementById("copyBankAccountButton");
+
+const bankCopyMessage =
+  document.getElementById("bankCopyMessage");
+
+copyBankAccountButton.addEventListener("click", async function () {
+  const accountNumber =
+    document.getElementById("bankAccountNumber").textContent.trim();
+
+  try {
+    await navigator.clipboard.writeText(accountNumber);
+    bankCopyMessage.textContent = "Account number copied.";
+    bankCopyMessage.className = "payment-copy-message success";
+  } catch (error) {
+    bankCopyMessage.textContent =
+      "Please copy the account number manually: " + accountNumber;
+    bankCopyMessage.className = "payment-copy-message";
+  }
+});
+
 const paymentMethodInputs =
   document.querySelectorAll('input[name="paymentMethod"]');
 
