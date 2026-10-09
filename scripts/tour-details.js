@@ -671,8 +671,6 @@ tourBookingForm.addEventListener(
 );
 
 
-/* ---------- BOOKING ---------- */
-
 /* ---------- PAYMENT ---------- */
 
 const makePaymentButton =
@@ -681,76 +679,28 @@ const makePaymentButton =
 const paymentMessage =
   document.getElementById("paymentMessage");
 
-const cardPaymentDetails =
-  document.getElementById("cardPaymentDetails");
-
-const bankTransferDetails =
-  document.getElementById("bankTransferDetails");
-
-const copyBankAccountButton =
-  document.getElementById("copyBankAccountButton");
-
-const bankCopyMessage =
-  document.getElementById("bankCopyMessage");
-
-copyBankAccountButton.addEventListener("click", async function () {
-  const accountNumber =
-    document.getElementById("bankAccountNumber").textContent.trim();
-
-  try {
-    await navigator.clipboard.writeText(accountNumber);
-    bankCopyMessage.textContent = "Account number copied.";
-    bankCopyMessage.className = "payment-copy-message success";
-  } catch (error) {
-    bankCopyMessage.textContent =
-      "Please copy the account number manually: " + accountNumber;
-    bankCopyMessage.className = "payment-copy-message";
-  }
-});
-
-const paymentMethodInputs =
-  document.querySelectorAll('input[name="paymentMethod"]');
-
-function updatePaymentMethodDetails() {
-  const selectedPayment =
-    document.querySelector('input[name="paymentMethod"]:checked');
-
-  cardPaymentDetails.hidden =
-    !selectedPayment || selectedPayment.value !== "card";
-
-  bankTransferDetails.hidden =
-    !selectedPayment || selectedPayment.value !== "bank";
-
-  paymentMessage.textContent = "";
-  paymentMessage.className = "payment-message";
-}
-
-paymentMethodInputs.forEach(function (input) {
-  input.addEventListener("change", updatePaymentMethodDetails);
-});
-
 makePaymentButton.addEventListener("click", function () {
   const selectedPayment =
     document.querySelector('input[name="paymentMethod"]:checked');
 
   if (!selectedPayment) {
-    paymentMessage.textContent = "Please select Card Payment or Bank Transfer.";
+    paymentMessage.textContent =
+      "Please select Card Payment or Bank Transfer.";
     paymentMessage.className = "payment-message error";
     return;
   }
 
-  updatePaymentMethodDetails();
+  const booking = JSON.parse(
+    localStorage.getItem("tourBooking") || "null"
+  );
 
-  if (selectedPayment.value === "card") {
+  if (!booking) {
     paymentMessage.textContent =
-      "Paystack checkout is not active yet. Your final quote and secure payment setup must be confirmed before you can pay by card.";
-    paymentMessage.className = "payment-message notice";
-    cardPaymentDetails.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      "Your booking details could not be found. Please submit your booking again.";
+    paymentMessage.className = "payment-message error";
     return;
   }
 
-  paymentMessage.textContent =
-    "Bank transfer selected. Please wait for our team to confirm the final amount and provide the official account details before transferring.";
-  paymentMessage.className = "payment-message notice";
-  bankTransferDetails.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  localStorage.setItem("selectedPaymentMethod", selectedPayment.value);
+  window.location.href = "payment.html";
 });
