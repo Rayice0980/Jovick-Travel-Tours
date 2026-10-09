@@ -545,3 +545,5 @@
 .price-estimate-note{display:block;margin-top:8px;color:#64748b;font-size:.82rem;line-height:1.5;max-width:32rem}.payment-option-disabled{opacity:.62;cursor:not-allowed}.payment-option-disabled small{display:inline-block;margin-left:6px;font-size:.75rem;font-weight:700;color:#64748b}.payment-option-disabled input{cursor:not-allowed}
 
 .booking-policy-consent{display:flex;align-items:flex-start;gap:10px;margin:16px 0;font-size:.85rem;line-height:1.5;color:#475569}.booking-policy-consent input{flex:0 0 auto;margin-top:4px;accent-color:#0878c9}.booking-policy-consent label{display:block}.booking-policy-consent a{color:#0878c9;text-decoration:underline;text-underline-offset:2px}
+
+.package-clarification-note{margin:16px 0;padding:14px 16px;border-left:4px solid #0878c9;border-radius:8px;background:#f1f7fc;color:#536477;font-size:.88rem;line-height:1.65}
