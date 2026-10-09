@@ -965,7 +965,7 @@ const viewTourButton =
 if (destination) {
 
   document.title =
-    `Jvk Travel | ${destination.name}`;
+    `${destination.name} | Jovick Travel & Tours`;
 
 
   destinationHero.style
