@@ -426,3 +426,58 @@
 
   font-weight: bold;
 }
+
+/* ---------- PAYMENT DETAILS ---------- */
+
+.payment-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #d9e5f3;
+  border-left: 4px solid #0066cc;
+  border-radius: 8px;
+  background: #f7faff;
+  text-align: left;
+}
+
+.payment-details[hidden] {
+  display: none;
+}
+
+.payment-details h3 {
+  margin: 0 0 12px;
+  color: #17324d;
+  font-size: 19px;
+}
+
+.payment-details p {
+  margin: 10px 0;
+  line-height: 1.65;
+  color: #405166;
+}
+
+.payment-details .payment-notice {
+  padding: 12px;
+  border-radius: 6px;
+  background: #fff5df;
+  color: #76520b;
+  font-size: 14px;
+}
+
+.payment-message.error {
+  color: #b42318;
+}
+
+.payment-message.notice {
+  color: #334155;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .payment-methods {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-details {
+    padding: 16px;
+  }
+}
