@@ -481,3 +481,61 @@
     padding: 16px;
   }
 }
+
+
+.bank-account-card {
+  margin: 18px 0;
+  padding: 16px;
+  border: 1px solid #d9e5f3;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.bank-account-card p {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid #edf0f4;
+}
+
+.bank-account-card p:last-child {
+  border-bottom: 0;
+}
+
+.bank-account-card p span {
+  min-width: 105px;
+  color: #5b6675;
+  font-size: 14px;
+}
+
+.bank-account-card p strong {
+  overflow-wrap: anywhere;
+  color: #172b4d;
+}
+
+.copy-account-button {
+  padding: 8px 12px;
+  border: 1px solid #0066cc;
+  border-radius: 6px;
+  background: #fff;
+  color: #0052a3;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+
+.copy-account-button:hover {
+  background: #f0f7ff;
+}
+
+.payment-copy-message {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.payment-copy-message.success {
+  color: #18794e;
+}
