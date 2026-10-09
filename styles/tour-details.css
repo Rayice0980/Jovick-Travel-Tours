@@ -547,3 +547,70 @@
 .booking-policy-consent{display:flex;align-items:flex-start;gap:10px;margin:16px 0;font-size:.85rem;line-height:1.5;color:#475569}.booking-policy-consent input{flex:0 0 auto;margin-top:4px;accent-color:#0878c9}.booking-policy-consent label{display:block}.booking-policy-consent a{color:#0878c9;text-decoration:underline;text-underline-offset:2px}
 
 .package-clarification-note{margin:16px 0;padding:14px 16px;border-left:4px solid #0878c9;border-radius:8px;background:#f1f7fc;color:#536477;font-size:.88rem;line-height:1.65}
+
+/* ---------- BOOKING TERMS & PRIVACY CONSENT ---------- */
+#tourBookingForm .booking-policy-consent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  margin: 16px 0 8px;
+  padding: 12px 14px;
+  border: 1px solid #dbe5ef;
+  border-radius: 8px;
+  background: #f7faff;
+  box-sizing: border-box;
+}
+
+#tourBookingForm .booking-policy-consent input[type="checkbox"] {
+  flex: 0 0 17px;
+  width: 17px;
+  min-width: 17px;
+  height: 17px;
+  margin: 3px 0 0;
+  padding: 0;
+  border: 0;
+  border-radius: 3px;
+  accent-color: #0878c9;
+  cursor: pointer;
+}
+
+#tourBookingForm .booking-policy-consent label {
+  flex: 1 1 auto;
+  min-width: 0;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+#tourBookingForm .booking-policy-consent a {
+  color: #075db5;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+#tourBookingForm .booking-policy-consent a:hover {
+  color: #064b91;
+}
+
+#tourBookingForm .booking-policy-consent input:focus-visible {
+  outline: 2px solid #075db5;
+  outline-offset: 3px;
+}
+
+@media (max-width: 480px) {
+  #tourBookingForm .booking-policy-consent {
+    gap: 9px;
+    padding: 11px;
+  }
+
+  #tourBookingForm .booking-policy-consent label {
+    font-size: 13px;
+  }
+}
+
