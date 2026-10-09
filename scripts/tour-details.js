@@ -567,7 +567,7 @@ tourBookingForm.addEventListener(
       "• Full name: " + customerName,
       "• Email address: " + customerEmail,
       "• Phone number: " + customerPhone
-    ].join("\\n");
+    ].join("\n");
 
     const submitButton =
       tourBookingForm.querySelector('button[type="submit"]');
