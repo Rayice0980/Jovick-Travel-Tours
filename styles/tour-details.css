@@ -539,3 +539,7 @@
 .payment-copy-message.success {
   color: #18794e;
 }
+
+
+/* Booking clarity and accessible payment states */
+.price-estimate-note{display:block;margin-top:8px;color:#64748b;font-size:.82rem;line-height:1.5;max-width:32rem}.payment-option-disabled{opacity:.62;cursor:not-allowed}.payment-option-disabled small{display:inline-block;margin-left:6px;font-size:.75rem;font-weight:700;color:#64748b}.payment-option-disabled input{cursor:not-allowed}
