@@ -380,14 +380,37 @@
           >
             <h3>Bank Transfer Instructions</h3>
             <p>
-              Our team will confirm your final package price and provide the
-              verified bank name, account name, and account number before you
-              transfer money.
+              Please confirm your final booking amount with our team before
+              making a transfer to the account below.
             </p>
+
+            <div class="bank-account-card">
+              <p>
+                <span>Bank name</span>
+                <strong>Easy by Zenith</strong>
+              </p>
+              <p>
+                <span>Account name</span>
+                <strong>Josiah Johnpaul Chijeoke</strong>
+              </p>
+              <p>
+                <span>Account number</span>
+                <strong id="bankAccountNumber">9158950008</strong>
+                <button
+                  id="copyBankAccountButton"
+                  class="copy-account-button"
+                  type="button"
+                >Copy account number</button>
+              </p>
+            </div>
+
             <p class="payment-notice">
-              Please do not transfer funds until you have received the final
-              amount and official account details from Jovick Travel &amp; Tours.
+              Before transferring, verify that the account name and number
+              match the details confirmed by Jovick Travel &amp; Tours. Keep
+              your transaction receipt for reference. Your booking is not
+              marked as paid until the transfer has been verified.
             </p>
+            <p id="bankCopyMessage" class="payment-copy-message" aria-live="polite"></p>
           </div>
 
         </div>
