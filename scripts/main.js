@@ -4,7 +4,10 @@ const pages = [
   "tours.html",
   "about.html",
   "faq.html",
-  "contact.html"
+  "contact.html",
+  "privacy-policy.html",
+  "terms.html",
+  "cancellation-refunds.html"
 ];
 
 const pageNames = {
@@ -13,7 +16,10 @@ const pageNames = {
   "tours.html": "Tours",
   "about.html": "About Us",
   "faq.html": "FAQ",
-  "contact.html": "Contact"
+  "contact.html": "Contact",
+  "privacy-policy.html": "Privacy Policy",
+  "terms.html": "Terms & Conditions",
+  "cancellation-refunds.html": "Cancellation & Refunds"
 };
 
 async function loadComponent(elementId, file) {
@@ -60,6 +66,7 @@ function initializeSiteInteractions() {
 
   function closeMenu() {
     navBar.classList.remove("show-menu");
+    menuButton.setAttribute("aria-expanded", "false");
 
     const menuIcon = menuButton.querySelector("i");
 
