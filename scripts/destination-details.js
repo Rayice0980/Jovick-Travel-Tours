@@ -897,6 +897,356 @@ const destinationData = {
 
   }
 
+  "abia": {
+    name: "Abia State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Abia State.",
+    image: "images/destination-placeholder.svg",
+    description: "Abia State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Abia State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "adamawa": {
+    name: "Adamawa State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Adamawa State.",
+    image: "images/destination-placeholder.svg",
+    description: "Adamawa State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Adamawa State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "akwa-ibom": {
+    name: "Akwa Ibom State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Akwa Ibom State.",
+    image: "images/destination-placeholder.svg",
+    description: "Akwa Ibom State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Akwa Ibom State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "anambra": {
+    name: "Anambra State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Anambra State.",
+    image: "images/destination-placeholder.svg",
+    description: "Anambra State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Anambra State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "bauchi": {
+    name: "Bauchi State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Bauchi State.",
+    image: "images/destination-placeholder.svg",
+    description: "Bauchi State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Bauchi State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "bayelsa": {
+    name: "Bayelsa State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Bayelsa State.",
+    image: "images/destination-placeholder.svg",
+    description: "Bayelsa State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Bayelsa State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "benue": {
+    name: "Benue State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Benue State.",
+    image: "images/destination-placeholder.svg",
+    description: "Benue State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Benue State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "borno": {
+    name: "Borno State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Borno State.",
+    image: "images/destination-placeholder.svg",
+    description: "Borno State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Borno State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "cross-river": {
+    name: "Cross River State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Cross River State.",
+    image: "images/destination-placeholder.svg",
+    description: "Cross River State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Cross River State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "delta": {
+    name: "Delta State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Delta State.",
+    image: "images/destination-placeholder.svg",
+    description: "Delta State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Delta State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "ebonyi": {
+    name: "Ebonyi State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Ebonyi State.",
+    image: "images/destination-placeholder.svg",
+    description: "Ebonyi State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Ebonyi State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "edo": {
+    name: "Edo State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Edo State.",
+    image: "images/destination-placeholder.svg",
+    description: "Edo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Edo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "ekiti": {
+    name: "Ekiti State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Ekiti State.",
+    image: "images/destination-placeholder.svg",
+    description: "Ekiti State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Ekiti State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "enugu": {
+    name: "Enugu State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Enugu State.",
+    image: "images/destination-placeholder.svg",
+    description: "Enugu State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Enugu State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "gombe": {
+    name: "Gombe State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Gombe State.",
+    image: "images/destination-placeholder.svg",
+    description: "Gombe State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Gombe State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "imo": {
+    name: "Imo State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Imo State.",
+    image: "images/destination-placeholder.svg",
+    description: "Imo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Imo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "jigawa": {
+    name: "Jigawa State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Jigawa State.",
+    image: "images/destination-placeholder.svg",
+    description: "Jigawa State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Jigawa State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "kaduna": {
+    name: "Kaduna State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Kaduna State.",
+    image: "images/destination-placeholder.svg",
+    description: "Kaduna State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Kaduna State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "kano": {
+    name: "Kano State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Kano State.",
+    image: "images/destination-placeholder.svg",
+    description: "Kano State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Kano State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "katsina": {
+    name: "Katsina State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Katsina State.",
+    image: "images/destination-placeholder.svg",
+    description: "Katsina State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Katsina State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "kebbi": {
+    name: "Kebbi State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Kebbi State.",
+    image: "images/destination-placeholder.svg",
+    description: "Kebbi State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Kebbi State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "kogi": {
+    name: "Kogi State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Kogi State.",
+    image: "images/destination-placeholder.svg",
+    description: "Kogi State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Kogi State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "kwara": {
+    name: "Kwara State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Kwara State.",
+    image: "images/destination-placeholder.svg",
+    description: "Kwara State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Kwara State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "nasarawa": {
+    name: "Nasarawa State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Nasarawa State.",
+    image: "images/destination-placeholder.svg",
+    description: "Nasarawa State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Nasarawa State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "niger": {
+    name: "Niger State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Niger State.",
+    image: "images/destination-placeholder.svg",
+    description: "Niger State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Niger State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "ogun": {
+    name: "Ogun State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Ogun State.",
+    image: "images/destination-placeholder.svg",
+    description: "Ogun State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Ogun State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "ondo": {
+    name: "Ondo State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Ondo State.",
+    image: "images/destination-placeholder.svg",
+    description: "Ondo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Ondo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "osun": {
+    name: "Osun State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Osun State.",
+    image: "images/destination-placeholder.svg",
+    description: "Osun State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Osun State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "oyo": {
+    name: "Oyo State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Oyo State.",
+    image: "images/destination-placeholder.svg",
+    description: "Oyo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Oyo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "plateau": {
+    name: "Plateau State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Plateau State.",
+    image: "images/destination-placeholder.svg",
+    description: "Plateau State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Plateau State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "rivers": {
+    name: "Rivers State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Rivers State.",
+    image: "images/destination-placeholder.svg",
+    description: "Rivers State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Rivers State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "sokoto": {
+    name: "Sokoto State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Sokoto State.",
+    image: "images/destination-placeholder.svg",
+    description: "Sokoto State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Sokoto State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "taraba": {
+    name: "Taraba State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Taraba State.",
+    image: "images/destination-placeholder.svg",
+    description: "Taraba State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Taraba State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "yobe": {
+    name: "Yobe State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Yobe State.",
+    image: "images/destination-placeholder.svg",
+    description: "Yobe State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Yobe State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  },
+
+  "zamfara": {
+    name: "Zamfara State",
+    country: "Nigeria",
+    tagline: "Discover the culture, communities and landscapes of Zamfara State.",
+    image: "images/destination-placeholder.svg",
+    description: "Zamfara State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience: "Experience the distinctive local culture, everyday life and regional character of Zamfara State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: []
+  }
+
 };
 
 
@@ -1002,6 +1352,12 @@ if (destination) {
      PLACES TO VISIT
      ================================= */
 
+  const placesSection = document.querySelector(".places-to-visit");
+
+  if (!destination.places.length) {
+    placesSection.hidden = true;
+  }
+
   destination.places.forEach(function (place) {
 
     const placeCard =
@@ -1042,7 +1398,11 @@ if (destination) {
      TOUR BUTTON
      ================================= */
 
-  viewTourButton.href =
-    `tour-details.html?tour=${destination.tour}`;
+  if (destination.tour) {
+    viewTourButton.href = `tour-details.html?tour=${destination.tour}`;
+  } else {
+    viewTourButton.href = "tours.html";
+    viewTourButton.innerHTML = 'Explore Available Tours <i class="fa-solid fa-arrow-right"></i>';
+  }
 
 }
