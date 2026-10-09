@@ -170,6 +170,21 @@
             >
 
 
+            <label for="flightPreference">
+              Flight Preference
+            </label>
+
+            <select id="flightPreference" required>
+              <option value="">Choose a flight option</option>
+              <option value="return">Return flight (outbound and return)</option>
+              <option value="one-way">One-way flight (outbound only)</option>
+            </select>
+
+            <p class="flight-note">
+              If you choose a one-way flight, you will arrange and pay for your return journey yourself. Final package pricing will be confirmed by our team based on your flight preference.
+            </p>
+
+
             <label for="numberOfTravelers">
               Number of Travelers
             </label>
@@ -251,6 +266,11 @@
           <p>
             <strong>Travelers:</strong>
             <span id="summaryTravelers"></span>
+          </p>
+
+          <p>
+            <strong>Flight Preference:</strong>
+            <span id="summaryFlight"></span>
           </p>
 
           <p>
