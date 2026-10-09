@@ -147,7 +147,7 @@
 
   padding: 9px 16px;
 
-  background-color: #299b83;
+  background-color: #075db5;
   color: white;
 
   border-radius: 20px;
@@ -162,7 +162,7 @@
 }
 
 .view-tour:hover {
-  background-color: #0066cc;
+  background-color: #064b91;
 
   transform: translateX(2px);
 }
