@@ -66,7 +66,6 @@ function initializeSiteInteractions() {
 
   function closeMenu() {
     navBar.classList.remove("show-menu");
-    menuButton.setAttribute("aria-expanded", "false");
 
     const menuIcon = menuButton.querySelector("i");
 
