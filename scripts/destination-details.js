@@ -968,11 +968,10 @@ if (destination) {
     `${destination.name} | Jovick Travel & Tours`;
 
 
-  destinationHero.style
-    .setProperty(
-      "--destination-image",
-      `url("${destination.image}")`
-    );
+  // Use the exact destination image shown on the Destinations page
+  // as the background of this page's first (hero) section.
+  destinationHero.style.backgroundImage =
+    `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("${destination.image}")`;
 
 
   destinationName.textContent =
