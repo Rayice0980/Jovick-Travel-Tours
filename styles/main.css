@@ -99,28 +99,47 @@ a:hover{
 
 
 
-/* Shared back navigation for pages outside the main header navigation */
+/* Floating circular back button: overlays content without moving the hero */
 .page-back-wrap {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 30px;
+  display: contents;
 }
 .page-back-link {
+  position: fixed;
+  top: 96px;
+  left: 18px;
+  z-index: 1200;
   display: inline-flex;
   align-items: center;
-  gap: 9px;
-  margin: 22px 0 0;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 2px solid #075db5;
+  border-radius: 50%;
+  background: #fff;
   color: #075db5;
-  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .22);
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 1;
   text-decoration: none;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
 }
 .page-back-link:hover {
-  color: #034785;
-  transform: translateX(-2px);
+  background: #075db5;
+  color: #fff;
+  transform: scale(1.06);
 }
 .page-back-link:focus-visible {
-  outline: 2px solid #075db5;
-  outline-offset: 4px;
-  border-radius: 3px;
+  outline: 3px solid #f3b51b;
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .page-back-link {
+    top: 84px;
+    left: 12px;
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
 }
