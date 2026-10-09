@@ -555,19 +555,19 @@ tourBookingForm.addEventListener(
       "A new tour booking request has been submitted through the JOVICK Travel & Tours website.",
       "",
       "TOUR DETAILS",
-      "Tour: " + tour.name,
-      "Destination: " + tour.location,
-      "Duration: " + tour.duration,
-      "Price per person: " + formatPrice(getBasePrice()),
-      "Number of travelers: " + numberOfTravelers,
-      "Estimated total: " + totalPriceText,
-      "Preferred travel date: " + travelDate,
+      "• Tour: " + tour.name,
+      "• Destination: " + tour.location,
+      "• Duration: " + tour.duration,
+      "• Price per person: " + formatPrice(getBasePrice()),
+      "• Number of travelers: " + numberOfTravelers,
+      "• Estimated total: " + totalPriceText,
+      "• Preferred travel date: " + travelDate,
       "",
       "CUSTOMER DETAILS",
-      "Full name: " + customerName,
-      "Email address: " + customerEmail,
-      "Phone number: " + customerPhone
-    ].join("\n");
+      "• Full name: " + customerName,
+      "• Email address: " + customerEmail,
+      "• Phone number: " + customerPhone
+    ].join("\\n");
 
     const submitButton =
       tourBookingForm.querySelector('button[type="submit"]');
