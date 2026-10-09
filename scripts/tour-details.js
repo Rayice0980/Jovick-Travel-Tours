@@ -21,7 +21,7 @@ const tourData = {
   lagos: {
     name: "Lagos City Experience",
     location: "Lagos, Nigeria",
-    image: "images/Lagos.jpg",
+    image: "images/Lagos 1.jpg",
     duration: "3 Days & Nights",
     price: "₦350,000",
     description:
@@ -129,7 +129,7 @@ const tourData = {
   accra: {
     name: "Accra Discovery",
     location: "Accra, Ghana",
-    image: "images/Ghana.jpg",
+    image: "images/Ghana 1.jpg",
     duration: "4 Days & Nights",
     price: "₦850,000",
     description:
@@ -147,7 +147,7 @@ const tourData = {
   cairo: {
     name: "Cairo Heritage Tour",
     location: "Cairo, Egypt",
-    image: "images/Cairo.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "5 Days & Nights",
     price: "₦1,800,000",
     description:
@@ -165,7 +165,7 @@ const tourData = {
   nairobi: {
     name: "Nairobi Adventure",
     location: "Nairobi, Kenya",
-    image: "images/Nairobi.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "5 Days & Nights",
     price: "₦1,900,000",
     description:
@@ -183,7 +183,7 @@ const tourData = {
   rome: {
     name: "Rome Historical Tour",
     location: "Rome, Italy",
-    image: "images/Rome.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "5 Days & Nights",
     price: "₦3,500,000",
     description:
@@ -201,7 +201,7 @@ const tourData = {
   amsterdam: {
     name: "Amsterdam Escape",
     location: "Amsterdam, Netherlands",
-    image: "images/Amsterdam.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "5 Days & Nights",
     price: "₦3,700,000",
     description:
@@ -219,7 +219,7 @@ const tourData = {
   barcelona: {
     name: "Barcelona Experience",
     location: "Barcelona, Spain",
-    image: "images/Barcelona.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "5 Days & Nights",
     price: "₦3,400,000",
     description:
@@ -237,7 +237,7 @@ const tourData = {
   "abu-dhabi": {
     name: "Abu Dhabi Experience",
     location: "Abu Dhabi, United Arab Emirates",
-    image: "images/Abu Dhabi.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "5 Days & Nights",
     price: "₦2,200,000",
     description:
@@ -255,7 +255,7 @@ const tourData = {
   riyadh: {
     name: "Riyadh Discovery",
     location: "Riyadh, Saudi Arabia",
-    image: "images/Riyadh.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "5 Days & Nights",
     price: "₦2,100,000",
     description:
@@ -273,7 +273,7 @@ const tourData = {
   tokyo: {
     name: "Tokyo Adventure",
     location: "Tokyo, Japan",
-    image: "images/Tokyo.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "7 Days & Nights",
     price: "₦4,500,000",
     description:
@@ -291,7 +291,7 @@ const tourData = {
   singapore: {
     name: "Singapore Experience",
     location: "Singapore",
-    image: "images/Singapore.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "6 Days & Nights",
     price: "₦2,700,000",
     description:
@@ -309,7 +309,7 @@ const tourData = {
   bangkok: {
     name: "Bangkok Discovery",
     location: "Bangkok, Thailand",
-    image: "images/Bangkok.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "6 Days & Nights",
     price: "₦2,400,000",
     description:
@@ -327,7 +327,7 @@ const tourData = {
   seoul: {
     name: "Seoul Experience",
     location: "Seoul, South Korea",
-    image: "images/Seoul.jpg",
+    image: "images/destination-placeholder.svg",
     duration: "6 Days & Nights",
     price: "₦3,800,000",
     description:
