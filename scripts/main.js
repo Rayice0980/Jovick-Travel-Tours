@@ -2,6 +2,8 @@ const pages = [
   "index.html",
   "destinations.html",
   "tours.html",
+  "about.html",
+  "faq.html",
   "contact.html"
 ];
 
@@ -9,6 +11,8 @@ const pageNames = {
   "index.html": "Home",
   "destinations.html": "Destinations",
   "tours.html": "Tours",
+  "about.html": "About Us",
+  "faq.html": "FAQ",
   "contact.html": "Contact"
 };
 
