@@ -523,6 +523,8 @@ tourBookingForm.addEventListener(
       document.getElementById("customerPhone").value.trim();
     const travelDate =
       document.getElementById("travelDate").value;
+    const flightPreference =
+      document.getElementById("flightPreference").value;
     const numberOfTravelers =
       Number(numberOfTravelersInput.value);
 
@@ -537,6 +539,7 @@ tourBookingForm.addEventListener(
       !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customerEmail) ||
       customerPhone.length < 5 ||
       !travelDate ||
+      !["return", "one-way"].includes(flightPreference) ||
       !Number.isInteger(numberOfTravelers) ||
       numberOfTravelers < 1
     ) {
@@ -562,6 +565,9 @@ tourBookingForm.addEventListener(
       "Number of travelers: " + numberOfTravelers,
       "Estimated total: " + totalPriceText,
       "Preferred travel date: " + travelDate,
+      "Flight preference: " + (flightPreference === "return"
+        ? "Return flight (outbound and return)"
+        : "One-way flight (outbound only; customer will arrange return journey)"),
       "",
       "CUSTOMER DETAILS",
       "Full name: " + customerName,
@@ -614,6 +620,7 @@ tourBookingForm.addEventListener(
         customerEmail: customerEmail,
         customerPhone: customerPhone,
         travelDate: travelDate,
+        flightPreference: flightPreference,
         numberOfTravelers: numberOfTravelers
       };
 
@@ -632,6 +639,10 @@ tourBookingForm.addEventListener(
         travelDate;
       document.getElementById("summaryTravelers").textContent =
         numberOfTravelers;
+      document.getElementById("summaryFlight").textContent =
+        flightPreference === "return"
+          ? "Return flight (outbound and return)"
+          : "One-way flight (return journey arranged by traveler)";
       document.getElementById("summaryPrice").textContent =
         totalPriceText;
 
