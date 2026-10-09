@@ -437,7 +437,7 @@ const destinationData = {
     tagline:
       "Experience wildlife and modern African city life.",
 
-    image: "images/Nairobi.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Nairobi combines modern city life with access to wildlife, nature and some of Kenya's most interesting attractions.",
@@ -451,21 +451,21 @@ const destinationData = {
 
       {
         name: "Nairobi National Park",
-        image: "images/Nairobi.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A unique wildlife destination located close to the city."
       },
 
       {
         name: "Giraffe Centre",
-        image: "images/Nairobi.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A popular conservation and wildlife attraction."
       },
 
       {
         name: "Karen Blixen Museum",
-        image: "images/Nairobi.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A cultural attraction connected with Kenya's history."
       }
@@ -484,7 +484,7 @@ const destinationData = {
     tagline:
       "Walk through centuries of history.",
 
-    image: "images/Rome.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Rome is an extraordinary destination filled with ancient monuments, beautiful architecture, art, food and Italian culture.",
@@ -498,21 +498,21 @@ const destinationData = {
 
       {
         name: "Colosseum",
-        image: "images/Rome.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "One of Rome's most famous ancient monuments."
       },
 
       {
         name: "Trevi Fountain",
-        image: "images/Rome.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A spectacular and iconic fountain in central Rome."
       },
 
       {
         name: "Vatican City",
-        image: "images/Rome.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A major cultural and religious destination surrounded by extraordinary art and history."
       }
@@ -531,7 +531,7 @@ const destinationData = {
     tagline:
       "Discover canals, culture and charming European streets.",
 
-    image: "images/Amsterdam.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Amsterdam is known for its canals, historic architecture, museums, cycling culture and lively neighborhoods.",
@@ -545,21 +545,21 @@ const destinationData = {
 
       {
         name: "Canal District",
-        image: "images/Amsterdam.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A beautiful network of canals surrounded by historic buildings."
       },
 
       {
         name: "Rijksmuseum",
-        image: "images/Amsterdam.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A major museum showcasing Dutch art and history."
       },
 
       {
         name: "Jordaan",
-        image: "images/Amsterdam.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A charming neighborhood known for streets, cafes and canals."
       }
@@ -578,7 +578,7 @@ const destinationData = {
     tagline:
       "Experience architecture, beaches and Spanish culture.",
 
-    image: "images/Barcelona.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Barcelona offers a combination of Mediterranean beaches, remarkable architecture, food, art and vibrant city life.",
@@ -592,21 +592,21 @@ const destinationData = {
 
       {
         name: "Sagrada Familia",
-        image: "images/Barcelona.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "One of Barcelona's most famous architectural landmarks."
       },
 
       {
         name: "Park Güell",
-        image: "images/Barcelona.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A colorful park featuring remarkable architectural designs."
       },
 
       {
         name: "Barceloneta Beach",
-        image: "images/Barcelona.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A popular beach area close to the city center."
       }
@@ -625,7 +625,7 @@ const destinationData = {
     tagline:
       "Discover culture, luxury and Arabian hospitality.",
 
-    image: "images/Abu Dhabi.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Abu Dhabi is the capital of the United Arab Emirates and offers impressive architecture, cultural attractions, beaches and luxury experiences.",
@@ -639,21 +639,21 @@ const destinationData = {
 
       {
         name: "Sheikh Zayed Grand Mosque",
-        image: "images/Abu Dhabi.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "One of Abu Dhabi's most impressive architectural landmarks."
       },
 
       {
         name: "Louvre Abu Dhabi",
-        image: "images/Abu Dhabi.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A remarkable museum combining art, architecture and culture."
       },
 
       {
         name: "Yas Island",
-        image: "images/Abu Dhabi.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A major entertainment and leisure destination."
       }
@@ -672,7 +672,7 @@ const destinationData = {
     tagline:
       "Discover modern Saudi Arabia and its heritage.",
 
-    image: "images/Riyadh.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Riyadh is Saudi Arabia's capital and a growing destination known for modern development, cultural attractions and traditional heritage.",
@@ -686,21 +686,21 @@ const destinationData = {
 
       {
         name: "Kingdom Centre",
-        image: "images/Riyadh.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "One of Riyadh's most recognizable modern landmarks."
       },
 
       {
         name: "Diriyah",
-        image: "images/Riyadh.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A historic area offering insight into Saudi heritage."
       },
 
       {
         name: "Edge of the World",
-        image: "images/Riyadh.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A dramatic natural landscape outside Riyadh."
       }
@@ -719,7 +719,7 @@ const destinationData = {
     tagline:
       "Experience technology, tradition and Japanese culture.",
 
-    image: "images/Tokyo.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Tokyo is a fascinating combination of modern technology, traditional culture, food, shopping and entertainment.",
@@ -733,21 +733,21 @@ const destinationData = {
 
       {
         name: "Shibuya",
-        image: "images/Tokyo.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "One of Tokyo's busiest and most recognizable districts."
       },
 
       {
         name: "Tokyo Skytree",
-        image: "images/Tokyo.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A famous observation and communications tower."
       },
 
       {
         name: "Senso-ji Temple",
-        image: "images/Tokyo.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A historic temple and important cultural attraction."
       }
@@ -766,7 +766,7 @@ const destinationData = {
     tagline:
       "Explore a clean, modern and multicultural city.",
 
-    image: "images/Singapore.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Singapore is known for its modern skyline, gardens, food, shopping and efficient city environment.",
@@ -780,21 +780,21 @@ const destinationData = {
 
       {
         name: "Marina Bay Sands",
-        image: "images/Singapore.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "One of Singapore's most recognizable modern landmarks."
       },
 
       {
         name: "Gardens by the Bay",
-        image: "images/Singapore.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A spectacular modern garden attraction."
       },
 
       {
         name: "Sentosa Island",
-        image: "images/Singapore.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A popular leisure and entertainment destination."
       }
@@ -813,7 +813,7 @@ const destinationData = {
     tagline:
       "Discover temples, food, markets and vibrant city life.",
 
-    image: "images/Bangkok.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Bangkok is a lively destination known for temples, markets, food, nightlife and Thai culture.",
@@ -827,21 +827,21 @@ const destinationData = {
 
       {
         name: "Grand Palace",
-        image: "images/Bangkok.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "One of Bangkok's most important historic attractions."
       },
 
       {
         name: "Wat Arun",
-        image: "images/Bangkok.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A beautiful temple located along the Chao Phraya River."
       },
 
       {
         name: "Chatuchak Market",
-        image: "images/Bangkok.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A famous market offering a huge variety of goods and local experiences."
       }
@@ -860,7 +860,7 @@ const destinationData = {
     tagline:
       "Experience Korean culture, technology and modern city life.",
 
-    image: "images/Seoul.jpg",
+    image: "images/destination-placeholder.svg",
 
     description:
       "Seoul combines historic palaces and traditional neighborhoods with modern architecture, technology, shopping and entertainment.",
@@ -874,21 +874,21 @@ const destinationData = {
 
       {
         name: "Gyeongbokgung Palace",
-        image: "images/Seoul.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A historic royal palace and major cultural attraction."
       },
 
       {
         name: "N Seoul Tower",
-        image: "images/Seoul.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A famous landmark offering panoramic city views."
       },
 
       {
         name: "Myeongdong",
-        image: "images/Seoul.jpg",
+        image: "images/destination-placeholder.svg",
         description:
           "A lively shopping and food district."
       }
