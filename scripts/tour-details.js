@@ -685,7 +685,14 @@ makePaymentButton.addEventListener("click", function () {
 
   if (!selectedPayment) {
     paymentMessage.textContent =
-      "Please select Card Payment or Bank Transfer.";
+      "Bank transfer is currently the only available payment method. Please select Bank Transfer.";
+    paymentMessage.className = "payment-message error";
+    return;
+  }
+
+  if (selectedPayment.value !== "bank") {
+    paymentMessage.textContent =
+      "Card checkout is not available yet. Please choose Bank Transfer.";
     paymentMessage.className = "payment-message error";
     return;
   }
