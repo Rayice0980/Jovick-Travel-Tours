@@ -976,3 +976,61 @@
     width: 100%;
   }
 }
+
+/* ---------- HEADER NAVIGATION: SIX-LINK LAYOUT ---------- */
+@media (min-width: 769px) and (max-width: 1100px) {
+  .page-header {
+    gap: 14px;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .page-header .company-name {
+    font-size: 14px;
+    letter-spacing: .5px;
+  }
+
+  .nav-bar {
+    gap: clamp(10px, 1.4vw, 16px);
+  }
+
+  .nav-bar a {
+    font-size: 12px;
+  }
+}
+
+/* Keep the mobile menu wide enough for every navigation label.
+   This overrides older duplicate dropdown rules earlier in this file. */
+@media (max-width: 768px) {
+  .nav-bar.show-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 20px;
+    width: min(280px, calc(100vw - 40px));
+    padding: 10px;
+    gap: 3px;
+    background: #fff;
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+    animation: slideDown 0.25s ease;
+  }
+
+  .nav-bar.show-menu a {
+    display: block;
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 9px;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .nav-bar.show-menu a:hover,
+  .nav-bar.show-menu a.active {
+    color: #0066cc;
+    background: #eef6ff;
+  }
+}
