@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Complete your Jovick Travel & Tours booking payment instructions.">
+  <title>Complete Payment - Jovick Travel & Tours</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/header.css">
+  <link rel="stylesheet" href="styles/footer.css">
+  <link rel="stylesheet" href="styles/payment.css">
+  <link rel="stylesheet" href="styles/mediaquery.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="payment-page">
+    <section class="payment-card">
+      <a class="payment-back-link" href="tours.html"><i class="fa-solid fa-arrow-left"></i> Back to tours</a>
+      <div class="payment-page-icon"><i class="fa-solid fa-shield-halved"></i></div>
+      <h1>Complete Your Payment</h1>
+      <p class="payment-intro">Review your booking and follow the instructions for your selected payment method.</p>
+
+      <div id="paymentBookingSummary" class="payment-booking-summary" aria-live="polite">
+        <p>Loading your booking details…</p>
+      </div>
+
+      <section id="bankPaymentPanel" class="payment-instructions" hidden>
+        <h2><i class="fa-solid fa-building-columns"></i> Bank Transfer</h2>
+        <p>Transfer only after confirming the final amount with Jovick Travel &amp; Tours.</p>
+        <div class="payment-bank-details">
+          <div><span>Bank name</span><strong>Easy by Zenith</strong></div>
+          <div><span>Account name</span><strong>Josiah Johnpaul Chijeoke</strong></div>
+          <div class="account-number-row"><span>Account number</span><strong id="paymentAccountNumber">9158955008</strong><button type="button" id="copyPaymentAccount">Copy number</button></div>
+        </div>
+        <p id="paymentCopyMessage" class="payment-status-message" aria-live="polite"></p>
+        <p class="payment-warning"><i class="fa-solid fa-triangle-exclamation"></i> Verify the account name, account number and final amount before transferring. Keep your receipt. Clicking the button below only notifies us that you say you have paid; it does not automatically verify the transfer.</p>
+        <button type="button" id="paymentMadeButton" class="payment-primary-button">I have made a payment</button>
+      </section>
+
+      <section id="cardPaymentPanel" class="payment-instructions" hidden>
+        <h2><i class="fa-solid fa-credit-card"></i> Card Payment</h2>
+        <p>Secure Paystack card checkout has not been activated on this website yet.</p>
+        <p class="payment-warning">Please do not enter or send your card details on this website. Contact Jovick Travel &amp; Tours to confirm when card payment is available. The “I have made a payment” confirmation is available for bank transfers only until card checkout is connected.</p>
+      </section>
+
+      <p id="paymentPageMessage" class="payment-status-message" aria-live="polite"></p>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/payment.js"></script>
+</body>
+</html>
