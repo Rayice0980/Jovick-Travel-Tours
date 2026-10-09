@@ -504,188 +504,163 @@ if (tour) {
 
 /* ---------- BOOKING ---------- */
 
+const SUPABASE_FUNCTION_URL =
+  "https://rfswkddhhtjvcdwkykwp.supabase.co/functions/v1/contact-form";
+
+const SUPABASE_PUBLISHABLE_KEY =
+  "sb_publishable_fM3wreQX_U3MgG3n7Sv9Fw_45e3MNOk";
+
 tourBookingForm.addEventListener(
   "submit",
-  function (event) {
-
+  async function (event) {
     event.preventDefault();
 
-
     const customerName =
-      document
-        .getElementById("customerName")
-        .value
-        .trim();
-
-
+      document.getElementById("customerName").value.trim();
     const customerEmail =
-      document
-        .getElementById("customerEmail")
-        .value
-        .trim();
-
-
+      document.getElementById("customerEmail").value.trim();
     const customerPhone =
-      document
-        .getElementById("customerPhone")
-        .value
-        .trim();
-
-
+      document.getElementById("customerPhone").value.trim();
     const travelDate =
-      document
-        .getElementById("travelDate")
-        .value;
-
-
+      document.getElementById("travelDate").value;
     const numberOfTravelers =
-      Number(
-        numberOfTravelersInput.value
-      );
-
+      Number(numberOfTravelersInput.value);
 
     if (!tour) {
-
       bookingMessage.textContent =
-        "Tour information could not be found.";
-
+        "Tour information could not be found. Please return to the tours page and try again.";
       return;
-
     }
-
 
     if (
-      customerName === "" ||
-      customerEmail === "" ||
-      customerPhone === "" ||
-      travelDate === "" ||
-      !numberOfTravelers ||
+      customerName.length < 2 ||
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customerEmail) ||
+      customerPhone.length < 5 ||
+      !travelDate ||
+      !Number.isInteger(numberOfTravelers) ||
       numberOfTravelers < 1
     ) {
-
       bookingMessage.textContent =
-        "Please complete all the required fields.";
-
+        "Please complete all fields with valid details before submitting.";
       return;
-
     }
 
-
     const totalPrice =
-      calculateTotalPrice(
-        numberOfTravelers
-      );
+      calculateTotalPrice(numberOfTravelers);
 
-
-    const booking = {
-
-      tour: tour.name,
-
-      location: tour.location,
-
-      duration: tour.duration,
-
-      pricePerPerson:
-        getBasePrice(),
-
-      totalPrice:
-        totalPrice,
-
-      customerName:
-        customerName,
-
-      customerEmail:
-        customerEmail,
-
-      customerPhone:
-        customerPhone,
-
-      travelDate:
-        travelDate,
-
-      numberOfTravelers:
-        numberOfTravelers
-
-    };
-
-
-    localStorage.setItem(
-      "tourBooking",
-      JSON.stringify(booking)
-    );
-
-
-    /* ---------- BOOKING SUMMARY ---------- */
-
-    document.getElementById(
-      "summaryTour"
-    ).textContent =
-      tour.name;
-
-
-    document.getElementById(
-      "summaryName"
-    ).textContent =
-      customerName;
-
-
-    document.getElementById(
-      "summaryEmail"
-    ).textContent =
-      customerEmail;
-
-
-    document.getElementById(
-      "summaryDate"
-    ).textContent =
-      travelDate;
-
-
-    document.getElementById(
-      "summaryTravelers"
-    ).textContent =
-      numberOfTravelers;
-
-
-    document.getElementById(
-      "summaryPrice"
-    ).textContent =
+    const totalPriceText =
       formatPrice(totalPrice);
 
+    const bookingDetails = [
+      "A new tour booking request has been submitted through the JOVICK Travel & Tours website.",
+      "",
+      "TOUR DETAILS",
+      "Tour: " + tour.name,
+      "Destination: " + tour.location,
+      "Duration: " + tour.duration,
+      "Price per person: " + formatPrice(getBasePrice()),
+      "Number of travelers: " + numberOfTravelers,
+      "Estimated total: " + totalPriceText,
+      "Preferred travel date: " + travelDate,
+      "",
+      "CUSTOMER DETAILS",
+      "Full name: " + customerName,
+      "Email address: " + customerEmail,
+      "Phone number: " + customerPhone
+    ].join("\n");
 
-    document.getElementById(
-      "successMessage"
-    ).textContent =
-      "Thank you, " +
-      customerName +
-      "! Your booking request for " +
-      tour.name +
-      " has been successfully received.";
+    const submitButton =
+      tourBookingForm.querySelector('button[type="submit"]');
 
+    submitButton.disabled = true;
+    submitButton.textContent = "Sending booking...";
+    bookingMessage.textContent = "Sending your booking request...";
+    bookingMessage.className = "booking-message";
 
-    /* ---------- HIDE FORM ---------- */
+    try {
+      const response = await fetch(SUPABASE_FUNCTION_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "apikey": SUPABASE_PUBLISHABLE_KEY
+        },
+        body: JSON.stringify({
+          name: customerName,
+          email: customerEmail,
+          subject: "Tour booking request: " + tour.name,
+          message: bookingDetails,
+          website: ""
+        })
+      });
 
-    tourBookingForm.style.display =
-      "none";
+      const data = await response.json().catch(function () {
+        return {};
+      });
 
+      if (!response.ok || data.ok !== true) {
+        throw new Error(
+          data.error ||
+          "We could not send your booking request right now. Please try again."
+        );
+      }
 
-    bookingMessage.textContent =
-      "";
+      const booking = {
+        tour: tour.name,
+        location: tour.location,
+        duration: tour.duration,
+        pricePerPerson: getBasePrice(),
+        totalPrice: totalPrice,
+        customerName: customerName,
+        customerEmail: customerEmail,
+        customerPhone: customerPhone,
+        travelDate: travelDate,
+        numberOfTravelers: numberOfTravelers
+      };
 
+      localStorage.setItem(
+        "tourBooking",
+        JSON.stringify(booking)
+      );
 
-    /* ---------- SHOW SUCCESS ---------- */
+      document.getElementById("summaryTour").textContent =
+        tour.name;
+      document.getElementById("summaryName").textContent =
+        customerName;
+      document.getElementById("summaryEmail").textContent =
+        customerEmail;
+      document.getElementById("summaryDate").textContent =
+        travelDate;
+      document.getElementById("summaryTravelers").textContent =
+        numberOfTravelers;
+      document.getElementById("summaryPrice").textContent =
+        totalPriceText;
 
-    bookingSuccess.style.display =
-      "block";
+      document.getElementById("successMessage").textContent =
+        "Thank you, " + customerName +
+        "! Your booking request for " + tour.name +
+        " has been sent successfully. Our team will contact you.";
 
+      tourBookingForm.style.display = "none";
+      bookingMessage.textContent = "";
+      bookingSuccess.style.display = "block";
 
-    bookingSuccess.scrollIntoView({
-      behavior: "smooth"
-    });
-
+      bookingSuccess.scrollIntoView({
+        behavior: "smooth"
+      });
+    } catch (error) {
+      console.error("[Jovick tour booking] Submission failed:", error);
+      bookingMessage.textContent =
+        "Sorry, we could not send your booking request right now. Please try again or contact us on WhatsApp.";
+      bookingMessage.className = "booking-message error";
+    } finally {
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit Booking";
+    }
   }
 );
 
+
+/* ---------- BOOKING ---------- */
 
 /* ---------- PAYMENT ---------- */
 
