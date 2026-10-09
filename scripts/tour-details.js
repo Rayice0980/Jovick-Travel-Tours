@@ -5,7 +5,7 @@ const tourData = {
     location: "Abuja, Nigeria",
     image: "images/Abuja 3.jpg",
     duration: "3 Days & Nights",
-    price: "₦150,000",
+    price: "₦250,000",
     description:
       "Explore the beauty of Abuja with a guided city experience covering some of the city's most interesting landmarks and attractions.",
     includes: [
@@ -23,7 +23,7 @@ const tourData = {
     location: "Lagos, Nigeria",
     image: "images/Lagos.jpg",
     duration: "3 Days & Nights",
-    price: "₦180,000",
+    price: "₦350,000",
     description:
       "Discover the energy, culture and attractions of Lagos with an exciting city experience.",
     includes: [
@@ -41,7 +41,7 @@ const tourData = {
     location: "Dubai, United Arab Emirates",
     image: "images/Dubai 2.jpg",
     duration: "7 Days & Nights",
-    price: "₦850,000",
+    price: "₦2,400,000",
     description:
       "Experience Dubai's modern attractions, beautiful architecture, shopping destinations and unforgettable entertainment.",
     includes: [
@@ -59,7 +59,7 @@ const tourData = {
     location: "London, United Kingdom",
     image: "images/London 2.jpg",
     duration: "5 Days & Nights",
-    price: "₦600,000",
+    price: "₦3,800,000",
     description:
       "Experience the historic landmarks, culture and attractions of London.",
     includes: [
@@ -77,7 +77,7 @@ const tourData = {
     location: "Paris, France",
     image: "images/Paris 1.jpg",
     duration: "3 Days & Nights",
-    price: "₦150,000",
+    price: "₦2,800,000",
     description:
       "Enjoy a memorable Paris experience filled with beautiful landmarks, culture and romantic destinations.",
     includes: [
@@ -95,7 +95,7 @@ const tourData = {
     location: "Cape Town, South Africa",
     image: "images/Cape Town 1.jpg",
     duration: "7 Days & Nights",
-    price: "₦900,000",
+    price: "₦2,200,000",
     description:
       "Discover the natural beauty, coastline and attractions of Cape Town.",
     includes: [
@@ -113,7 +113,7 @@ const tourData = {
     location: "Zanzibar, Tanzania",
     image: "images/Tanzania 1.jpg",
     duration: "5 Days & Nights",
-    price: "₦700,000",
+    price: "₦2,000,000",
     description:
       "Enjoy the beaches, culture and unforgettable island atmosphere of Zanzibar.",
     includes: [
@@ -131,7 +131,7 @@ const tourData = {
     location: "Accra, Ghana",
     image: "images/Ghana.jpg",
     duration: "4 Days & Nights",
-    price: "₦350,000",
+    price: "₦850,000",
     description:
       "Discover Accra's culture, history, food and beautiful attractions.",
     includes: [
@@ -149,7 +149,7 @@ const tourData = {
     location: "Cairo, Egypt",
     image: "images/Cairo.jpg",
     duration: "5 Days & Nights",
-    price: "₦550,000",
+    price: "₦1,800,000",
     description:
       "Explore the ancient history, culture and famous landmarks of Cairo.",
     includes: [
@@ -167,7 +167,7 @@ const tourData = {
     location: "Nairobi, Kenya",
     image: "images/Nairobi.jpg",
     duration: "5 Days & Nights",
-    price: "₦600,000",
+    price: "₦1,900,000",
     description:
       "Experience Nairobi's city attractions, culture and surrounding natural beauty.",
     includes: [
@@ -185,7 +185,7 @@ const tourData = {
     location: "Rome, Italy",
     image: "images/Rome.jpg",
     duration: "5 Days & Nights",
-    price: "₦650,000",
+    price: "₦3,500,000",
     description:
       "Explore Rome's historic landmarks, architecture and cultural heritage.",
     includes: [
@@ -203,7 +203,7 @@ const tourData = {
     location: "Amsterdam, Netherlands",
     image: "images/Amsterdam.jpg",
     duration: "5 Days & Nights",
-    price: "₦680,000",
+    price: "₦3,700,000",
     description:
       "Experience Amsterdam's canals, culture, architecture and famous attractions.",
     includes: [
@@ -221,7 +221,7 @@ const tourData = {
     location: "Barcelona, Spain",
     image: "images/Barcelona.jpg",
     duration: "5 Days & Nights",
-    price: "₦700,000",
+    price: "₦3,400,000",
     description:
       "Discover Barcelona's architecture, beaches, culture and vibrant atmosphere.",
     includes: [
@@ -239,7 +239,7 @@ const tourData = {
     location: "Abu Dhabi, United Arab Emirates",
     image: "images/Abu Dhabi.jpg",
     duration: "5 Days & Nights",
-    price: "₦750,000",
+    price: "₦2,200,000",
     description:
       "Explore Abu Dhabi's impressive architecture, culture and modern attractions.",
     includes: [
@@ -257,7 +257,7 @@ const tourData = {
     location: "Riyadh, Saudi Arabia",
     image: "images/Riyadh.jpg",
     duration: "5 Days & Nights",
-    price: "₦700,000",
+    price: "₦2,100,000",
     description:
       "Discover Riyadh's culture, modern attractions and historic destinations.",
     includes: [
@@ -275,7 +275,7 @@ const tourData = {
     location: "Tokyo, Japan",
     image: "images/Tokyo.jpg",
     duration: "7 Days & Nights",
-    price: "₦950,000",
+    price: "₦4,500,000",
     description:
       "Experience Tokyo's technology, culture, food, entertainment and famous landmarks.",
     includes: [
@@ -293,7 +293,7 @@ const tourData = {
     location: "Singapore",
     image: "images/Singapore.jpg",
     duration: "6 Days & Nights",
-    price: "₦900,000",
+    price: "₦2,700,000",
     description:
       "Discover Singapore's modern attractions, gardens, culture and entertainment.",
     includes: [
@@ -311,7 +311,7 @@ const tourData = {
     location: "Bangkok, Thailand",
     image: "images/Bangkok.jpg",
     duration: "6 Days & Nights",
-    price: "₦750,000",
+    price: "₦2,400,000",
     description:
       "Experience Bangkok's culture, food, temples, markets and famous attractions.",
     includes: [
@@ -329,7 +329,7 @@ const tourData = {
     location: "Seoul, South Korea",
     image: "images/Seoul.jpg",
     duration: "6 Days & Nights",
-    price: "₦850,000",
+    price: "₦3,800,000",
     description:
       "Explore Seoul's modern lifestyle, history, culture, food and entertainment.",
     includes: [
