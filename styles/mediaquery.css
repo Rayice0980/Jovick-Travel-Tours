@@ -86,32 +86,6 @@
     color: #0066cc;
     background: #eef6ff;
   }
-
-
- .nav-bar.show-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100%;
-  right: 20px;
-  width: 150px;
-
-  background-color:  #037df7;
-  padding: 10px 12px;
-  gap: 8px;
-
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
-
-  animation: slideDown 0.3s ease;
-}
-
-.nav-bar.show-menu a {
-  color: black;
-  font-weight: bold;
-  padding: 6px 4px;
-}
-
 @keyframes slideDown {
   from {
     opacity: 0;
