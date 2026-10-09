@@ -100,6 +100,11 @@ a:hover{
 
 
 /* Shared back navigation for pages outside the main header navigation */
+.page-back-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
 .page-back-link {
   display: inline-flex;
   align-items: center;
