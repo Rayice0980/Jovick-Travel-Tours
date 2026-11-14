@@ -35,11 +35,21 @@ if (!booking || !paymentMethod) {
   bookingSummary.innerHTML = [
     "<h2>Booking Summary</h2>",
     "<p><span>Tour</span><strong>" + escapeHtml(booking.tour) + "</strong></p>",
-    "<p><span>Customer</span><strong>" + escapeHtml(booking.customerName) + "</strong></p>",
-    "<p><span>Travel date</span><strong>" + escapeHtml(booking.travelDate) + "</strong></p>",
-    "<p><span>Travelers</span><strong>" + escapeHtml(booking.numberOfTravelers) + "</strong></p>",
-    "<p><span>Estimated total</span><strong>" + money(booking.totalPrice) + "</strong></p>",
-    "<p><span>Payment method</span><strong>" + (paymentMethod === "bank" ? "Bank Transfer" : "Card Payment") + "</strong></p>"
+    "<p><span>Customer</span><strong>" +
+      escapeHtml(booking.customerName) +
+      "</strong></p>",
+    "<p><span>Travel date</span><strong>" +
+      escapeHtml(booking.travelDate) +
+      "</strong></p>",
+    "<p><span>Travelers</span><strong>" +
+      escapeHtml(booking.numberOfTravelers) +
+      "</strong></p>",
+    "<p><span>Estimated total</span><strong>" +
+      money(booking.totalPrice) +
+      "</strong></p>",
+    "<p><span>Payment method</span><strong>" +
+      (paymentMethod === "bank" ? "Bank Transfer" : "Card Payment") +
+      "</strong></p>",
   ].join("");
 
   bankPaymentPanel.hidden = paymentMethod !== "bank";
@@ -47,20 +57,24 @@ if (!booking || !paymentMethod) {
 }
 
 function escapeHtml(value) {
-  return String(value == null ? "" : value).replace(/[&<>"']/g, function (character) {
-    return {
-      "&": "&amp;",
-      "<": "&lt;",
-      ">": "&gt;",
-      '"': "&quot;",
-      "'": "&#39;"
-    }[character];
-  });
+  return String(value == null ? "" : value).replace(
+    /[&<>"']/g,
+    function (character) {
+      return {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;",
+      }[character];
+    },
+  );
 }
 
 copyPaymentAccount.addEventListener("click", async function () {
-  const accountNumber =
-    document.getElementById("paymentAccountNumber").textContent.trim();
+  const accountNumber = document
+    .getElementById("paymentAccountNumber")
+    .textContent.trim();
   try {
     await navigator.clipboard.writeText(accountNumber);
     paymentCopyMessage.textContent = "Account number copied.";
@@ -93,7 +107,7 @@ paymentMadeButton.addEventListener("click", async function () {
     "Number of travelers: " + booking.numberOfTravelers,
     "Estimated booking total: " + money(booking.totalPrice),
     "",
-    "Please contact the customer and verify the transfer against the bank account before marking this booking as paid."
+    "Please contact the customer and verify the transfer against the bank account before marking this booking as paid.",
   ].join("\n");
 
   try {
@@ -101,15 +115,15 @@ paymentMadeButton.addEventListener("click", async function () {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "apikey": PAYMENT_PUBLISHABLE_KEY
+        apikey: PAYMENT_PUBLISHABLE_KEY,
       },
       body: JSON.stringify({
         name: booking.customerName,
         email: booking.customerEmail,
         subject: "Payment reported - verify transfer: " + booking.tour,
         message: message,
-        website: ""
-      })
+        website: "",
+      }),
     });
 
     const data = await response.json().catch(function () {

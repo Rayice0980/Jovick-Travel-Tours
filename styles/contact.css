@@ -2,7 +2,6 @@
    CONTACT PAGE
    ================================= */
 
-
 /* ---------- HERO ---------- */
 
 .contact-sec-1 {
@@ -10,10 +9,7 @@
   padding: 80px 40px;
 
   background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.42),
-      rgba(0, 0, 0, 0.52)
-    ),
+    linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.52)),
     url("../images/Mountain sky.jpg");
 
   background-size: cover;
@@ -51,7 +47,6 @@
   line-height: 1.7;
 }
 
-
 /* ---------- CONTACT SECTION ---------- */
 
 .contact-sec-2 {
@@ -64,7 +59,6 @@
 
   padding: 85px 50px;
 }
-
 
 /* ---------- LEFT SIDE ---------- */
 
@@ -103,7 +97,6 @@
 
   margin-bottom: 30px;
 }
-
 
 /* ---------- CONTACT INFO CARDS ---------- */
 
@@ -178,7 +171,6 @@ a.contact-info-card:hover {
   line-height: 1.4;
 }
 
-
 /* ---------- WHATSAPP ---------- */
 
 .whatsapp-chat-button {
@@ -221,7 +213,6 @@ a.contact-info-card:hover {
   color: #777;
   font-size: 12px;
 }
-
 
 /* ---------- CONTACT FORM ---------- */
 
@@ -285,8 +276,7 @@ a.contact-info-card:hover {
 .contact-form textarea:focus {
   border-color: #0066cc;
 
-  box-shadow:
-    0 0 0 3px rgba(0, 102, 204, 0.08);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.08);
 }
 
 .contact-form input.input-error,
@@ -369,7 +359,6 @@ a.contact-info-card:hover {
   color: #b42318;
   border: 1px solid #f1c5c1;
 }
-
 
 /* ---------- FAQ ---------- */
 
@@ -455,17 +444,13 @@ a.contact-info-card:hover {
   display: block;
 }
 
-
 /* ---------- CTA ---------- */
 
 .contact-sec-3 {
   padding: 80px 40px;
 
   background-image:
-    linear-gradient(
-      rgba(255, 255, 255, 0.90),
-      rgba(255, 255, 255, 0.90)
-    ),
+    linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
     url("../images/Mountain sky.jpg");
 
   background-size: cover;
@@ -544,7 +529,6 @@ a.contact-info-card:hover {
   color: #333;
 }
 
-
 /* ---------- FLOATING WHATSAPP ---------- */
 
 .floating-whatsapp {
@@ -588,13 +572,11 @@ a.contact-info-card:hover {
   font-size: 19px;
 }
 
-
 /* =================================
    CONTACT PAGE - RESPONSIVE OVERRIDES
    ================================= */
 
 @media (max-width: 768px) {
-
   .contact-sec-1 {
     min-height: 320px;
     padding: 60px 25px;
@@ -640,7 +622,6 @@ a.contact-info-card:hover {
 }
 
 @media (max-width: 480px) {
-
   .contact-sec-1 {
     min-height: 290px;
     padding: 50px 18px;
@@ -729,4 +710,14 @@ a.contact-info-card:hover {
     font-size: 20px;
   }
 }
-.contact-privacy-note{margin:12px 0 0;color:#64748b;font-size:.82rem;line-height:1.5}.contact-privacy-note a{color:#0878c9;text-decoration:underline;text-underline-offset:2px}
+.contact-privacy-note {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+.contact-privacy-note a {
+  color: #0878c9;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}

@@ -2,17 +2,13 @@
    DESTINATION DETAILS
    ================================= */
 
-
 const destinationData = {
-
   abuja: {
-
     name: "Abuja",
 
     country: "Nigeria",
 
-    tagline:
-      "Discover Nigeria's beautiful capital city.",
+    tagline: "Discover Nigeria's beautiful capital city.",
 
     image: "images/Abuja 2.jpg",
 
@@ -25,41 +21,35 @@ const destinationData = {
     tour: "abuja",
 
     places: [
-
       {
         name: "Zuma Rock",
         image: "images/Abuja 2.jpg",
         description:
-          "One of Nigeria's most recognizable natural landmarks and a popular attraction near Abuja."
+          "One of Nigeria's most recognizable natural landmarks and a popular attraction near Abuja.",
       },
 
       {
         name: "Millennium Park",
         image: "images/Abuja 2.jpg",
         description:
-          "A beautiful green space in the heart of Abuja, ideal for relaxing and enjoying the outdoors."
+          "A beautiful green space in the heart of Abuja, ideal for relaxing and enjoying the outdoors.",
       },
 
       {
         name: "Aso Rock",
         image: "images/Abuja 2.jpg",
         description:
-          "A famous natural landmark that forms an important part of Abuja's landscape."
-      }
-
-    ]
-
+          "A famous natural landmark that forms an important part of Abuja's landscape.",
+      },
+    ],
   },
 
-
   lagos: {
-
     name: "Lagos",
 
     country: "Nigeria",
 
-    tagline:
-      "Experience Nigeria's energetic coastal city.",
+    tagline: "Experience Nigeria's energetic coastal city.",
 
     image: "images/Lagos 1.jpg",
 
@@ -72,41 +62,35 @@ const destinationData = {
     tour: "lagos",
 
     places: [
-
       {
         name: "Lekki Conservation Centre",
         image: "images/Lagos 1.jpg",
         description:
-          "A popular nature attraction where visitors can experience Lagos' natural environment."
+          "A popular nature attraction where visitors can experience Lagos' natural environment.",
       },
 
       {
         name: "Tarkwa Bay",
         image: "images/Lagos 1.jpg",
         description:
-          "A beautiful beach destination known for its relaxed coastal atmosphere."
+          "A beautiful beach destination known for its relaxed coastal atmosphere.",
       },
 
       {
         name: "Nike Art Gallery",
         image: "images/Lagos 1.jpg",
         description:
-          "A major cultural attraction showcasing Nigerian art and creativity."
-      }
-
-    ]
-
+          "A major cultural attraction showcasing Nigerian art and creativity.",
+      },
+    ],
   },
 
-
   dubai: {
-
     name: "Dubai",
 
     country: "United Arab Emirates",
 
-    tagline:
-      "Explore luxury, innovation and unforgettable experiences.",
+    tagline: "Explore luxury, innovation and unforgettable experiences.",
 
     image: "images/Dubai 2.jpg",
 
@@ -119,41 +103,35 @@ const destinationData = {
     tour: "dubai",
 
     places: [
-
       {
         name: "Burj Khalifa",
         image: "images/Dubai 2.jpg",
         description:
-          "One of Dubai's most famous landmarks and an iconic part of the city's skyline."
+          "One of Dubai's most famous landmarks and an iconic part of the city's skyline.",
       },
 
       {
         name: "Dubai Marina",
         image: "images/Dubai 2.jpg",
         description:
-          "A modern waterfront district filled with restaurants, attractions and spectacular views."
+          "A modern waterfront district filled with restaurants, attractions and spectacular views.",
       },
 
       {
         name: "Palm Jumeirah",
         image: "images/Dubai 2.jpg",
         description:
-          "A remarkable man-made island known for luxury resorts and beautiful coastal scenery."
-      }
-
-    ]
-
+          "A remarkable man-made island known for luxury resorts and beautiful coastal scenery.",
+      },
+    ],
   },
 
-
   london: {
-
     name: "London",
 
     country: "United Kingdom",
 
-    tagline:
-      "Discover history, culture and modern British life.",
+    tagline: "Discover history, culture and modern British life.",
 
     image: "images/London 2.jpg",
 
@@ -166,41 +144,34 @@ const destinationData = {
     tour: "london",
 
     places: [
-
       {
         name: "Big Ben",
         image: "images/London 2.jpg",
-        description:
-          "One of London's most recognizable landmarks."
+        description: "One of London's most recognizable landmarks.",
       },
 
       {
         name: "Tower Bridge",
         image: "images/London 2.jpg",
         description:
-          "A historic bridge and one of the most photographed sights in London."
+          "A historic bridge and one of the most photographed sights in London.",
       },
 
       {
         name: "Buckingham Palace",
         image: "images/London 2.jpg",
         description:
-          "The famous London residence associated with the British monarchy."
-      }
-
-    ]
-
+          "The famous London residence associated with the British monarchy.",
+      },
+    ],
   },
 
-
   paris: {
-
     name: "Paris",
 
     country: "France",
 
-    tagline:
-      "Experience art, romance, fashion and French culture.",
+    tagline: "Experience art, romance, fashion and French culture.",
 
     image: "images/Paris 1.jpg",
 
@@ -213,41 +184,33 @@ const destinationData = {
     tour: "paris",
 
     places: [
-
       {
         name: "Eiffel Tower",
         image: "images/Paris 1.jpg",
-        description:
-          "The world-famous symbol of Paris."
+        description: "The world-famous symbol of Paris.",
       },
 
       {
         name: "Louvre Museum",
         image: "images/Paris 1.jpg",
-        description:
-          "One of the world's most famous museums."
+        description: "One of the world's most famous museums.",
       },
 
       {
         name: "Arc de Triomphe",
         image: "images/Paris 1.jpg",
         description:
-          "A historic monument overlooking one of Paris' famous avenues."
-      }
-
-    ]
-
+          "A historic monument overlooking one of Paris' famous avenues.",
+      },
+    ],
   },
 
-
   "cape-town": {
-
     name: "Cape Town",
 
     country: "South Africa",
 
-    tagline:
-      "Where mountains, beaches and city life meet.",
+    tagline: "Where mountains, beaches and city life meet.",
 
     image: "images/Cape Town 1.jpg",
 
@@ -260,41 +223,34 @@ const destinationData = {
     tour: "cape-town",
 
     places: [
-
       {
         name: "Table Mountain",
         image: "images/Cape Town 1.jpg",
-        description:
-          "One of Cape Town's most famous natural landmarks."
+        description: "One of Cape Town's most famous natural landmarks.",
       },
 
       {
         name: "V&A Waterfront",
         image: "images/Cape Town 1.jpg",
         description:
-          "A lively waterfront area with restaurants, shopping and entertainment."
+          "A lively waterfront area with restaurants, shopping and entertainment.",
       },
 
       {
         name: "Camps Bay",
         image: "images/Cape Town 1.jpg",
         description:
-          "A popular beach destination surrounded by dramatic scenery."
-      }
-
-    ]
-
+          "A popular beach destination surrounded by dramatic scenery.",
+      },
+    ],
   },
 
-
   zanzibar: {
-
     name: "Zanzibar",
 
     country: "Tanzania",
 
-    tagline:
-      "Relax on beautiful beaches and discover island culture.",
+    tagline: "Relax on beautiful beaches and discover island culture.",
 
     image: "images/Tanzania 1.jpg",
 
@@ -307,41 +263,34 @@ const destinationData = {
     tour: "zanzibar",
 
     places: [
-
       {
         name: "Stone Town",
         image: "images/Tanzania 1.jpg",
         description:
-          "A historic area known for its architecture, culture and narrow streets."
+          "A historic area known for its architecture, culture and narrow streets.",
       },
 
       {
         name: "Nungwi Beach",
         image: "images/Tanzania 1.jpg",
-        description:
-          "A popular beach known for beautiful coastal scenery."
+        description: "A popular beach known for beautiful coastal scenery.",
       },
 
       {
         name: "Prison Island",
         image: "images/Tanzania 1.jpg",
         description:
-          "An island attraction offering a memorable coastal experience."
-      }
-
-    ]
-
+          "An island attraction offering a memorable coastal experience.",
+      },
+    ],
   },
 
-
   accra: {
-
     name: "Accra",
 
     country: "Ghana",
 
-    tagline:
-      "Discover Ghanaian culture, history and coastal life.",
+    tagline: "Discover Ghanaian culture, history and coastal life.",
 
     image: "images/Ghana 1.jpg",
 
@@ -354,41 +303,32 @@ const destinationData = {
     tour: "accra",
 
     places: [
-
       {
         name: "Labadi Beach",
         image: "images/Ghana 1.jpg",
-        description:
-          "One of Accra's popular coastal destinations."
+        description: "One of Accra's popular coastal destinations.",
       },
 
       {
         name: "Kwame Nkrumah Memorial Park",
         image: "images/Ghana 1.jpg",
-        description:
-          "A significant historical and cultural attraction."
+        description: "A significant historical and cultural attraction.",
       },
 
       {
         name: "Makola Market",
         image: "images/Ghana 1.jpg",
-        description:
-          "A lively market offering an authentic urban experience."
-      }
-
-    ]
-
+        description: "A lively market offering an authentic urban experience.",
+      },
+    ],
   },
 
-
   cairo: {
-
     name: "Cairo",
 
     country: "Egypt",
 
-    tagline:
-      "Step into thousands of years of history.",
+    tagline: "Step into thousands of years of history.",
 
     image: "images/Abuja 2.jpg",
 
@@ -401,41 +341,34 @@ const destinationData = {
     tour: "cairo",
 
     places: [
-
       {
         name: "Pyramids of Giza",
         image: "images/Abuja 2.jpg",
-        description:
-          "One of the world's most famous ancient landmarks."
+        description: "One of the world's most famous ancient landmarks.",
       },
 
       {
         name: "Egyptian Museum",
         image: "images/Abuja 2.jpg",
         description:
-          "A major museum featuring ancient Egyptian history and artifacts."
+          "A major museum featuring ancient Egyptian history and artifacts.",
       },
 
       {
         name: "Khan el-Khalili",
         image: "images/Abuja 2.jpg",
         description:
-          "A historic market area known for shopping and traditional atmosphere."
-      }
-
-    ]
-
+          "A historic market area known for shopping and traditional atmosphere.",
+      },
+    ],
   },
 
-
   nairobi: {
-
     name: "Nairobi",
 
     country: "Kenya",
 
-    tagline:
-      "Experience wildlife and modern African city life.",
+    tagline: "Experience wildlife and modern African city life.",
 
     image: "images/Nairobi, Kenya.jpg",
 
@@ -448,41 +381,32 @@ const destinationData = {
     tour: "nairobi",
 
     places: [
-
       {
         name: "Nairobi National Park",
         image: "images/Nairobi National Par.jpg",
-        description:
-          "A unique wildlife destination located close to the city."
+        description: "A unique wildlife destination located close to the city.",
       },
 
       {
         name: "Giraffe Centre",
         image: "images/Giraffe Centre.jpg",
-        description:
-          "A popular conservation and wildlife attraction."
+        description: "A popular conservation and wildlife attraction.",
       },
 
       {
         name: "Karen Blixen Museum",
         image: "images/Karen Blixen Museum.jpg",
-        description:
-          "A cultural attraction connected with Kenya's history."
-      }
-
-    ]
-
+        description: "A cultural attraction connected with Kenya's history.",
+      },
+    ],
   },
 
-
   rome: {
-
     name: "Rome",
 
     country: "Italy",
 
-    tagline:
-      "Walk through centuries of history.",
+    tagline: "Walk through centuries of history.",
 
     image: "images/Rome, Italy.jpg",
 
@@ -495,41 +419,33 @@ const destinationData = {
     tour: "rome",
 
     places: [
-
       {
         name: "Colosseum",
         image: "images/Colosseum.jpg",
-        description:
-          "One of Rome's most famous ancient monuments."
+        description: "One of Rome's most famous ancient monuments.",
       },
 
       {
         name: "Trevi Fountain",
         image: "images/Trevi Fountain.jpg",
-        description:
-          "A spectacular and iconic fountain in central Rome."
+        description: "A spectacular and iconic fountain in central Rome.",
       },
 
       {
         name: "Vatican City",
         image: "images/Vatican City.jpg",
         description:
-          "A major cultural and religious destination surrounded by extraordinary art and history."
-      }
-
-    ]
-
+          "A major cultural and religious destination surrounded by extraordinary art and history.",
+      },
+    ],
   },
 
-
   amsterdam: {
-
     name: "Amsterdam",
 
     country: "Netherlands",
 
-    tagline:
-      "Discover canals, culture and charming European streets.",
+    tagline: "Discover canals, culture and charming European streets.",
 
     image: "images/Amsterdam, Netherlands.jpg",
 
@@ -542,41 +458,34 @@ const destinationData = {
     tour: "amsterdam",
 
     places: [
-
       {
         name: "Canal District",
         image: "images/destination-placeholder.svg",
         description:
-          "A beautiful network of canals surrounded by historic buildings."
+          "A beautiful network of canals surrounded by historic buildings.",
       },
 
       {
         name: "Rijksmuseum",
         image: "images/destination-placeholder.svg",
-        description:
-          "A major museum showcasing Dutch art and history."
+        description: "A major museum showcasing Dutch art and history.",
       },
 
       {
         name: "Jordaan",
         image: "images/destination-placeholder.svg",
         description:
-          "A charming neighborhood known for streets, cafes and canals."
-      }
-
-    ]
-
+          "A charming neighborhood known for streets, cafes and canals.",
+      },
+    ],
   },
 
-
   barcelona: {
-
     name: "Barcelona",
 
     country: "Spain",
 
-    tagline:
-      "Experience architecture, beaches and Spanish culture.",
+    tagline: "Experience architecture, beaches and Spanish culture.",
 
     image: "images/Barcelona, Spain.jpg",
 
@@ -589,41 +498,33 @@ const destinationData = {
     tour: "barcelona",
 
     places: [
-
       {
         name: "Sagrada Familia",
         image: "images/destination-placeholder.svg",
-        description:
-          "One of Barcelona's most famous architectural landmarks."
+        description: "One of Barcelona's most famous architectural landmarks.",
       },
 
       {
         name: "Park Güell",
         image: "images/destination-placeholder.svg",
         description:
-          "A colorful park featuring remarkable architectural designs."
+          "A colorful park featuring remarkable architectural designs.",
       },
 
       {
         name: "Barceloneta Beach",
         image: "images/destination-placeholder.svg",
-        description:
-          "A popular beach area close to the city center."
-      }
-
-    ]
-
+        description: "A popular beach area close to the city center.",
+      },
+    ],
   },
 
-
   "abu-dhabi": {
-
     name: "Abu Dhabi",
 
     country: "United Arab Emirates",
 
-    tagline:
-      "Discover culture, luxury and Arabian hospitality.",
+    tagline: "Discover culture, luxury and Arabian hospitality.",
 
     image: "images/Abu Dhabi, United Arab Emirates.jpg",
 
@@ -636,41 +537,34 @@ const destinationData = {
     tour: "abu-dhabi",
 
     places: [
-
       {
         name: "Sheikh Zayed Grand Mosque",
         image: "images/destination-placeholder.svg",
         description:
-          "One of Abu Dhabi's most impressive architectural landmarks."
+          "One of Abu Dhabi's most impressive architectural landmarks.",
       },
 
       {
         name: "Louvre Abu Dhabi",
         image: "images/destination-placeholder.svg",
         description:
-          "A remarkable museum combining art, architecture and culture."
+          "A remarkable museum combining art, architecture and culture.",
       },
 
       {
         name: "Yas Island",
         image: "images/destination-placeholder.svg",
-        description:
-          "A major entertainment and leisure destination."
-      }
-
-    ]
-
+        description: "A major entertainment and leisure destination.",
+      },
+    ],
   },
 
-
   riyadh: {
-
     name: "Riyadh",
 
     country: "Saudi Arabia",
 
-    tagline:
-      "Discover modern Saudi Arabia and its heritage.",
+    tagline: "Discover modern Saudi Arabia and its heritage.",
 
     image: "images/Riyadh, Saudi Arabia.jpg",
 
@@ -683,41 +577,32 @@ const destinationData = {
     tour: "riyadh",
 
     places: [
-
       {
         name: "Kingdom Centre",
         image: "images/destination-placeholder.svg",
-        description:
-          "One of Riyadh's most recognizable modern landmarks."
+        description: "One of Riyadh's most recognizable modern landmarks.",
       },
 
       {
         name: "Diriyah",
         image: "images/destination-placeholder.svg",
-        description:
-          "A historic area offering insight into Saudi heritage."
+        description: "A historic area offering insight into Saudi heritage.",
       },
 
       {
         name: "Edge of the World",
         image: "images/destination-placeholder.svg",
-        description:
-          "A dramatic natural landscape outside Riyadh."
-      }
-
-    ]
-
+        description: "A dramatic natural landscape outside Riyadh.",
+      },
+    ],
   },
 
-
   tokyo: {
-
     name: "Tokyo",
 
     country: "Japan",
 
-    tagline:
-      "Experience technology, tradition and Japanese culture.",
+    tagline: "Experience technology, tradition and Japanese culture.",
 
     image: "images/Tokyo, Japan.jpg",
 
@@ -730,41 +615,32 @@ const destinationData = {
     tour: "tokyo",
 
     places: [
-
       {
         name: "Shibuya",
         image: "images/destination-placeholder.svg",
-        description:
-          "One of Tokyo's busiest and most recognizable districts."
+        description: "One of Tokyo's busiest and most recognizable districts.",
       },
 
       {
         name: "Tokyo Skytree",
         image: "images/destination-placeholder.svg",
-        description:
-          "A famous observation and communications tower."
+        description: "A famous observation and communications tower.",
       },
 
       {
         name: "Senso-ji Temple",
         image: "images/destination-placeholder.svg",
-        description:
-          "A historic temple and important cultural attraction."
-      }
-
-    ]
-
+        description: "A historic temple and important cultural attraction.",
+      },
+    ],
   },
 
-
   singapore: {
-
     name: "Singapore",
 
     country: "Singapore",
 
-    tagline:
-      "Explore a clean, modern and multicultural city.",
+    tagline: "Explore a clean, modern and multicultural city.",
 
     image: "images/Singapore.jpg",
 
@@ -777,41 +653,32 @@ const destinationData = {
     tour: "singapore",
 
     places: [
-
       {
         name: "Marina Bay Sands",
         image: "images/destination-placeholder.svg",
-        description:
-          "One of Singapore's most recognizable modern landmarks."
+        description: "One of Singapore's most recognizable modern landmarks.",
       },
 
       {
         name: "Gardens by the Bay",
         image: "images/destination-placeholder.svg",
-        description:
-          "A spectacular modern garden attraction."
+        description: "A spectacular modern garden attraction.",
       },
 
       {
         name: "Sentosa Island",
         image: "images/destination-placeholder.svg",
-        description:
-          "A popular leisure and entertainment destination."
-      }
-
-    ]
-
+        description: "A popular leisure and entertainment destination.",
+      },
+    ],
   },
 
-
   bangkok: {
-
     name: "Bangkok",
 
     country: "Thailand",
 
-    tagline:
-      "Discover temples, food, markets and vibrant city life.",
+    tagline: "Discover temples, food, markets and vibrant city life.",
 
     image: "images/Bangkok, Thailand.jpg",
 
@@ -824,41 +691,33 @@ const destinationData = {
     tour: "bangkok",
 
     places: [
-
       {
         name: "Grand Palace",
         image: "images/destination-placeholder.svg",
-        description:
-          "One of Bangkok's most important historic attractions."
+        description: "One of Bangkok's most important historic attractions.",
       },
 
       {
         name: "Wat Arun",
         image: "images/destination-placeholder.svg",
-        description:
-          "A beautiful temple located along the Chao Phraya River."
+        description: "A beautiful temple located along the Chao Phraya River.",
       },
 
       {
         name: "Chatuchak Market",
         image: "images/destination-placeholder.svg",
         description:
-          "A famous market offering a huge variety of goods and local experiences."
-      }
-
-    ]
-
+          "A famous market offering a huge variety of goods and local experiences.",
+      },
+    ],
   },
 
-
   seoul: {
-
     name: "Seoul",
 
     country: "South Korea",
 
-    tagline:
-      "Experience Korean culture, technology and modern city life.",
+    tagline: "Experience Korean culture, technology and modern city life.",
 
     image: "images/Seoul, South Korea.jpg",
 
@@ -871,293 +730,265 @@ const destinationData = {
     tour: "seoul",
 
     places: [
-
       {
         name: "Gyeongbokgung Palace",
         image: "images/destination-placeholder.svg",
-        description:
-          "A historic royal palace and major cultural attraction."
+        description: "A historic royal palace and major cultural attraction.",
       },
 
       {
         name: "N Seoul Tower",
         image: "images/destination-placeholder.svg",
-        description:
-          "A famous landmark offering panoramic city views."
+        description: "A famous landmark offering panoramic city views.",
       },
 
       {
         name: "Myeongdong",
         image: "images/destination-placeholder.svg",
-        description:
-          "A lively shopping and food district."
-      }
-
-    ]
-
+        description: "A lively shopping and food district.",
+      },
+    ],
   },
-
-
 
   "akwa-ibom": {
     name: "Akwa Ibom State",
     country: "Nigeria",
-    tagline: "Discover the culture, communities and landscapes of Akwa Ibom State.",
+    tagline:
+      "Discover the culture, communities and landscapes of Akwa Ibom State.",
     image: "images/destination-placeholder.svg",
-    description: "Akwa Ibom State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Akwa Ibom State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Akwa Ibom State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Akwa Ibom State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-
-  "bauchi": {
+  bauchi: {
     name: "Bauchi State",
     country: "Nigeria",
-    tagline: "Discover the culture, communities and landscapes of Bauchi State.",
+    tagline:
+      "Discover the culture, communities and landscapes of Bauchi State.",
     image: "images/destination-placeholder.svg",
-    description: "Bauchi State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Bauchi State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Bauchi State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Bauchi State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
-
-
-
 
   "cross-river": {
     name: "Cross River State",
     country: "Nigeria",
-    tagline: "Discover the culture, communities and landscapes of Cross River State.",
+    tagline:
+      "Discover the culture, communities and landscapes of Cross River State.",
     image: "images/destination-placeholder.svg",
-    description: "Cross River State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Cross River State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Cross River State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Cross River State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-
-
-  "edo": {
+  edo: {
     name: "Edo State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Edo State.",
     image: "images/destination-placeholder.svg",
-    description: "Edo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Edo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Edo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Edo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-
-  "enugu": {
+  enugu: {
     name: "Enugu State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Enugu State.",
     image: "images/destination-placeholder.svg",
-    description: "Enugu State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Enugu State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Enugu State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Enugu State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-
-
-
-  "kaduna": {
+  kaduna: {
     name: "Kaduna State",
     country: "Nigeria",
-    tagline: "Discover the culture, communities and landscapes of Kaduna State.",
+    tagline:
+      "Discover the culture, communities and landscapes of Kaduna State.",
     image: "images/destination-placeholder.svg",
-    description: "Kaduna State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Kaduna State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Kaduna State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Kaduna State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-  "kano": {
+  kano: {
     name: "Kano State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Kano State.",
     image: "images/destination-placeholder.svg",
-    description: "Kano State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Kano State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Kano State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Kano State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-
-
-
-
-
-  "niger": {
+  niger: {
     name: "Niger State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Niger State.",
     image: "images/destination-placeholder.svg",
-    description: "Niger State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Niger State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Niger State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Niger State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-  "ogun": {
+  ogun: {
     name: "Ogun State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Ogun State.",
     image: "images/destination-placeholder.svg",
-    description: "Ogun State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Ogun State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Ogun State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Ogun State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-  "ondo": {
+  ondo: {
     name: "Ondo State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Ondo State.",
     image: "images/destination-placeholder.svg",
-    description: "Ondo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Ondo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Ondo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Ondo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-  "osun": {
+  osun: {
     name: "Osun State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Osun State.",
     image: "images/destination-placeholder.svg",
-    description: "Osun State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Osun State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Osun State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Osun State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-  "oyo": {
+  oyo: {
     name: "Oyo State",
     country: "Nigeria",
     tagline: "Discover the culture, communities and landscapes of Oyo State.",
     image: "images/destination-placeholder.svg",
-    description: "Oyo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Oyo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Oyo State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Oyo State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-  "plateau": {
+  plateau: {
     name: "Plateau State",
     country: "Nigeria",
-    tagline: "Discover the culture, communities and landscapes of Plateau State.",
+    tagline:
+      "Discover the culture, communities and landscapes of Plateau State.",
     image: "images/destination-placeholder.svg",
-    description: "Plateau State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Plateau State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Plateau State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Plateau State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
 
-  "rivers": {
+  rivers: {
     name: "Rivers State",
     country: "Nigeria",
-    tagline: "Discover the culture, communities and landscapes of Rivers State.",
+    tagline:
+      "Discover the culture, communities and landscapes of Rivers State.",
     image: "images/destination-placeholder.svg",
-    description: "Rivers State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
-    experience: "Experience the distinctive local culture, everyday life and regional character of Rivers State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
-    places: []
+    description:
+      "Rivers State is one of Nigeria's 36 states. Explore its local culture, traditions, communities and landscapes while planning a visit with Jovick Travel & Tours.",
+    experience:
+      "Experience the distinctive local culture, everyday life and regional character of Rivers State. Contact Jovick Travel & Tours to discuss travel arrangements and available tours.",
+    places: [],
   },
-
-
-
-
-
 };
-
 
 /* =================================
    GET SELECTED DESTINATION
    ================================= */
 
-const urlParams =
-  new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(window.location.search);
 
-const selectedPlace =
-  urlParams.get("place");
+const selectedPlace = urlParams.get("place");
 
-
-const destination =
-  destinationData[selectedPlace];
-
+const destination = destinationData[selectedPlace];
 
 /* =================================
    CHECK DESTINATION
    ================================= */
 
 if (!destination) {
-
   window.location.href = "destinations.html";
-
 }
-
 
 /* =================================
    PAGE ELEMENTS
    ================================= */
 
-const destinationHero =
-  document.getElementById("destinationHero");
+const destinationHero = document.getElementById("destinationHero");
 
-const destinationName =
-  document.getElementById("destinationName");
+const destinationName = document.getElementById("destinationName");
 
-const destinationCountry =
-  document.getElementById("destinationCountry");
+const destinationCountry = document.getElementById("destinationCountry");
 
-const destinationTagline =
-  document.getElementById("destinationTagline");
+const destinationTagline = document.getElementById("destinationTagline");
 
-const destinationDescription =
-  document.getElementById("destinationDescription");
+const destinationDescription = document.getElementById(
+  "destinationDescription",
+);
 
-const experienceName =
-  document.getElementById("experienceName");
+const experienceName = document.getElementById("experienceName");
 
-const experienceText =
-  document.getElementById("experienceText");
+const experienceText = document.getElementById("experienceText");
 
-const placesGrid =
-  document.getElementById("placesGrid");
+const placesGrid = document.getElementById("placesGrid");
 
-const viewTourButton =
-  document.getElementById("viewTourButton");
-
+const viewTourButton = document.getElementById("viewTourButton");
 
 /* =================================
    DISPLAY DESTINATION
    ================================= */
 
 if (destination) {
-
-  document.title =
-    `${destination.name} | Jovick Travel & Tours`;
-
+  document.title = `${destination.name} | Jovick Travel & Tours`;
 
   // Use the exact destination image shown on the Destinations page
   // as the background of this page's first (hero) section.
-  destinationHero.style.backgroundImage =
-    `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("${destination.image}")`;
+  destinationHero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("${destination.image}")`;
 
+  destinationName.textContent = destination.name;
 
-  destinationName.textContent =
-    destination.name;
+  destinationCountry.textContent = destination.country;
 
+  destinationTagline.textContent = destination.tagline;
 
-  destinationCountry.textContent =
-    destination.country;
+  destinationDescription.textContent = destination.description;
 
+  experienceName.textContent = destination.name;
 
-  destinationTagline.textContent =
-    destination.tagline;
-
-
-  destinationDescription.textContent =
-    destination.description;
-
-
-  experienceName.textContent =
-    destination.name;
-
-
-  experienceText.textContent =
-    destination.experience;
-
+  experienceText.textContent = destination.experience;
 
   /* =================================
      PLACES TO VISIT
@@ -1170,13 +1001,9 @@ if (destination) {
   }
 
   destination.places.forEach(function (place) {
+    const placeCard = document.createElement("article");
 
-    const placeCard =
-      document.createElement("article");
-
-    placeCard.className =
-      "place-card";
-
+    placeCard.className = "place-card";
 
     placeCard.innerHTML = `
 
@@ -1199,11 +1026,8 @@ if (destination) {
 
     `;
 
-
     placesGrid.appendChild(placeCard);
-
   });
-
 
   /* =================================
      TOUR BUTTON
@@ -1213,7 +1037,7 @@ if (destination) {
     viewTourButton.href = `tour-details.html?tour=${destination.tour}`;
   } else {
     viewTourButton.href = "tours.html";
-    viewTourButton.innerHTML = 'Explore Available Tours <i class="fa-solid fa-arrow-right"></i>';
+    viewTourButton.innerHTML =
+      'Explore Available Tours <i class="fa-solid fa-arrow-right"></i>';
   }
-
 }

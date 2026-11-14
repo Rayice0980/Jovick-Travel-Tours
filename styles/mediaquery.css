@@ -1,10 +1,6 @@
-
-
-
 /* ---------- TABLET & MOBILE ---------- */
 
 @media (max-width: 768px) {
-
   /* ---------- HEADER ---------- */
 
   .page-header {
@@ -86,18 +82,17 @@
     color: #0066cc;
     background: #eef6ff;
   }
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-15px);
-  }
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-}
-
 
   /* =================================
      HOME PAGE
@@ -112,10 +107,7 @@
     justify-content: center;
 
     background-image:
-      linear-gradient(
-        rgba(0, 102, 204, 0),
-        rgba(0, 102, 204, 0.85)
-      ),
+      linear-gradient(rgba(0, 102, 204, 0), rgba(0, 102, 204, 0.85)),
       url("../images/Mountain sky.jpg");
 
     background-position: center;
@@ -142,7 +134,6 @@
     padding: 13px 22px;
   }
 
-
   /* ---------- HOME POPULAR DESTINATIONS ---------- */
 
   .section-2 {
@@ -165,7 +156,6 @@
     margin: 0 0 25px;
   }
 
-
   /* ---------- HOME FEATURES ---------- */
 
   .section-3 {
@@ -184,7 +174,6 @@
     height: 55px;
   }
 
-
   /* ---------- FOOTER ---------- */
 
   .footer-section {
@@ -197,7 +186,6 @@
     grid-column: 1 / -1;
     max-width: 520px;
   }
-
 
   /* =================================
      DESTINATIONS PAGE
@@ -262,7 +250,6 @@
     margin: 0 16px 16px;
   }
 
-
   /* =================================
      TOURS PAGE
      ================================= */
@@ -281,7 +268,6 @@
     line-height: 1.5;
   }
 
-
   .tour-sec-2 {
     padding: 40px 20px 55px;
   }
@@ -296,14 +282,12 @@
     margin-bottom: 25px;
   }
 
-
   /* ---------- TOUR GRID ---------- */
 
   .tour-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
-
 
   /* ---------- TOUR CARDS ---------- */
 
@@ -316,42 +300,34 @@
     border-radius: 10px;
   }
 
-
   .tour-sec-2 .location-img {
     height: 190px;
   }
-
 
   .tour-sec-2 .article-card h3 {
     font-size: 20px;
     margin: 14px 16px 7px;
   }
 
-
   .tour-sec-2 .article-card > p {
     font-size: 14px;
     margin: 0 16px 8px;
   }
-
 
   .tour-price {
     font-size: 17px;
     margin: 0 16px 10px;
   }
 
-
   .tour-sec-2 .article-card button {
     margin: 0 16px 16px;
     padding: 9px 16px;
   }
-
 }
-
 
 /* ---------- SMALL PHONES ---------- */
 
 @media (max-width: 480px) {
-
   /* ---------- DESTINATIONS ---------- */
 
   .destinations-sec-1 {
@@ -377,7 +353,6 @@
   .destinations-grid-sec .location-img {
     height: 185px;
   }
-
 
   /* ---------- TOURS ---------- */
 
@@ -443,9 +418,6 @@
   .footer-contact-info p {
     font-size: 13px;
   }
-
-  
-
 }
 
 /* =================================
@@ -453,7 +425,6 @@
    ================================= */
 
 @media (max-width: 768px) {
-
   .contact-sec-1 {
     min-height: 300px;
     padding: 50px 20px;
@@ -467,7 +438,6 @@
     font-size: 16px;
     line-height: 1.5;
   }
-
 
   /* ---------- CONTACT SECTION 2 ---------- */
 
@@ -490,7 +460,6 @@
     line-height: 1.6;
   }
 
-
   /* ---------- CONTACT FORM ---------- */
 
   .contact-form {
@@ -512,7 +481,6 @@
     padding: 13px;
   }
 
-
   /* ---------- SECTION 3 ---------- */
 
   .contact-sec-3 {
@@ -527,14 +495,11 @@
   .contact-sec-3 p {
     line-height: 1.5;
   }
-
 }
-
 
 /* ---------- SMALL PHONES ---------- */
 
 @media (max-width: 480px) {
-
   .contact-sec-1 {
     min-height: 280px;
     padding: 40px 15px;
@@ -566,43 +531,29 @@
   }
 
   .contact-form {
-  padding: 25px 20px;
+    padding: 25px 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form textarea {
+    min-height: 120px;
+  }
 }
-
-.contact-form input,
-.contact-form textarea {
-  font-size: 14px;
-}
-
-.contact-form textarea {
-  min-height: 120px;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* =================================
    NEW PAGES
    DESTINATION DETAILS + TOUR DETAILS
    ================================= */
 
-
 /* =================================
    DESTINATION DETAILS PAGE
    ================================= */
 
 @media (max-width: 768px) {
-
   .destination-details-hero {
     min-height: 360px;
   }
@@ -672,13 +623,11 @@
   }
 }
 
-
 /* =================================
    DESTINATION DETAILS - SMALL PHONES
    ================================= */
 
 @media (max-width: 480px) {
-
   .destination-details-hero {
     min-height: 320px;
   }
@@ -770,13 +719,11 @@
   }
 }
 
-
 /* =================================
    TOUR DETAILS PAGE
    ================================= */
 
 @media (max-width: 768px) {
-
   .tour-detail-hero {
     height: 350px;
   }
@@ -837,13 +784,11 @@
   }
 }
 
-
 /* =================================
    TOUR DETAILS - SMALL PHONES
    ================================= */
 
 @media (max-width: 480px) {
-
   .tour-detail-hero {
     height: 300px;
   }
@@ -961,7 +906,7 @@
 
   .page-header .company-name {
     font-size: 14px;
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
   }
 
   .nav-bar {
@@ -972,5 +917,3 @@
     font-size: 12px;
   }
 }
-
-

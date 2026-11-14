@@ -3,7 +3,6 @@
    HOME PAGE
    ================================= */
 
-
 /* =================================
    HERO SECTION
    ================================= */
@@ -12,10 +11,7 @@
   min-height: 650px;
 
   background-image:
-    linear-gradient(
-      rgba(0, 28, 56, 0.55),
-      rgba(0, 28, 56, 0.35)
-    ),
+    linear-gradient(rgba(0, 28, 56, 0.55), rgba(0, 28, 56, 0.35)),
     url("../images/Mountain\ sky.jpg");
 
   background-size: cover;
@@ -32,7 +28,6 @@
   animation: heroBackgroundZoom 12s ease-out both;
 }
 
-
 .home-hero-overlay {
   width: 100%;
   max-width: 1200px;
@@ -44,7 +39,6 @@
   position: relative;
   z-index: 2;
 }
-
 
 /* =================================
    HERO TEXT
@@ -66,7 +60,6 @@
   transform: translateY(30px);
 }
 
-
 .home-hero h1 {
   max-width: 760px;
 
@@ -80,13 +73,11 @@
   transform: translateY(35px);
 }
 
-
 .home-hero h1 span {
   display: block;
 
   color: #8ec8ff;
 }
-
 
 .home-hero > .home-hero-overlay > p {
   max-width: 650px;
@@ -100,7 +91,6 @@
   opacity: 0;
   transform: translateY(35px);
 }
-
 
 /* =================================
    HERO ACTIONS
@@ -120,7 +110,6 @@
   opacity: 0;
   transform: translateY(35px);
 }
-
 
 .hero-primary-button,
 .hero-secondary-button {
@@ -147,13 +136,11 @@
     box-shadow 0.3s ease;
 }
 
-
 .hero-primary-button {
   background-color: white;
 
   color: #0066cc;
 }
-
 
 .hero-primary-button:hover {
   background-color: #0066cc;
@@ -162,10 +149,8 @@
 
   transform: translateY(-3px);
 
-  box-shadow:
-    0 10px 25px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
 }
-
 
 .hero-secondary-button {
   border: 1px solid rgba(255, 255, 255, 0.75);
@@ -175,7 +160,6 @@
   background-color: rgba(255, 255, 255, 0.08);
 }
 
-
 .hero-secondary-button:hover {
   background-color: white;
 
@@ -183,7 +167,6 @@
 
   transform: translateY(-3px);
 }
-
 
 /* =================================
    HERO TRUST
@@ -204,7 +187,6 @@
   transform: translateY(30px);
 }
 
-
 .hero-trust-item {
   display: flex;
 
@@ -217,57 +199,45 @@
   color: #f4f8fc;
 }
 
-
 .hero-trust-item i {
   color: #8ec8ff;
 
   font-size: 18px;
 }
 
-
 /* =================================
    HERO LOAD ANIMATIONS
    ================================= */
 
 body.home-loaded .hero-eyebrow {
-  animation:
-    heroFadeUp 0.8s ease forwards;
+  animation: heroFadeUp 0.8s ease forwards;
 
   animation-delay: 0.15s;
 }
 
-
 body.home-loaded .home-hero h1 {
-  animation:
-    heroFadeUp 0.9s ease forwards;
+  animation: heroFadeUp 0.9s ease forwards;
 
   animation-delay: 0.3s;
 }
 
-
 body.home-loaded .home-hero-overlay > p {
-  animation:
-    heroFadeUp 0.9s ease forwards;
+  animation: heroFadeUp 0.9s ease forwards;
 
   animation-delay: 0.45s;
 }
 
-
 body.home-loaded .hero-actions {
-  animation:
-    heroFadeUp 0.9s ease forwards;
+  animation: heroFadeUp 0.9s ease forwards;
 
   animation-delay: 0.6s;
 }
 
-
 body.home-loaded .hero-trust {
-  animation:
-    heroFadeUp 0.9s ease forwards;
+  animation: heroFadeUp 0.9s ease forwards;
 
   animation-delay: 0.75s;
 }
-
 
 /* =================================
    GENERAL SECTION STYLES
@@ -289,7 +259,6 @@ body.home-loaded .hero-trust {
   margin-bottom: 12px;
 }
 
-
 .section-heading {
   max-width: 750px;
 
@@ -297,7 +266,6 @@ body.home-loaded .hero-trust {
 
   text-align: center;
 }
-
 
 .section-heading h2 {
   font-size: 38px;
@@ -309,7 +277,6 @@ body.home-loaded .hero-trust {
   margin-bottom: 14px;
 }
 
-
 .section-heading p {
   color: #666;
 
@@ -317,7 +284,6 @@ body.home-loaded .hero-trust {
 
   line-height: 1.7;
 }
-
 
 /* =================================
    SCROLL REVEAL
@@ -333,13 +299,11 @@ body.home-loaded .hero-trust {
     transform 0.8s ease;
 }
 
-
 .reveal.visible {
   opacity: 1;
 
   transform: translateY(0);
 }
-
 
 /* =================================
    WELCOME SECTION
@@ -361,11 +325,9 @@ body.home-loaded .hero-trust {
   align-items: center;
 }
 
-
 .welcome-image {
   position: relative;
 }
-
 
 .welcome-image img {
   width: 100%;
@@ -378,18 +340,14 @@ body.home-loaded .hero-trust {
 
   display: block;
 
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
 
-  transition:
-    transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
-
 
 .welcome-image:hover img {
   transform: scale(1.02);
 }
-
 
 /* =================================
    WELCOME BADGE
@@ -414,10 +372,8 @@ body.home-loaded .hero-trust {
 
   border-radius: 12px;
 
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
-
 
 .welcome-image-badge i {
   width: 40px;
@@ -435,12 +391,10 @@ body.home-loaded .hero-trust {
   color: #0066cc;
 }
 
-
 .welcome-image-badge strong,
 .welcome-image-badge span {
   display: block;
 }
-
 
 .welcome-image-badge strong {
   color: #222;
@@ -450,13 +404,11 @@ body.home-loaded .hero-trust {
   margin-bottom: 3px;
 }
 
-
 .welcome-image-badge span {
   color: #777;
 
   font-size: 12px;
 }
-
 
 /* =================================
    WELCOME CONTENT
@@ -472,11 +424,9 @@ body.home-loaded .hero-trust {
   margin-bottom: 20px;
 }
 
-
 .welcome-content h2 span {
   color: #0066cc;
 }
-
 
 .welcome-content p {
   color: #666;
@@ -487,7 +437,6 @@ body.home-loaded .hero-trust {
 
   margin-bottom: 16px;
 }
-
 
 .text-link {
   display: inline-flex;
@@ -509,13 +458,11 @@ body.home-loaded .hero-trust {
     color 0.3s ease;
 }
 
-
 .text-link:hover {
   color: #0052a3;
 
   gap: 12px;
 }
-
 
 /* =================================
    POPULAR DESTINATIONS
@@ -529,7 +476,6 @@ body.home-loaded .hero-trust {
   text-align: center;
 }
 
-
 .destination-preview-grid {
   max-width: 1150px;
 
@@ -537,12 +483,10 @@ body.home-loaded .hero-trust {
 
   display: grid;
 
-  grid-template-columns:
-    repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
   gap: 25px;
 }
-
 
 /* =================================
    DESTINATION CARDS
@@ -559,8 +503,7 @@ body.home-loaded .hero-trust {
 
   overflow: hidden;
 
-  box-shadow:
-    0 5px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 
   transition:
     transform 0.35s ease,
@@ -569,14 +512,11 @@ body.home-loaded .hero-trust {
   opacity: 1;
 }
 
-
 .home-destination-card:hover {
   transform: translateY(-8px);
 
-  box-shadow:
-    0 15px 32px rgba(0, 0, 0, 0.14);
+  box-shadow: 0 15px 32px rgba(0, 0, 0, 0.14);
 }
-
 
 .home-destination-card img {
   width: 100%;
@@ -587,20 +527,16 @@ body.home-loaded .hero-trust {
 
   display: block;
 
-  transition:
-    transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
-
 
 .home-destination-card:hover img {
   transform: scale(1.06);
 }
 
-
 .home-destination-content {
   padding: 22px;
 }
-
 
 .home-destination-content > span {
   color: #0066cc;
@@ -614,7 +550,6 @@ body.home-loaded .hero-trust {
   letter-spacing: 1px;
 }
 
-
 .home-destination-content h3 {
   color: #222;
 
@@ -623,7 +558,6 @@ body.home-loaded .hero-trust {
   margin: 7px 0;
 }
 
-
 .home-destination-content p {
   color: #666;
 
@@ -631,7 +565,6 @@ body.home-loaded .hero-trust {
 
   margin-bottom: 17px;
 }
-
 
 .home-destination-content strong {
   display: inline-flex;
@@ -644,41 +577,32 @@ body.home-loaded .hero-trust {
 
   font-size: 14px;
 
-  transition:
-    gap 0.3s ease;
+  transition: gap 0.3s ease;
 }
 
-
-.home-destination-card:hover
-.home-destination-content strong {
+.home-destination-card:hover .home-destination-content strong {
   gap: 12px;
 }
-
 
 /* =================================
    DESTINATION CARD ANIMATION
    ================================= */
 
 .reveal.visible .home-destination-card {
-  animation:
-    cardReveal 0.75s ease both;
+  animation: cardReveal 0.75s ease both;
 }
-
 
 .reveal.visible .home-destination-card:nth-child(1) {
-  animation-delay: 0.10s;
+  animation-delay: 0.1s;
 }
-
 
 .reveal.visible .home-destination-card:nth-child(2) {
   animation-delay: 0.25s;
 }
 
-
 .reveal.visible .home-destination-card:nth-child(3) {
-  animation-delay: 0.40s;
+  animation-delay: 0.4s;
 }
-
 
 /* =================================
    MAIN SECTION BUTTON
@@ -708,7 +632,6 @@ body.home-loaded .hero-trust {
     transform 0.3s ease;
 }
 
-
 .section-main-button:hover {
   background-color: #0052a3;
 
@@ -716,7 +639,6 @@ body.home-loaded .hero-trust {
 
   transform: translateY(-3px);
 }
-
 
 /* =================================
    WHY JOVICK
@@ -730,7 +652,6 @@ body.home-loaded .hero-trust {
   background-color: white;
 }
 
-
 .benefits-grid {
   max-width: 1150px;
 
@@ -738,12 +659,10 @@ body.home-loaded .hero-trust {
 
   display: grid;
 
-  grid-template-columns:
-    repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   gap: 20px;
 }
-
 
 .benefit-card {
   padding: 32px 22px;
@@ -759,14 +678,11 @@ body.home-loaded .hero-trust {
     box-shadow 0.35s ease;
 }
 
-
 .benefit-card:hover {
   transform: translateY(-7px);
 
-  box-shadow:
-    0 12px 28px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
 }
-
 
 /* =================================
    BENEFIT ICONS
@@ -796,13 +712,11 @@ body.home-loaded .hero-trust {
     background-color 0.3s ease;
 }
 
-
 .benefit-card:hover .benefit-icon {
   transform: scale(1.08);
 
   background-color: #dceeff;
 }
-
 
 .benefit-card h3 {
   color: #222;
@@ -812,7 +726,6 @@ body.home-loaded .hero-trust {
   margin-bottom: 10px;
 }
 
-
 .benefit-card p {
   color: #666;
 
@@ -821,36 +734,29 @@ body.home-loaded .hero-trust {
   line-height: 1.7;
 }
 
-
 /* =================================
    BENEFIT CARD ANIMATION
    ================================= */
 
 .reveal.visible .benefit-card {
-  animation:
-    cardReveal 0.75s ease both;
+  animation: cardReveal 0.75s ease both;
 }
-
 
 .reveal.visible .benefit-card:nth-child(1) {
-  animation-delay: 0.10s;
+  animation-delay: 0.1s;
 }
-
 
 .reveal.visible .benefit-card:nth-child(2) {
   animation-delay: 0.25s;
 }
 
-
 .reveal.visible .benefit-card:nth-child(3) {
-  animation-delay: 0.40s;
+  animation-delay: 0.4s;
 }
-
 
 .reveal.visible .benefit-card:nth-child(4) {
   animation-delay: 0.55s;
 }
-
 
 /* =================================
    TRAVEL EXPERIENCE CTA
@@ -870,10 +776,7 @@ body.home-loaded .hero-trust {
   text-align: center;
 
   background-image:
-    linear-gradient(
-      rgba(0, 67, 134, 0.84),
-      rgba(0, 67, 134, 0.84)
-    ),
+    linear-gradient(rgba(0, 67, 134, 0.84), rgba(0, 67, 134, 0.84)),
     url("../images/Mountain\ sky.jpg");
 
   background-size: cover;
@@ -883,16 +786,13 @@ body.home-loaded .hero-trust {
   color: white;
 }
 
-
 .experience-content {
   max-width: 750px;
 }
 
-
 .experience-content .section-label {
   color: #b9ddff;
 }
-
 
 .experience-content h2 {
   font-size: 45px;
@@ -902,11 +802,9 @@ body.home-loaded .hero-trust {
   margin-bottom: 18px;
 }
 
-
 .experience-content h2 span {
   color: #9bd0ff;
 }
-
 
 .experience-content > p {
   max-width: 650px;
@@ -919,7 +817,6 @@ body.home-loaded .hero-trust {
 
   line-height: 1.7;
 }
-
 
 .experience-actions {
   display: flex;
@@ -934,7 +831,6 @@ body.home-loaded .hero-trust {
 
   flex-wrap: wrap;
 }
-
 
 .experience-primary,
 .experience-secondary {
@@ -960,13 +856,11 @@ body.home-loaded .hero-trust {
     color 0.3s ease;
 }
 
-
 .experience-primary {
   background-color: white;
 
   color: #0066cc;
 }
-
 
 .experience-primary:hover {
   background-color: #eaf4ff;
@@ -976,13 +870,11 @@ body.home-loaded .hero-trust {
   transform: translateY(-3px);
 }
 
-
 .experience-secondary {
   border: 1px solid rgba(255, 255, 255, 0.7);
 
   color: white;
 }
-
 
 .experience-secondary:hover {
   background-color: white;
@@ -991,7 +883,6 @@ body.home-loaded .hero-trust {
 
   transform: translateY(-3px);
 }
-
 
 /* =================================
    FINAL CTA
@@ -1018,10 +909,8 @@ body.home-loaded .hero-trust {
 
   border-radius: 18px;
 
-  box-shadow:
-    0 8px 25px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
 }
-
 
 .home-final-cta h2 {
   color: #222;
@@ -1031,7 +920,6 @@ body.home-loaded .hero-trust {
   margin-bottom: 8px;
 }
 
-
 .home-final-cta p {
   color: #666;
 
@@ -1039,7 +927,6 @@ body.home-loaded .hero-trust {
 
   line-height: 1.6;
 }
-
 
 .cta-button {
   flex-shrink: 0;
@@ -1069,7 +956,6 @@ body.home-loaded .hero-trust {
     transform 0.3s ease;
 }
 
-
 .cta-button:hover {
   background-color: #0052a3;
 
@@ -1078,13 +964,11 @@ body.home-loaded .hero-trust {
   transform: translateY(-3px);
 }
 
-
 /* =================================
    KEYFRAME ANIMATIONS
    ================================= */
 
 @keyframes heroBackgroundZoom {
-
   from {
     background-size: 105%;
   }
@@ -1092,70 +976,52 @@ body.home-loaded .hero-trust {
   to {
     background-size: cover;
   }
-
 }
-
 
 @keyframes heroFadeUp {
-
   from {
     opacity: 0;
 
-    transform:
-      translateY(35px);
+    transform: translateY(35px);
   }
 
   to {
     opacity: 1;
 
-    transform:
-      translateY(0);
+    transform: translateY(0);
   }
-
 }
-
 
 @keyframes cardReveal {
-
   from {
     opacity: 0;
 
-    transform:
-      translateY(35px)
-      scale(0.97);
+    transform: translateY(35px) scale(0.97);
   }
 
   to {
     opacity: 1;
 
-    transform:
-      translateY(0)
-      scale(1);
+    transform: translateY(0) scale(1);
   }
-
 }
-
 
 /* =================================
    TABLET
    ================================= */
 
 @media (max-width: 900px) {
-
   .home-hero {
     min-height: 590px;
   }
-
 
   .home-hero-overlay {
     padding: 80px 35px;
   }
 
-
   .home-hero h1 {
     font-size: 48px;
   }
-
 
   .home-welcome {
     grid-template-columns: 1fr;
@@ -1165,13 +1031,11 @@ body.home-loaded .hero-trust {
     padding: 75px 30px;
   }
 
-
   .welcome-image {
     max-width: 700px;
 
     margin: 0 auto;
   }
-
 
   .welcome-content {
     max-width: 700px;
@@ -1179,42 +1043,31 @@ body.home-loaded .hero-trust {
     margin: 0 auto;
   }
 
-
   .destination-preview-grid {
-    grid-template-columns:
-      1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-
 
   .benefits-grid {
-    grid-template-columns:
-      1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-
 
   .home-final-cta {
-    margin:
-      60px 30px;
+    margin: 60px 30px;
   }
-
 }
-
 
 /* =================================
    MOBILE
    ================================= */
 
 @media (max-width: 600px) {
-
   .home-hero {
     min-height: 600px;
   }
 
-
   .home-hero-overlay {
     padding: 70px 22px;
   }
-
 
   .hero-eyebrow {
     font-size: 11px;
@@ -1222,13 +1075,11 @@ body.home-loaded .hero-trust {
     letter-spacing: 1.8px;
   }
 
-
   .home-hero h1 {
     font-size: 38px;
 
     line-height: 1.12;
   }
-
 
   .home-hero > .home-hero-overlay > p {
     font-size: 16px;
@@ -1236,19 +1087,16 @@ body.home-loaded .hero-trust {
     line-height: 1.6;
   }
 
-
   .hero-actions {
     flex-direction: column;
 
     align-items: stretch;
   }
 
-
   .hero-primary-button,
   .hero-secondary-button {
     width: 100%;
   }
-
 
   .hero-trust {
     gap: 15px;
@@ -1256,21 +1104,17 @@ body.home-loaded .hero-trust {
     margin-top: 32px;
   }
 
-
   .hero-trust-item {
     font-size: 12px;
   }
-
 
   .home-welcome {
     padding: 60px 20px;
   }
 
-
   .welcome-image img {
     height: 350px;
   }
-
 
   .welcome-image-badge {
     right: 12px;
@@ -1280,38 +1124,30 @@ body.home-loaded .hero-trust {
     padding: 12px 14px;
   }
 
-
   .welcome-content h2 {
     font-size: 31px;
   }
-
 
   .welcome-content p {
     font-size: 15px;
   }
 
-
   .popular-destinations,
   .why-jovick {
-    padding:
-      65px 20px;
+    padding: 65px 20px;
   }
-
 
   .section-heading {
     margin-bottom: 32px;
   }
 
-
   .section-heading h2 {
     font-size: 30px;
   }
 
-
   .section-heading p {
     font-size: 14px;
   }
-
 
   .destination-preview-grid {
     grid-template-columns: 1fr;
@@ -1319,11 +1155,9 @@ body.home-loaded .hero-trust {
     gap: 20px;
   }
 
-
   .home-destination-card img {
     height: 220px;
   }
-
 
   .benefits-grid {
     grid-template-columns: 1fr;
@@ -1331,28 +1165,23 @@ body.home-loaded .hero-trust {
     gap: 15px;
   }
 
-
   .travel-experience {
     min-height: 480px;
 
     padding: 70px 20px;
   }
 
-
   .experience-content h2 {
     font-size: 34px;
   }
-
 
   .experience-content > p {
     font-size: 15px;
   }
 
-
   .experience-actions {
     flex-direction: column;
   }
-
 
   .experience-primary,
   .experience-secondary {
@@ -1361,44 +1190,35 @@ body.home-loaded .hero-trust {
     justify-content: center;
   }
 
-
   .home-final-cta {
-    margin:
-      45px 15px;
+    margin: 45px 15px;
 
-    padding:
-      30px 22px;
+    padding: 30px 22px;
 
     flex-direction: column;
 
     align-items: flex-start;
   }
 
-
   .home-final-cta h2 {
     font-size: 25px;
   }
-
 
   .cta-button {
     width: 100%;
 
     justify-content: center;
   }
-
 }
-
 
 /* =================================
    SMALL PHONES
    ================================= */
 
 @media (max-width: 400px) {
-
   .home-hero h1 {
     font-size: 33px;
   }
-
 
   .home-hero-overlay {
     padding-left: 18px;
@@ -1406,11 +1226,9 @@ body.home-loaded .hero-trust {
     padding-right: 18px;
   }
 
-
   .welcome-image img {
     height: 300px;
   }
-
 
   .welcome-image-badge {
     position: relative;
@@ -1426,24 +1244,19 @@ body.home-loaded .hero-trust {
     margin-right: 15px;
   }
 
-
   .experience-content h2 {
     font-size: 30px;
   }
-
 }
-
 
 /* =================================
    REDUCED MOTION
    ================================= */
 
 @media (prefers-reduced-motion: reduce) {
-
   .home-hero {
     animation: none;
   }
-
 
   .hero-eyebrow,
   .home-hero h1,
@@ -1457,7 +1270,6 @@ body.home-loaded .hero-trust {
     animation: none !important;
   }
 
-
   .reveal {
     opacity: 1;
 
@@ -1465,7 +1277,6 @@ body.home-loaded .hero-trust {
 
     transition: none;
   }
-
 
   .reveal.visible .home-destination-card,
   .reveal.visible .benefit-card {
@@ -1476,7 +1287,6 @@ body.home-loaded .hero-trust {
     transform: none;
   }
 
-
   .home-destination-card,
   .benefit-card,
   .welcome-image img,
@@ -1486,5 +1296,4 @@ body.home-loaded .hero-trust {
   .cta-button {
     transition: none;
   }
-
 }

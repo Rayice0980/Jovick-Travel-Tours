@@ -9,7 +9,7 @@
   padding: clamp(22px, 5vw, 42px);
   background: #fff;
   border-radius: 16px;
-  box-shadow: 0 8px 28px rgba(20, 43, 70, .10);
+  box-shadow: 0 8px 28px rgba(20, 43, 70, 0.1);
 }
 .payment-back-link {
   color: #075db5;
@@ -120,7 +120,7 @@
   background: #116b55;
 }
 .payment-primary-button:disabled {
-  opacity: .65;
+  opacity: 0.65;
   cursor: wait;
 }
 .payment-status-message {

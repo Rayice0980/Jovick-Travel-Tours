@@ -2,7 +2,6 @@
    TOURS PAGE
    ================================= */
 
-
 /* ---------- SECTION 1 ---------- */
 
 .tour-sec-1 {
@@ -33,7 +32,6 @@
   line-height: 1.6;
 }
 
-
 /* ---------- SECTION 2 ---------- */
 
 .tour-sec-2 {
@@ -52,7 +50,6 @@
   margin-bottom: 25px;
 }
 
-
 /* ---------- TOUR GRID ---------- */
 
 .tour-grid {
@@ -60,7 +57,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
-
 
 /* ---------- TOUR CARD ---------- */
 
@@ -77,9 +73,7 @@
   overflow: hidden;
 
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-
 }
-
 
 /* ---------- TOUR IMAGE ---------- */
 
@@ -91,14 +85,12 @@
   display: block;
 }
 
-
 /* ---------- TOUR TITLE ---------- */
 
 .tour-sec-2 .article-card h3 {
   font-size: 18px;
   margin: 12px 18px 7px;
 }
-
 
 /* ---------- TOUR DETAILS ---------- */
 
@@ -113,7 +105,6 @@
   margin-right: 5px;
 }
 
-
 /* ---------- PRICE ---------- */
 
 .tour-price {
@@ -126,7 +117,6 @@
 
   margin: 0 18px 12px;
 }
-
 
 /* ---------- VIEW TOUR ---------- */
 
@@ -157,7 +147,6 @@
   transform: translateX(2px);
 }
 
-
 /* ---------- EXTRA TOURS ---------- */
 
 .extra-tours {
@@ -167,7 +156,6 @@
 .extra-tours.show {
   display: contents;
 }
-
 
 /* ---------- VIEW ALL BUTTON ---------- */
 

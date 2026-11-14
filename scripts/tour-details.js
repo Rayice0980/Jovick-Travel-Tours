@@ -1,5 +1,4 @@
 const tourData = {
-
   abuja: {
     name: "Abuja City Tour",
     location: "Abuja, Nigeria",
@@ -13,10 +12,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected meals"
-    ]
+      "Selected meals",
+    ],
   },
-
 
   lagos: {
     name: "Lagos City Experience",
@@ -31,10 +29,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected meals"
-    ]
+      "Selected meals",
+    ],
   },
-
 
   dubai: {
     name: "Dubai Experience",
@@ -49,10 +46,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Airport transfer",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   london: {
     name: "London Gateway",
@@ -67,10 +63,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   paris: {
     name: "Paris Romantic Trip",
@@ -85,10 +80,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   "cape-town": {
     name: "Cape Town Adventure",
@@ -103,10 +97,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   zanzibar: {
     name: "Zanzibar Escape",
@@ -121,10 +114,9 @@ const tourData = {
       "Island tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   accra: {
     name: "Accra Discovery",
@@ -139,10 +131,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   cairo: {
     name: "Cairo Heritage Tour",
@@ -157,10 +148,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   nairobi: {
     name: "Nairobi Adventure",
@@ -175,10 +165,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   rome: {
     name: "Rome Historical Tour",
@@ -193,10 +182,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   amsterdam: {
     name: "Amsterdam Escape",
@@ -211,10 +199,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   barcelona: {
     name: "Barcelona Experience",
@@ -229,10 +216,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   "abu-dhabi": {
     name: "Abu Dhabi Experience",
@@ -247,10 +233,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   riyadh: {
     name: "Riyadh Discovery",
@@ -265,10 +250,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   tokyo: {
     name: "Tokyo Adventure",
@@ -283,10 +267,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   singapore: {
     name: "Singapore Experience",
@@ -301,10 +284,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   bangkok: {
     name: "Bangkok Discovery",
@@ -319,10 +301,9 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
+      "Selected activities",
+    ],
   },
-
 
   seoul: {
     name: "Seoul Experience",
@@ -337,170 +318,108 @@ const tourData = {
       "City tour",
       "Tour guide",
       "Transportation",
-      "Selected activities"
-    ]
-  }
-
+      "Selected activities",
+    ],
+  },
 };
-
 
 /* ---------- GET SELECTED TOUR ---------- */
 
-const urlParams =
-  new URLSearchParams(window.location.search);
+const urlParams = new URLSearchParams(window.location.search);
 
-const selectedTour =
-  urlParams.get("tour");
+const selectedTour = urlParams.get("tour");
 
-const tour =
-  tourData[selectedTour];
-
+const tour = tourData[selectedTour];
 
 /* ---------- PAGE ELEMENTS ---------- */
 
-const tourName =
-  document.getElementById("tourName");
+const tourName = document.getElementById("tourName");
 
-const tourLocation =
-  document.getElementById("tourLocation");
+const tourLocation = document.getElementById("tourLocation");
 
-const tourImage =
-  document.getElementById("tourImage");
+const tourImage = document.getElementById("tourImage");
 
-const tourTitle =
-  document.getElementById("tourTitle");
+const tourTitle = document.getElementById("tourTitle");
 
-const tourDescription =
-  document.getElementById("tourDescription");
+const tourDescription = document.getElementById("tourDescription");
 
-const tourDuration =
-  document.getElementById("tourDuration");
+const tourDuration = document.getElementById("tourDuration");
 
-const tourPrice =
-  document.getElementById("tourPrice");
+const tourPrice = document.getElementById("tourPrice");
 
-const tourIncludes =
-  document.getElementById("tourIncludes");
-
+const tourIncludes = document.getElementById("tourIncludes");
 
 /* ---------- DISPLAY TOUR ---------- */
 
 if (tour) {
+  tourName.textContent = tour.name;
 
-  tourName.textContent =
-    tour.name;
+  tourLocation.textContent = tour.location;
 
-  tourLocation.textContent =
-    tour.location;
+  tourImage.src = tour.image;
 
-  tourImage.src =
-    tour.image;
+  tourImage.alt = tour.name;
 
-  tourImage.alt =
-    tour.name;
+  tourTitle.textContent = tour.name;
 
-  tourTitle.textContent =
-    tour.name;
+  tourDescription.textContent = tour.description;
 
-  tourDescription.textContent =
-    tour.description;
+  tourDuration.textContent = tour.duration;
 
-  tourDuration.textContent =
-    tour.duration;
-
-  tourPrice.textContent =
-    tour.price + " per person";
-
+  tourPrice.textContent = tour.price + " per person";
 
   tourIncludes.innerHTML = "";
 
-
   tour.includes.forEach(function (item) {
+    const li = document.createElement("li");
 
-    const li =
-      document.createElement("li");
-
-    li.textContent =
-      item;
+    li.textContent = item;
 
     tourIncludes.appendChild(li);
-
   });
-
-
 } else {
+  tourName.textContent = "Tour Not Found";
 
-  tourName.textContent =
-    "Tour Not Found";
+  tourLocation.textContent = "Please return to our tours page.";
 
-  tourLocation.textContent =
-    "Please return to our tours page.";
-
-  tourDescription.textContent =
-    "The selected tour could not be found.";
-
+  tourDescription.textContent = "The selected tour could not be found.";
 }
-
 
 /* ---------- BOOKING ELEMENTS ---------- */
 
-const tourBookingForm =
-  document.getElementById("tourBookingForm");
+const tourBookingForm = document.getElementById("tourBookingForm");
 
-const bookingMessage =
-  document.getElementById("bookingMessage");
+const bookingMessage = document.getElementById("bookingMessage");
 
-const bookingSuccess =
-  document.getElementById("bookingSuccess");
+const bookingSuccess = document.getElementById("bookingSuccess");
 
-const numberOfTravelersInput =
-  document.getElementById("numberOfTravelers");
-
+const numberOfTravelersInput = document.getElementById("numberOfTravelers");
 
 /* ---------- PRICE CALCULATION ---------- */
 
 function getBasePrice() {
-
   if (!tour) {
     return 0;
   }
 
-  return Number(
-    tour.price.replace(/[₦,]/g, "")
-  );
-
+  return Number(tour.price.replace(/[₦,]/g, ""));
 }
-
 
 function calculateTotalPrice(numberOfTravelers) {
+  const basePrice = getBasePrice();
 
-  const basePrice =
-    getBasePrice();
-
-  return basePrice *
-    Number(numberOfTravelers);
-
+  return basePrice * Number(numberOfTravelers);
 }
-
 
 function formatPrice(amount) {
-
-  return "₦" +
-    amount.toLocaleString("en-NG");
-
+  return "₦" + amount.toLocaleString("en-NG");
 }
-
 
 /* ---------- SHOW PRICE PER PERSON ---------- */
 
 if (tour) {
-
-  tourPrice.textContent =
-    formatPrice(getBasePrice()) +
-    " per person";
-
+  tourPrice.textContent = formatPrice(getBasePrice()) + " per person";
 }
-
 
 /* ---------- BOOKING ---------- */
 
@@ -510,178 +429,158 @@ const SUPABASE_FUNCTION_URL =
 const SUPABASE_PUBLISHABLE_KEY =
   "sb_publishable_fM3wreQX_U3MgG3n7Sv9Fw_45e3MNOk";
 
-tourBookingForm.addEventListener(
-  "submit",
-  async function (event) {
-    event.preventDefault();
+tourBookingForm.addEventListener("submit", async function (event) {
+  event.preventDefault();
 
-    const customerName =
-      document.getElementById("customerName").value.trim();
-    const customerEmail =
-      document.getElementById("customerEmail").value.trim();
-    const customerPhone =
-      document.getElementById("customerPhone").value.trim();
-    const travelDate =
-      document.getElementById("travelDate").value;
-    const flightPreference =
-      document.getElementById("flightPreference").value;
-    const numberOfTravelers =
-      Number(numberOfTravelersInput.value);
+  const customerName = document.getElementById("customerName").value.trim();
+  const customerEmail = document.getElementById("customerEmail").value.trim();
+  const customerPhone = document.getElementById("customerPhone").value.trim();
+  const travelDate = document.getElementById("travelDate").value;
+  const flightPreference = document.getElementById("flightPreference").value;
+  const numberOfTravelers = Number(numberOfTravelersInput.value);
 
-    if (!tour) {
-      bookingMessage.textContent =
-        "Tour information could not be found. Please return to the tours page and try again.";
-      return;
-    }
+  if (!tour) {
+    bookingMessage.textContent =
+      "Tour information could not be found. Please return to the tours page and try again.";
+    return;
+  }
 
-    if (
-      customerName.length < 2 ||
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customerEmail) ||
-      customerPhone.length < 5 ||
-      !travelDate ||
-      !["return", "one-way"].includes(flightPreference) ||
-      !Number.isInteger(numberOfTravelers) ||
-      numberOfTravelers < 1
-    ) {
-      bookingMessage.textContent =
-        "Please complete all fields with valid details before submitting.";
-      return;
-    }
+  if (
+    customerName.length < 2 ||
+    !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(customerEmail) ||
+    customerPhone.length < 5 ||
+    !travelDate ||
+    !["return", "one-way"].includes(flightPreference) ||
+    !Number.isInteger(numberOfTravelers) ||
+    numberOfTravelers < 1
+  ) {
+    bookingMessage.textContent =
+      "Please complete all fields with valid details before submitting.";
+    return;
+  }
 
-    const totalPrice =
-      calculateTotalPrice(numberOfTravelers);
+  const totalPrice = calculateTotalPrice(numberOfTravelers);
 
-    const totalPriceText =
-      formatPrice(totalPrice);
+  const totalPriceText = formatPrice(totalPrice);
 
-    const bookingDetails = [
-      "A new tour booking request has been submitted through the JOVICK Travel & Tours website.",
-      "",
-      "TOUR DETAILS",
-      "Tour: " + tour.name,
-      "Destination: " + tour.location,
-      "Duration: " + tour.duration,
-      "Price per person: " + formatPrice(getBasePrice()),
-      "Number of travelers: " + numberOfTravelers,
-      "Estimated total: " + totalPriceText,
-      "Preferred travel date: " + travelDate,
-      "Flight preference: " + (flightPreference === "return"
+  const bookingDetails = [
+    "A new tour booking request has been submitted through the JOVICK Travel & Tours website.",
+    "",
+    "TOUR DETAILS",
+    "Tour: " + tour.name,
+    "Destination: " + tour.location,
+    "Duration: " + tour.duration,
+    "Price per person: " + formatPrice(getBasePrice()),
+    "Number of travelers: " + numberOfTravelers,
+    "Estimated total: " + totalPriceText,
+    "Preferred travel date: " + travelDate,
+    "Flight preference: " +
+      (flightPreference === "return"
         ? "Return flight (outbound and return)"
         : "One-way flight (outbound only; customer will arrange return journey)"),
-      "",
-      "CUSTOMER DETAILS",
-      "Full name: " + customerName,
-      "Email address: " + customerEmail,
-      "Phone number: " + customerPhone
-    ].join("\n");
+    "",
+    "CUSTOMER DETAILS",
+    "Full name: " + customerName,
+    "Email address: " + customerEmail,
+    "Phone number: " + customerPhone,
+  ].join("\n");
 
-    const submitButton =
-      tourBookingForm.querySelector('button[type="submit"]');
+  const submitButton = tourBookingForm.querySelector('button[type="submit"]');
 
-    submitButton.disabled = true;
-    submitButton.textContent = "Sending booking...";
-    bookingMessage.textContent = "Sending your booking request...";
-    bookingMessage.className = "booking-message";
+  submitButton.disabled = true;
+  submitButton.textContent = "Sending booking...";
+  bookingMessage.textContent = "Sending your booking request...";
+  bookingMessage.className = "booking-message";
 
-    try {
-      const response = await fetch(SUPABASE_FUNCTION_URL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "apikey": SUPABASE_PUBLISHABLE_KEY
-        },
-        body: JSON.stringify({
-          name: customerName,
-          email: customerEmail,
-          subject: "Tour booking request: " + tour.name,
-          message: bookingDetails,
-          website: ""
-        })
-      });
+  try {
+    const response = await fetch(SUPABASE_FUNCTION_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        apikey: SUPABASE_PUBLISHABLE_KEY,
+      },
+      body: JSON.stringify({
+        name: customerName,
+        email: customerEmail,
+        subject: "Tour booking request: " + tour.name,
+        message: bookingDetails,
+        website: "",
+      }),
+    });
 
-      const data = await response.json().catch(function () {
-        return {};
-      });
+    const data = await response.json().catch(function () {
+      return {};
+    });
 
-      if (!response.ok || data.ok !== true) {
-        throw new Error(
-          data.error ||
-          "We could not send your booking request right now. Please try again."
-        );
-      }
-
-      const booking = {
-        tour: tour.name,
-        location: tour.location,
-        duration: tour.duration,
-        pricePerPerson: getBasePrice(),
-        totalPrice: totalPrice,
-        customerName: customerName,
-        customerEmail: customerEmail,
-        customerPhone: customerPhone,
-        travelDate: travelDate,
-        flightPreference: flightPreference,
-        numberOfTravelers: numberOfTravelers
-      };
-
-      localStorage.setItem(
-        "tourBooking",
-        JSON.stringify(booking)
+    if (!response.ok || data.ok !== true) {
+      throw new Error(
+        data.error ||
+          "We could not send your booking request right now. Please try again.",
       );
-
-      document.getElementById("summaryTour").textContent =
-        tour.name;
-      document.getElementById("summaryName").textContent =
-        customerName;
-      document.getElementById("summaryEmail").textContent =
-        customerEmail;
-      document.getElementById("summaryDate").textContent =
-        travelDate;
-      document.getElementById("summaryTravelers").textContent =
-        numberOfTravelers;
-      document.getElementById("summaryFlight").textContent =
-        flightPreference === "return"
-          ? "Return flight (outbound and return)"
-          : "One-way flight (return journey arranged by traveler)";
-      document.getElementById("summaryPrice").textContent =
-        totalPriceText;
-
-      document.getElementById("successMessage").textContent =
-        "Thank you, " + customerName +
-        "! Your booking request for " + tour.name +
-        " has been sent successfully. Our team will contact you.";
-
-      tourBookingForm.style.display = "none";
-      bookingMessage.textContent = "";
-      bookingSuccess.style.display = "block";
-
-      bookingSuccess.scrollIntoView({
-        behavior: "smooth"
-      });
-    } catch (error) {
-      console.error("[Jovick tour booking] Submission failed:", error);
-      bookingMessage.textContent =
-        "Sorry, we could not send your booking request right now. Please try again or contact us on WhatsApp.";
-      bookingMessage.className = "booking-message error";
-    } finally {
-      submitButton.disabled = false;
-      submitButton.textContent = "Submit Booking";
     }
-  }
-);
 
+    const booking = {
+      tour: tour.name,
+      location: tour.location,
+      duration: tour.duration,
+      pricePerPerson: getBasePrice(),
+      totalPrice: totalPrice,
+      customerName: customerName,
+      customerEmail: customerEmail,
+      customerPhone: customerPhone,
+      travelDate: travelDate,
+      flightPreference: flightPreference,
+      numberOfTravelers: numberOfTravelers,
+    };
+
+    localStorage.setItem("tourBooking", JSON.stringify(booking));
+
+    document.getElementById("summaryTour").textContent = tour.name;
+    document.getElementById("summaryName").textContent = customerName;
+    document.getElementById("summaryEmail").textContent = customerEmail;
+    document.getElementById("summaryDate").textContent = travelDate;
+    document.getElementById("summaryTravelers").textContent = numberOfTravelers;
+    document.getElementById("summaryFlight").textContent =
+      flightPreference === "return"
+        ? "Return flight (outbound and return)"
+        : "One-way flight (return journey arranged by traveler)";
+    document.getElementById("summaryPrice").textContent = totalPriceText;
+
+    document.getElementById("successMessage").textContent =
+      "Thank you, " +
+      customerName +
+      "! Your booking request for " +
+      tour.name +
+      " has been sent successfully. Our team will contact you.";
+
+    tourBookingForm.style.display = "none";
+    bookingMessage.textContent = "";
+    bookingSuccess.style.display = "block";
+
+    bookingSuccess.scrollIntoView({
+      behavior: "smooth",
+    });
+  } catch (error) {
+    console.error("[Jovick tour booking] Submission failed:", error);
+    bookingMessage.textContent =
+      "Sorry, we could not send your booking request right now. Please try again or contact us on WhatsApp.";
+    bookingMessage.className = "booking-message error";
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = "Submit Booking";
+  }
+});
 
 /* ---------- PAYMENT ---------- */
 
-const makePaymentButton =
-  document.getElementById("makePaymentButton");
+const makePaymentButton = document.getElementById("makePaymentButton");
 
-const paymentMessage =
-  document.getElementById("paymentMessage");
+const paymentMessage = document.getElementById("paymentMessage");
 
 makePaymentButton.addEventListener("click", function () {
-  const selectedPayment =
-    document.querySelector('input[name="paymentMethod"]:checked');
+  const selectedPayment = document.querySelector(
+    'input[name="paymentMethod"]:checked',
+  );
 
   if (!selectedPayment) {
     paymentMessage.textContent =
@@ -697,9 +596,7 @@ makePaymentButton.addEventListener("click", function () {
     return;
   }
 
-  const booking = JSON.parse(
-    localStorage.getItem("tourBooking") || "null"
-  );
+  const booking = JSON.parse(localStorage.getItem("tourBooking") || "null");
 
   if (!booking) {
     paymentMessage.textContent =

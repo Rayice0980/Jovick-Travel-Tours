@@ -7,7 +7,7 @@ const pages = [
   "contact.html",
   "privacy-policy.html",
   "terms.html",
-  "cancellation-refunds.html"
+  "cancellation-refunds.html",
 ];
 
 const pageNames = {
@@ -19,7 +19,7 @@ const pageNames = {
   "contact.html": "Contact",
   "privacy-policy.html": "Privacy Policy",
   "terms.html": "Terms & Conditions",
-  "cancellation-refunds.html": "Cancellation & Refunds"
+  "cancellation-refunds.html": "Cancellation & Refunds",
 };
 
 async function loadComponent(elementId, file) {
@@ -113,7 +113,7 @@ function initializeSiteInteractions() {
 
     searchButton.setAttribute(
       "aria-label",
-      isOpen ? "Close search" : "Open search"
+      isOpen ? "Close search" : "Open search",
     );
 
     if (isOpen) {
@@ -152,7 +152,7 @@ function initializeSiteInteractions() {
       return Promise.all([
         fetch(page),
         fetch("header.html"),
-        fetch("footer.html")
+        fetch("footer.html"),
       ])
         .then(async function (responses) {
           responses.forEach(function (response) {
@@ -167,15 +167,15 @@ function initializeSiteInteractions() {
 
           return {
             page: page,
-            matches: (
-              html + headerHtml + footerHtml
-            ).toLowerCase().includes(searchTerm.toLowerCase())
+            matches: (html + headerHtml + footerHtml)
+              .toLowerCase()
+              .includes(searchTerm.toLowerCase()),
           };
         })
         .catch(function () {
           return {
             page: page,
-            matches: false
+            matches: false,
           };
         });
     });
@@ -225,7 +225,7 @@ function initializeSiteInteractions() {
 async function initializeSite() {
   await Promise.all([
     loadComponent("site-header", "header.html"),
-    loadComponent("site-footer", "footer.html")
+    loadComponent("site-footer", "footer.html"),
   ]);
 
   initializeSiteInteractions();

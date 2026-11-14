@@ -11,7 +11,7 @@
 
   min-height: 72px;
   padding: 10px 5%;
-  
+
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;

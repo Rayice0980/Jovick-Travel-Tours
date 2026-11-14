@@ -4,15 +4,11 @@
   padding: 0;
 }
 
-
-
-
-
 body {
   font-family: Arial, sans-serif;
   padding-top: 60px;
 }
-img{
+img {
   max-width: 100%;
 }
 
@@ -29,7 +25,7 @@ button {
   align-items: center;
   gap: 10px;
 }
-.jovick-logo{
+.jovick-logo {
   width: 45px;
   height: 45px;
   object-fit: cover;
@@ -43,8 +39,6 @@ button {
   color: #111111;
   text-transform: uppercase;
 }
-
-
 
 .nav-bar a {
   position: relative;
@@ -72,7 +66,6 @@ button {
   width: 100%;
 }
 
-
 .footer-quick-link a {
   color: inherit;
   text-decoration: none;
@@ -92,12 +85,9 @@ button {
   color: #0066cc;
   text-decoration: none;
 }
-a:hover{
+a:hover {
   color: #0066cc;
 }
- 
-
-
 
 /* Floating circular back button: overlays content without moving the hero */
 .page-back-wrap {
@@ -118,12 +108,15 @@ a:hover{
   border-radius: 50%;
   background: #fff;
   color: #075db5;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, .22);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
   font-size: 21px;
   font-weight: 900;
   line-height: 1;
   text-decoration: none;
-  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 .page-back-link:hover {
   background: #075db5;

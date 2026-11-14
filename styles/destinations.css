@@ -2,15 +2,13 @@
    DESTINATIONS PAGE
    ================================ */
 
-
 /* ---------- SECTION 1 ---------- */
 
 .destinations-sec-1 {
   min-height: 400px;
   padding: 80px 40px;
 
-  background-image:
-    url("../images/Mountain sky.jpg");
+  background-image: url("../images/Mountain sky.jpg");
 
   background-size: cover;
   background-position: center;
@@ -35,13 +33,11 @@
   margin: 2px 0;
 }
 
-
 /* ---------- SECTION 2 ---------- */
 
 .destinations-sec-2 {
   padding: 70px 50px;
 }
-
 
 /* ---------- CATEGORY BUTTONS ---------- */
 
@@ -83,7 +79,6 @@
   border-color: #0066cc;
 }
 
-
 /* ---------- DESTINATION GRID ---------- */
 
 .destinations-grid-sec {
@@ -91,7 +86,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
 }
-
 
 /* ---------- DESTINATION CARD LINK ---------- */
 
@@ -102,7 +96,6 @@
   text-decoration: none;
   color: inherit;
 }
-
 
 /* ---------- DESTINATION CARD ---------- */
 
@@ -116,28 +109,24 @@
   border-radius: 12px;
   overflow: hidden;
 
-  box-shadow:
-    0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 
   transition:
     transform 0.2s ease,
     box-shadow 0.2s ease;
 }
 
-
 /* ---------- CARD HOVER ---------- */
 
 .destination-card-link:hover .article-card {
   transform: translateY(-4px);
 
-  box-shadow:
-    0 7px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 7px 20px rgba(0, 0, 0, 0.16);
 }
 
 .destination-card-link:hover .article-card h3 {
   font-weight: 700;
 }
-
 
 /* ---------- CARD IMAGE ---------- */
 
@@ -149,14 +138,12 @@
   display: block;
 }
 
-
 /* ---------- CARD TITLE ---------- */
 
 .destinations-grid-sec .article-card h3 {
   font-size: 22px;
   margin: 15px 18px 6px;
 }
-
 
 /* ---------- CARD LOCATION ---------- */
 

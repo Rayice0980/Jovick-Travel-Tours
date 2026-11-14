@@ -10,7 +10,11 @@
   padding: 70px 5% 55px;
 
   background:
-    radial-gradient(circle at 10% 10%, rgba(0, 102, 204, 0.18), transparent 30%),
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(0, 102, 204, 0.18),
+      transparent 30%
+    ),
     linear-gradient(135deg, #0b2945, #123f68 55%, #0d3558);
 
   color: #e8f1f8;
@@ -101,7 +105,9 @@
   position: relative;
   color: #c8d8e6;
   font-size: 14px;
-  transition: color 0.25s ease, transform 0.25s ease;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
 }
 
 .footer-quick-link a:hover {

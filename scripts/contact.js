@@ -23,7 +23,6 @@ const emailError = document.getElementById("emailError");
 const subjectError = document.getElementById("subjectError");
 const messageError = document.getElementById("messageError");
 
-
 /* ---------- FORM HELPERS ---------- */
 
 function showFieldError(input, errorElement, message) {
@@ -48,7 +47,6 @@ function showFormMessage(message, type) {
   contactFormMessage.className = "contact-form-message show " + type;
 }
 
-
 /* ---------- VALIDATION ---------- */
 
 function validateContactForm() {
@@ -64,11 +62,7 @@ function validateContactForm() {
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (name.length < 2) {
-    showFieldError(
-      nameInput,
-      nameError,
-      "Please enter your full name."
-    );
+    showFieldError(nameInput, nameError, "Please enter your full name.");
     isValid = false;
   }
 
@@ -76,17 +70,13 @@ function validateContactForm() {
     showFieldError(
       emailInput,
       emailError,
-      "Please enter a valid email address."
+      "Please enter a valid email address.",
     );
     isValid = false;
   }
 
   if (subject.length < 3) {
-    showFieldError(
-      subjectInput,
-      subjectError,
-      "Please enter a subject."
-    );
+    showFieldError(subjectInput, subjectError, "Please enter a subject.");
     isValid = false;
   }
 
@@ -94,14 +84,13 @@ function validateContactForm() {
     showFieldError(
       messageInput,
       messageError,
-      "Please enter at least 10 characters."
+      "Please enter at least 10 characters.",
     );
     isValid = false;
   }
 
   return isValid;
 }
-
 
 /* ---------- CONTACT FORM ---------- */
 
@@ -112,7 +101,7 @@ if (contactForm) {
     if (!validateContactForm()) {
       showFormMessage(
         "Please correct the highlighted fields and try again.",
-        "error"
+        "error",
       );
       return;
     }
@@ -122,22 +111,28 @@ if (contactForm) {
       '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
     showFormMessage("Sending your message...", "info");
 
-    console.info("[Jovick contact] Submitting to Supabase:", SUPABASE_FUNCTION_URL);
-    console.info("[Jovick contact] Honeypot filled:", Boolean(websiteInput && websiteInput.value.trim()));
+    console.info(
+      "[Jovick contact] Submitting to Supabase:",
+      SUPABASE_FUNCTION_URL,
+    );
+    console.info(
+      "[Jovick contact] Honeypot filled:",
+      Boolean(websiteInput && websiteInput.value.trim()),
+    );
 
     fetch(SUPABASE_FUNCTION_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "apikey": SUPABASE_PUBLISHABLE_KEY
+        apikey: SUPABASE_PUBLISHABLE_KEY,
       },
       body: JSON.stringify({
         name: nameInput.value.trim(),
         email: emailInput.value.trim(),
         subject: subjectInput.value.trim(),
         message: messageInput.value.trim(),
-        website: websiteInput ? websiteInput.value.trim() : ""
-      })
+        website: websiteInput ? websiteInput.value.trim() : "",
+      }),
     })
       .then(async function (response) {
         console.info("[Jovick contact] Supabase HTTP status:", response.status);
@@ -148,18 +143,16 @@ if (contactForm) {
 
         console.info("[Jovick contact] Supabase response received:", {
           httpOk: response.ok,
-          functionOk: data.ok === true
+          functionOk: data.ok === true,
         });
 
         if (!response.ok || !data.ok) {
-          throw new Error(
-            data.error || "Unable to send your message."
-          );
+          throw new Error(data.error || "Unable to send your message.");
         }
 
         showFormMessage(
           "Thank you! Your message has been sent successfully. We will get back to you as soon as possible.",
-          "success"
+          "success",
         );
 
         contactForm.reset();
@@ -170,7 +163,7 @@ if (contactForm) {
 
         showFormMessage(
           "Sorry, we could not send your message right now. Please try again or contact us on WhatsApp.",
-          "error"
+          "error",
         );
       })
       .finally(function () {
@@ -180,7 +173,6 @@ if (contactForm) {
       });
   });
 }
-
 
 /* ---------- CLEAR ERRORS WHILE TYPING ---------- */
 
@@ -192,9 +184,7 @@ if (contactForm) {
   input.addEventListener("input", function () {
     input.classList.remove("input-error");
 
-    const errorElement = document.getElementById(
-      input.id + "Error"
-    );
+    const errorElement = document.getElementById(input.id + "Error");
 
     if (errorElement) {
       errorElement.textContent = "";
@@ -204,7 +194,6 @@ if (contactForm) {
     contactFormMessage.textContent = "";
   });
 });
-
 
 /* ---------- FAQ ACCORDION ---------- */
 

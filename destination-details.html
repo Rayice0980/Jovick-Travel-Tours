@@ -1,203 +1,135 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Discover destination highlights and places to visit with Jovick Travel & Tours. Contact us to confirm available tours, prices and travel arrangements."
+    />
 
-<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta charset="UTF-8">
-  <meta name="description" content="Discover destination highlights and places to visit with Jovick Travel & Tours. Contact us to confirm available tours, prices and travel arrangements.">
+    <title>Destination Details | Jovick Travel &amp; Tours</title>
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
 
-  <title>Destination Details | Jovick Travel &amp; Tours</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/destination-details.css" />
+    <link rel="stylesheet" href="styles/mediaquery.css" />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  >
+    <link rel="icon" href="images/Jovick-logo.jpg" type="image/jpeg" />
+  </head>
 
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/destination-details.css">
-  <link rel="stylesheet" href="styles/mediaquery.css">
-
-  <link rel="icon" href="images/Jovick-logo.jpg" type="image/jpeg">
-</head>
-
-
-<body>
-
-
-  <!-- ================================
+  <body>
+    <!-- ================================
        HEADER
        ================================ -->
 
-      <div id="site-header"></div>
+    <div id="site-header"></div>
 
-  <a class="page-back-link" href="destinations.html" aria-label="Back to destinations" title="Back to destinations"><i class="fa-solid fa-arrow-left" aria-hidden="true"></i></a>
+    <a
+      class="page-back-link"
+      href="destinations.html"
+      aria-label="Back to destinations"
+      title="Back to destinations"
+      ><i class="fa-solid fa-arrow-left" aria-hidden="true"></i
+    ></a>
 
-
-  <!-- ================================
+    <!-- ================================
        DESTINATION HERO
        ================================ -->
 
-  <section
-    class="destination-details-hero"
-    id="destinationHero"
-  >
+    <section class="destination-details-hero" id="destinationHero">
+      <div class="destination-hero-overlay">
+        <p id="destinationCountry"></p>
 
-    <div class="destination-hero-overlay">
+        <h1 id="destinationName">Destination</h1>
 
-      <p id="destinationCountry"></p>
+        <p id="destinationTagline"></p>
+      </div>
+    </section>
 
-      <h1 id="destinationName">
-        Destination
-      </h1>
-
-      <p id="destinationTagline"></p>
-
-    </div>
-
-  </section>
-
-
-  <!-- ================================
+    <!-- ================================
        DESTINATION INFORMATION
        ================================ -->
 
-  <main>
+    <main>
+      <section class="destination-details-section">
+        <div class="destination-details-content">
+          <!-- ABOUT -->
 
-    <section class="destination-details-section">
+          <article class="destination-about">
+            <span class="destination-section-label"> Discover </span>
 
-      <div class="destination-details-content">
+            <h2 id="aboutTitle">About this destination</h2>
 
+            <p id="destinationDescription"></p>
+          </article>
 
-        <!-- ABOUT -->
+          <!-- PLACES TO VISIT -->
 
-        <article class="destination-about">
+          <article class="places-to-visit">
+            <span class="destination-section-label"> Explore </span>
 
-          <span class="destination-section-label">
-            Discover
-          </span>
+            <h2>Nice Places to Visit</h2>
 
-          <h2 id="aboutTitle">
-            About this destination
-          </h2>
+            <div class="places-grid" id="placesGrid"></div>
+          </article>
 
-          <p id="destinationDescription"></p>
+          <!-- TRAVEL EXPERIENCE -->
 
-        </article>
+          <article class="destination-experience">
+            <span class="destination-section-label"> Experience </span>
 
+            <h2>Why Visit <span id="experienceName"></span>?</h2>
 
-        <!-- PLACES TO VISIT -->
+            <p id="experienceText"></p>
+          </article>
 
-        <article class="places-to-visit">
+          <!-- CTA -->
 
-          <span class="destination-section-label">
-            Explore
-          </span>
+          <article class="destination-booking-card">
+            <div>
+              <span class="destination-section-label"> Ready to travel? </span>
 
-          <h2>
-            Nice Places to Visit
-          </h2>
+              <h2>Explore this destination with us</h2>
 
-          <div
-            class="places-grid"
-            id="placesGrid"
-          >
-          </div>
+              <p>View our available tour and continue to the booking page.</p>
+            </div>
 
-        </article>
+            <div class="destination-actions">
+              <a href="destinations.html" class="back-destinations">
+                <i class="fa-solid fa-arrow-left"></i>
+                Destinations
+              </a>
 
+              <a href="#" id="viewTourButton" class="view-destination-tour">
+                View Tour &amp; Book Now
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
 
-        <!-- TRAVEL EXPERIENCE -->
-
-        <article class="destination-experience">
-
-          <span class="destination-section-label">
-            Experience
-          </span>
-
-          <h2>
-            Why Visit <span id="experienceName"></span>?
-          </h2>
-
-          <p id="experienceText"></p>
-
-        </article>
-
-
-        <!-- CTA -->
-
-        <article class="destination-booking-card">
-
-          <div>
-
-            <span class="destination-section-label">
-              Ready to travel?
-            </span>
-
-            <h2>
-              Explore this destination with us
-            </h2>
-
-            <p>
-              View our available tour and continue
-              to the booking page.
-            </p>
-
-          </div>
-
-
-          <div class="destination-actions">
-
-            <a
-              href="destinations.html"
-              class="back-destinations"
-            >
-              <i class="fa-solid fa-arrow-left"></i>
-              Destinations
-            </a>
-
-            <a
-              href="#"
-              id="viewTourButton"
-              class="view-destination-tour"
-            >
-              View Tour &amp; Book Now
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-          </div>
-
-        </article>
-
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- ================================
+    <!-- ================================
        FOOTER
        ================================ -->
 
-      <div id="site-footer"></div>
+    <div id="site-footer"></div>
 
-
-  <!-- ================================
+    <!-- ================================
        JAVASCRIPT
        ================================ -->
 
-  <script src="scripts/main.js"></script>
+    <script src="scripts/main.js"></script>
 
-  <script src="scripts/destination-details.js"></script>
-
-</body>
-
+    <script src="scripts/destination-details.js"></script>
+  </body>
 </html>
